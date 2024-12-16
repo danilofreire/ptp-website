@@ -1,0 +1,57 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+Drupal.behaviors.theBar = function () {
+  $('.view-thebar ul li').each(function(){
+    if ($(this).find('.views-field-field-bar-image-fid').length) {
+      $(this).addClass('has-image');
+    }
+    else {
+      $(this).addClass('no-image');
+    }
+  });
+
+  var header = $('.the-bar h2');
+  header.css({
+    fontSize: '21px',
+    fontWeight: 'bold'
+  });
+  header.css('width', header.width() + 15);
+
+
+  var researchsitesbrowneduresearchfilesrendervitesseboldswf = { src: '/research/sites/brown.edu.research/files/render/vitesse-bold.swf' };
+  if(typeof sIFR !== 'undefined') {
+		sIFR.replace(researchsitesbrowneduresearchfilesrendervitesseboldswf, { "font": "/research/sites/brown.edu.research/files/render/vitesse-bold.swf", "selector": ".the-bar h2", "css": { ".sIFR-root": { "display": "block", "font-size": "21px", "font-weight": "normal", "font-style": "normal", "color": "#2f2a20", "background-color": "", "margin-left": 0, "margin-right": 0, "text-align": "left", "text-indent": 0, "text-transform": "none", "text-decoration": "none", "letter-spacing": 0, "opacity": "100", "leading": 0, "kerning": "false", "cursor": "arrow" }, "a": { "text-decoration": "none", "color": "#000000" }, "a:link": { "color": "#000000" }, "a:hover": { "color": "#c00404", "text-decoration": "none" } }, "wmode": "transparent", "fontname": "researchsitesbrowneduresearchfilesrendervitesseboldswf" });
+  }
+};
+
+}
+/*
+     FILE ARCHIVED ON 08:20:53 Sep 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:42:59 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.717
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.011
+  esindex: 0.012
+  cdx.remote: 6.25
+  LoadShardBlock: 88.832 (3)
+  PetaboxLoader3.datanode: 70.253 (4)
+  PetaboxLoader3.resolve: 419.544 (2)
+  load_resource: 418.934
+*/

@@ -1,0 +1,37 @@
+/* timeEntry styles */
+.timeEntry_control {
+	vertical-align: middle;
+	margin-left: 2px;
+}
+* html .timeEntry_control { /* IE only */
+	margin-top: -4px;
+}
+/* Make sure background colors from other styles don't obscure the current element highlight */
+.timeEntry {
+  background-color:transparent !important;
+}
+/* This is to keep FF from offering a drop-down list of previous values. */
+/* For some reason hiding the div where the image belongs keeps that from happening. */
+.timeEntry_control {
+  display:none;
+}
+/*
+     FILE ARCHIVED ON 19:04:17 May 27, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:04:07 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.834
+  exclusion.robots: 0.029
+  exclusion.robots.policy: 0.013
+  esindex: 0.015
+  cdx.remote: 345.108
+  LoadShardBlock: 255.904 (3)
+  PetaboxLoader3.datanode: 88.802 (4)
+  PetaboxLoader3.resolve: 263.195 (3)
+  load_resource: 118.143
+*/

@@ -1,0 +1,383 @@
+/**
+ *	$Id$
+ *
+ *	Brown Slides Module Stylesheet
+ *
+ *	@author Patrick Laverty <patrick_laverty@brown.edu>
+ *	@author John Pennypacker <john_pennypacker@brown.edu>
+ *	@author Huiling Xu <huiling_xu@brown.edu>
+ *
+ */
+
+
+/**
+ *	Slide add/edit form
+ */
+#edit-field-slide-media-type-value-Image-wrapper,
+#edit-field-slide-media-type-value-Video-wrapper,
+#edit-field-slide-media-type-value-HTML-wrapper {
+	display: inline;
+}
+.group-video .form-radios .form-item,
+.group-image .form-radios .form-item {
+	display: inline;
+	padding-right: .5em;	
+	white-space:nowrap;
+}
+.group-video .form-radios,
+.group-image .form-radios {
+	margin-right: 4em;
+}
+
+.brown-slide-collection-form .form-checkboxes .form-item {
+	display: inline;
+	padding-right: 1em;	
+}
+
+.brown-slide-collection-form .form-checkboxes .form-item .option img {
+	border: 3px solid #fff;
+}
+.group-image .form-radios .option img,
+.group-video .form-radios .option img{
+	border: 3px solid #F9F8F3;
+}
+
+.brown-slide-collection-form .form-checkboxes .form-item .selected-option img,
+.group-image .form-radios .selected-option img,
+.group-video .form-radios .selected-option img{
+	border: 3px solid #fc0;
+}
+
+.brown-slide-group-tab {
+	padding: .125em .5em .125em .75em;
+	text-align: center;
+	background-color: #CCC6B7;
+	border: 1px solid #847D6A;
+}
+.brown-slide-group-tab.selected-slide-type,
+.brown-slide-group-tab.selected-slide-type,
+.brown-slide-group-tab.selected-slide-type {
+	background-color: #F9F8F3;
+	position: relative;
+	z-index: 100;
+	border-bottom: 1px solid #F9F8F3;
+}
+
+.brown-slide-group {
+	margin-top: -14px;
+}
+.brown-slide-group legend {
+	display: none;
+}
+
+.block-slideshow-edit {
+	display: block;
+	float: left;
+	text-indent: -999em;
+	margin: 0 .5em .25em 0;
+	background: transparent url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/s/img/icon-edit-slideshow.png") 50% 50% no-repeat;
+	width: 20px; height: 20px;
+	border: 1px solid #fff;
+}
+
+/**
+ * Slideshow formatting
+ */
+
+ul.brown-slideshow {
+	margin: 0;
+	padding: 0;
+}
+
+li.brown-slide {
+	margin: 0 0 1em;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+.brown-slide .slide-wrapper {
+	position: relative;
+}
+.brown-slide img {
+	display: block;
+	margin: 0 auto;
+}
+.brown-slide h2, .brown-slide h3 {
+	font-size: 1.5em;
+	color: #fff;
+	margin: .75em 1em;
+}
+.brown-slide .slide-text {
+	margin: 0 1.5em 1em;
+}
+
+.brown-slide .caption {
+	position: absolute;
+	background: transparent url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/black70.png") 0 0 repeat;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.brown-slide .caption-top {
+	left: 0;
+	top: 0;
+}
+.brown-slide .caption-bottom {
+	left: 0;
+	bottom: 0;
+}
+.brown-slide .caption-top,
+.brown-slide .caption-bottom {
+	width: 100%;
+}
+
+.brown-slide .caption-left {
+	left: 0;
+	top: 0;
+}
+.brown-slide .caption-right {
+	right: 0;
+	top: 0;
+}
+.brown-slide .caption-right,
+.brown-slide .caption-left {
+	width: 30%;
+}
+
+.brown-slide .caption-none {
+	display: none;
+}
+
+.slide-video h2, .slide-html h2.node-title {
+	display: none;
+}
+
+.slide-html {
+	color: #fff;
+}
+
+/** SLIDESHOW NAVIGATION BUTTONS **/
+.slideshow-controls {
+	position: relative;
+}
+
+#s-nav {
+	background-color: #000;
+	text-align: center;
+}
+#s-nav:after {
+	content: ".";
+	clear: both;
+	color: #fff;
+	height: 0;
+	display: block;
+}
+
+.nav-sec {
+	float: left;
+}
+.thumb-nav-sec a, .dot-nav-sec a {
+	display: block;
+	float: left;
+}
+
+/** thumbnail nav styles **/
+.thumb-nav-sec a {
+	border: 3px solid #000;
+}
+.thumb-nav-sec .activeSlide {
+	border: 3px solid #FC0;
+	color: #930;
+}
+.slide-thumb {
+	width: 71px;
+	height: 40px;
+}
+
+
+/** dot nav styles **/
+.dot-nav-sec a {
+	margin-right: 7px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 18px;
+	height: 18px;
+	background: transparent url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/dots-sprite.png") 4px 50% no-repeat;
+	overflow: hidden;
+	text-indent: -999em;
+}
+.dot-nav-sec .activeSlide {
+	background-position: -16px 50%;
+}
+
+
+
+/** number nav styles **/
+.number-nav-sec {
+	line-height: 46px;
+}
+.number-nav-sec a {
+	border: 3px solid #000;
+	padding: 6px;
+}
+
+.number-nav-sec .activeSlide {
+	border: 3px solid #FC0;
+	color: #fc0;
+	background-color: #2f2a20;
+}
+
+
+
+/** 	PREVIOUS / NEXT BUTTONS **/
+.slides-arrow {
+	z-index: 100;
+	text-indent: -999em;
+	display: block;
+	width:46px;
+	height:46px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#brown-slideshow-previous {
+	left: 0;
+	background-image: url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/arrow-left-yellow.png"); 
+}
+
+#brown-slideshow-next {
+	right: 0;
+	background-image: url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/arrow-right-yellow.png"); 
+}
+
+#brown-slideshow-previous:hover {
+	background-image: url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/arrow-left-white.png");
+}
+#brown-slideshow-next:hover {
+	background-image: url("https://web.archive.org/web/20200123142344im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/arrow-right-white.png");
+}
+
+#s_count {
+	position: absolute;
+	right: 48px;
+	top: 16px;
+	color: #fff;
+	font-size: 11px;
+}
+
+/** 	PREVIOUS / NEXT BUTTONS for Navagation type: arrow **/
+.slideshow-controls-arrow {
+	display: block;
+	position: relative;
+	background-color: #000;
+}
+.slideshow-controls-arrow:after {
+	content: ".";
+	clear: both;
+	color: #fff;
+	height: 0;
+	display: block;
+}
+
+
+.slideshow-controls-arrow .slides-arrow {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.slideshow-controls-arrow #brown-slideshow-previous {
+}
+
+.slideshow-controls-arrow #brown-slideshow-next {
+}
+
+.slideshow-controls-arrow #s_count {
+	top: 16px;
+	left: 108px;
+	color: #fff;
+}
+
+
+
+
+
+/******************************************************************************************
+******************************************************************************************
+RESPONSIVE STYLES
+******************************************************************************************
+******************************************************************************************/
+
+/*********************************************************************/
+/* and  (min-width: 1px) and (max-width: 940px) */
+@media only screen and (min-width: 0.1em) and (max-width: 58.75em) {
+.thumb-nav-sec {
+	margin-left: 10px !important;
+}
+}
+
+/*********************************************************************/
+/* and  (min-width: 1px) and (max-width: 700px) */
+@media only screen and (min-width: 0.1em) and (max-width: 43.75em) {
+	
+
+	
+.content #s-nav .nav-sec img {
+	height: 20px;
+	width: auto;
+}
+}
+
+
+/*********************************************************************/
+/* other smallScreen, including amazon kindle fire */
+/* and  (min-width: 481px) and (max-width: 767px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 47.9375em) {
+
+}
+/*********************************************************************/
+/* handheld - small screen - landscape  */
+/* and (min-width: 361px) and (max-width: 480px) */
+@media screen and (min-width: 22.5625em) and (max-width: 30em) {
+
+}
+/*********************************************************************/
+/* samsung s3, samsung s4*/
+/* and (min-width: 321px) and and (width: 360px) */
+@media screen and (min-width: 20.0625em) and (max-width: 22.5em) {
+	
+}
+/*********************************************************************/
+/* all smallscreen handheld  */
+/* and (min-width: 0px) and (max-width: 480px) */
+@media screen and (min-width: 0em) and (max-width: 30em) {
+}
+/*********************************************************************/
+/* smallscreen portrait  */
+/* and (min-width: 0px) and (max-width: 320px) */
+@media screen and (min-width: 0em) and (max-width: 20em) {
+
+
+}
+/*
+     FILE ARCHIVED ON 14:23:44 Jan 23, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:00:06 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.943
+  exclusion.robots: 0.044
+  exclusion.robots.policy: 0.028
+  esindex: 0.016
+  cdx.remote: 7.041
+  LoadShardBlock: 60.949 (3)
+  PetaboxLoader3.datanode: 130.276 (4)
+  load_resource: 122.571
+  PetaboxLoader3.resolve: 50.77
+*/

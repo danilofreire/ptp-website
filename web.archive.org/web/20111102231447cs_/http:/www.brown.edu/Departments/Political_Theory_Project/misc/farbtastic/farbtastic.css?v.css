@@ -1,0 +1,55 @@
+
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 47px;
+  left: 47px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(../../../../../../../20111104231929im_/http:/www.brown.edu/Departments/Political_Theory_Project/misc/farbtastic/wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .overlay {
+  background: url(../../../../../../../20111104231929im_/http:/www.brown.edu/Departments/Political_Theory_Project/misc/farbtastic/mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden;
+  background: url(../../../../../../../20111104231929im_/http:/www.brown.edu/Departments/Political_Theory_Project/misc/farbtastic/marker.png) no-repeat;
+}
+
+
+/*
+     FILE ARCHIVED ON 23:19:29 Nov 04, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:16:18 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.673
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.01
+  esindex: 0.013
+  cdx.remote: 19.421
+  LoadShardBlock: 106.745 (3)
+  PetaboxLoader3.datanode: 109.332 (4)
+  load_resource: 69.342
+  PetaboxLoader3.resolve: 36.523
+*/

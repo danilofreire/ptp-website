@@ -1,0 +1,22 @@
+.timeline{padding-top:75px;}.timeline .row{display:table;width:100%;margin:0;}.timeline .row .column{display:table-cell;vertical-align:top;padding-bottom:90px;}@media screen and (max-width:739px){.timeline .row .column{display:inline-block;width:100%;padding-bottom:0;}}.timeline .row .img-col{text-align:center;}.timeline .row .img-col h2,.timeline .row .img-col h3,.timeline .row .img-col h4,.timeline .row .img-col h5,.timeline .row .img-col p{margin-top:0;}.timeline .row .img-col h2,.timeline .row .img-col h3,.timeline .row .img-col h4,.timeline .row .img-col h5{font-weight:bold;}@media screen and (min-width:740px){.timeline .row .img-col{text-align:left;width:20%;}}.timeline .row .center{width:15%;text-align:center;position:relative;min-width:1px;min-height:1px;background:transparent;}.timeline .row .center::before,.timeline .row .center::after{position:absolute;content:"";display:block;z-index:100;}.timeline .row .center::before{width:6px;height:100%;background:#F4F8F8;left:50%;margin-left:-5px;top:0;}@media screen and (max-width:739px){.timeline .row .center::before{width:100%;height:4px;left:0;}}.timeline .row .center::after{width:20px;height:20px;border:5px solid #C00404;background:#FFFFFF;top:0;left:50%;margin-left:-12px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;}@media screen and (max-width:739px){.timeline .row .center::after{width:10px;height:10px;border-width:5px;top:-3px;left:calc(50% - 5px);margin-left:unset;}}@media screen and (max-width:739px){.timeline .row .center{width:100%;}}.timeline .row .txt-col{text-align:left;}.typography .timeline .row .txt-col p{margin-top:0;}@media screen and (min-width:740px){.timeline .row .txt-col{width:65%;}}.timeline .row.yellow .center::after{border:5px solid #FFC72C;}.timeline .row.blue .center::after{border:5px solid #0a91c5;}.timeline .row.brown .center::after{border:5px solid #4E3629;}
+
+/*
+     FILE ARCHIVED ON 22:34:53 May 17, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:55:29 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.299
+  exclusion.robots: 0.03
+  exclusion.robots.policy: 0.018
+  esindex: 0.013
+  cdx.remote: 29.256
+  LoadShardBlock: 273.356 (3)
+  PetaboxLoader3.datanode: 281.112 (6)
+  PetaboxLoader3.resolve: 112.112 (3)
+  load_resource: 187.454
+*/

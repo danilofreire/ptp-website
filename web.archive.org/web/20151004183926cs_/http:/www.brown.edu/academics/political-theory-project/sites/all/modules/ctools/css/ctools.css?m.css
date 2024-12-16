@@ -1,0 +1,46 @@
+.ctools-locked {
+  color: red;
+  border: 1px solid red;
+  padding: 1em;
+}
+
+.ctools-owns-lock {
+  background: #FFFFDD none repeat scroll 0 0;
+  border: 1px solid #F0C020;
+  padding: 1em;
+}
+
+a.ctools-ajaxing,
+input.ctools-ajaxing,
+button.ctools-ajaxing,
+select.ctools-ajaxing {
+  padding-right: 18px !important;
+  background: url(../../../../../../../../../../20150919175021im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/ctools/images/status-active.gif) right center no-repeat;
+}
+
+div.ctools-ajaxing {
+  float: left;
+  width: 18px;
+  background: url(../../../../../../../../../../20150919175021im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/ctools/images/status-active.gif) center center no-repeat;
+}
+
+/*
+     FILE ARCHIVED ON 17:50:21 Sep 19, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:26:52 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.631
+  exclusion.robots: 0.029
+  exclusion.robots.policy: 0.018
+  esindex: 0.013
+  cdx.remote: 16.858
+  LoadShardBlock: 373.458 (3)
+  PetaboxLoader3.resolve: 561.742 (4)
+  PetaboxLoader3.datanode: 228.975 (5)
+  load_resource: 481.476 (2)
+*/

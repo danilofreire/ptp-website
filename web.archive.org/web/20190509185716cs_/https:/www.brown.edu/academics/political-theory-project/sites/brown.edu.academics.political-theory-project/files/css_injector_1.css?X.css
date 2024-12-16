@@ -1,0 +1,127 @@
+/* EVENT LIST */
+#sidebar-right .super-events-list .date ul li {
+  clear: left;
+  margin-bottom: 2.5em;
+}
+
+.cal_date {
+  display: none;
+}
+.cal_date:first-of-type {
+  display: block;
+  text-align: center;
+  line-height: 1;
+  float: left;
+  margin: .2em 10px 0 -2.75em;
+  clear: left;
+}
+.cal_date .cal_date_month {
+  display: block;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.cal_date .cal_date_day {
+  display: block;
+  font-size: 1.64em;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: .25px;
+  padding-top: 1px;
+}
+
+.view-Events .node-event {
+  display: inline-block !important;
+  font-size: 1em !important;
+  width: calc(470px / 2) !important;
+  vertical-align: top;
+  margin: 2% 12px 2% 0 !important;
+  background-color: #edeae0;
+}
+.view-Events .node-event h2 {
+  font-family: "proxima_nova_bold", sans-serif;
+  font-size: 16px;
+  line-height: 1.3em;
+  padding: 6px 11px;
+  margin: 0;
+  margin-top: .5em;
+}
+.super-events-list div.event-content img {
+  padding: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+  float: none !important;
+  width: 100% !important;
+  height: auto !important;
+}
+.view-Events .node-event .lw-event-details {
+  width: auto;
+  padding: 6px 11px;
+}
+.view-Events .node-event .lw-event-details p {
+  font-size: 12px !important;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.view-Events .node-event .lw-event-details .lw-date {
+  font-weight: bolder;
+}
+.view-Events .node-event .body {
+  display: none;
+}
+
+/* EVENT NODE PAGE */
+.main-article-event.node-lwevent .lw-event-details {
+  font-size: 16px !important;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 19px 0 0 19px;
+  width: 100% !important;
+}
+.main-article-event.node-lwevent .lwevent-image {
+  width: 20%;
+  margin-right: 2%;
+  float: left;
+}
+
+.main-article-event.node-lwevent .lwevent-image + .lw-event-details {
+  width: 75% !important;
+}
+.main-article-event.node-lwevent .lw-event-details .lw-date {
+  font-weight: bold;
+}
+.main-article-event.node-lwevent .lw-event-details .lw-location,
+.main-article-event.node-lwevent .lw-event-details .lw-room {
+  display: inline-block;
+}
+.main-article-event.node-lwevent .lw-event-details .lw-location {
+  max-width: unset;
+}
+.main-article-event.node-lwevent .lw-event-details p {
+  margin-bottom: .25em;
+}
+iframe.lw_media.lw_media_responsive {
+    max-width: 100%;
+}
+/*
+     FILE ARCHIVED ON 08:16:16 May 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:49:21 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.496
+  exclusion.robots: 0.017
+  exclusion.robots.policy: 0.007
+  esindex: 0.011
+  cdx.remote: 13.385
+  LoadShardBlock: 54.176 (3)
+  PetaboxLoader3.datanode: 67.045 (4)
+  load_resource: 91.131
+  PetaboxLoader3.resolve: 70.885
+*/

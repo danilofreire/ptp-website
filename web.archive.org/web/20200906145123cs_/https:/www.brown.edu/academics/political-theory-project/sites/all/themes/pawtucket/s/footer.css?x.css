@@ -1,0 +1,376 @@
+/****************************** Footer ******************************/
+#footer {
+	display: block;
+	clear: both;
+	background-color: #3a1e1a;
+	border-top: 4px solid #c00404;
+	line-height: 1.375em;
+	position: relative;
+	padding-bottom: 1em;
+	overflow: hidden;
+}
+#footer .block-edit, .block-menu .block-edit {
+	font-size: .75em;
+}
+#brown-university, #brown-resources {
+	height: auto;
+}
+#footer .block {
+	float: left;
+	border: none;
+	border-width: 0 1px 0 0;
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding-right: 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px dotted #fff;
+}
+#footer #site-links li {
+	padding: 0 0 9px 0;
+	line-height: 1.1;
+}
+#footer #brown-footer {
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding: 10px 0 10px 0;
+	color: #fff;
+	border-bottom: none;
+}
+#footer .content {
+	margin-bottom: 0;
+}
+#footer a:link, #footer a:visited {
+	color: #ffcc00;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+#footer li a {
+	display: block;
+}
+#footer li a[href$='.pdf'] {
+	display: inline-block;
+}
+#footer .marginator {
+	position: relative;
+}
+#footer:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	color: #3a1e1a; /* this hides the white line under the footer */
+	border: 1px solid #3a1e1a; /* this hides the white line under the footer */
+}
+#footer .content {
+	color: #fff;
+}
+#footer ul {
+	font-size: 1em; /* override default ul */
+	line-height: inherit; /* override default ul */
+	margin: 0; /* override default ul */
+	padding: 0;
+}
+#footer li {
+	margin: 0; /* override default li */
+	padding: 0;
+	line-height: 1.875em;
+	list-style: none;
+}
+#footer .marginator {
+	margin-top: 1em;
+}
+#footer #brown-footer {
+	margin: 0 2% 0 0;
+	color: #fff;
+}
+#brown-university, #brown-resources {
+
+}
+
+#top-destinations {
+	width: 15%;
+	margin: 0 2% 0 0;
+	padding-left: 1%;
+	border: 1px dotted #fff;
+	border-width: 0 0 0 1px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#footer #brown-university {
+	width: 35%;
+	color: #fff;
+}
+#brown-university h4, #footer h5 {
+	font-size: .75em;
+	color: #fff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-style: normal;
+	text-transform: uppercase;
+	margin-bottom: .375em;
+	margin-top: .125em;
+	height: 15px;
+	line-height: 1;
+}
+#footer h4 {
+	text-indent: -999em;
+	background: transparent url("https://web.archive.org/web/20200906230446im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/brown-university-type-footer.png") -1px 0 no-repeat;
+	height: 15px;
+	width: 203px;
+	margin-bottom: .5em;
+}
+#footer a:link, #footer a:visited {
+	color: #ffcc00;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+#footer .block-edit {
+	border: 1px solid #3a1e1a;
+}
+#footer .block-edit:hover {
+	border-color: #fff;
+}
+#footer ul.social-media a {
+	background-color: transparent;
+	background-image: url("https://web.archive.org/web/20200906230446im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/social-icons-sprite.png");
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 3px;
+	text-indent: -999em;
+	border-radius: 2px;
+}
+#footer-facebook {
+	background-position: 0 0;
+}
+#footer-facebook:hover {
+	background-position: 0 -40px;
+}
+#footer-twitter {
+	background-position: -40px 0;
+}
+#footer-twitter:hover {
+	background-position: -40px -40px;
+}
+#footer-youtube {
+	background-position: -81px 0px;
+}
+#footer-youtube:hover {
+	background-position: -81px -40px;
+}
+#footer-itunesu {
+	background-position: -120px 0;
+}
+#footer-itunesu:hover {
+	background-position: -120px -40px;
+}
+#footer-google-plus {
+	background-position: -160px 0;
+}
+#footer-google-plus:hover {
+	background-position: -160px -40px;
+}
+#footer-linkedin {
+	background-position: -200px 0;
+}
+#footer-linkedin:hover {
+	background-position: -200px -40px;
+}
+#footer-rss {
+	background-position: -240px 0;
+}
+#footer-rss:hover {
+	background-position: -240px -40px;
+}
+
+#footer-futurity {
+	background-position: -280px 0;
+}
+#footer-futurity:hover {
+	background-position: -280px -40px;
+}
+#footer-snapchat {
+	background-position: -359px 0;
+}
+#footer-snapchat:hover {
+	background-position: -359px -40px;
+}
+#footer-instagram {
+	background-position: -320px 0;
+}
+#footer-instagram:hover {
+	background-position: -320px -40px;
+}
+
+
+
+
+/******************************************************************************************
+******************************************************************************************
+RESPONSIVE STYLES
+******************************************************************************************
+******************************************************************************************/
+
+
+/* all screens except for handheld and amazon kindle  */
+/* and (min-width: 481px) and (max-width: 99999px) */
+@media screen and (min-width:30.0625em) and (max-width: 999em) {
+#footer #site-links .block {
+	float: left;
+	border: none;
+	border-width: 0 1px 0 0;
+	width: auto;
+	margin: 10px 0 0 0;
+	padding-right: 0;
+	padding: 0 10px 10px 10px;
+	border-bottom: none;
+	border-right: 1px dotted #fff;
+	min-height: 170px;
+	max-width: 30%;
+}
+#footer #site-links .block:nth-child(1) {
+	padding: 0 10px 10px 0px;
+}
+#footer #site-links .block:last-of-type  {
+	border-right: none;
+}
+#footer #brown-footer {
+	width: 100%;
+	margin: 20px 0 10px 0;
+	border-right: none;
+	border-top: 1px dotted #fff;
+	padding: 20px 0 20px 0;
+}
+
+}
+/*********************************************************************/
+/* average and large desktop  */
+/* and (min-width: 940px) and (max-width: 99999px) */
+@media only screen and (min-width: 58.75em) and (max-width: 999em) {
+#footer #brown-footer {
+	width: 320px;
+	margin: 0 0 10px 0;
+	border-right: 1px dotted #fff;
+	border-top: none;
+	padding: 10px 0 10px 0;
+	float: left;
+}
+#footer #site-links {
+	float: right;
+	width: 580px;
+	width: calc(100% - 322px);
+}
+#footer #site-links .block, #footer #site-links .block:nth-child(2) {
+	height: 180px;
+	margin: 0 0 0 0;	
+	padding: 8px 10px 10px 10px;
+}
+#footer #site-links .block:nth-child(1) {
+	padding: 8px 10px 10px 10px;
+}
+}
+
+/*********************************************************************/
+/* smaller than desktop, larger than handheld  */
+/* and (min-width: 481px) and (max-width: 939px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 58.6875em) {
+
+}
+/*********************************************************************/
+/* small desktop  */
+/* and (min-width: 801px) and (max-width: 939px) */
+@media only screen and (min-width: 50.0625em) and (max-width: 58.6875em) {
+
+
+}
+/*********************************************************************/
+/* tablet/ipad - portrait */
+/* and (min-width: 768px) and (max-width: 800px) */
+@media only screen and (min-width: 48em) and (max-width: 50em) {
+
+}
+/*********************************************************************/
+/* amazon kindle and larger */
+/* and (min-width: 600px) and (max-width: 99999px) */
+@media only screen and (min-width: 37.5em) and (max-width: 9999em) {
+
+}
+/*********************************************************************/
+/* larger than amazon kindle, smaller than desktop */
+/* and (min-width: 600px) and (max-width: 939px) */
+@media only screen and (min-width: 37.5em) and (max-width: 58.6875em) {
+
+
+}
+/*********************************************************************/
+/* amazon kindle fire only */
+/* and (min-width: 600px) and (max-width: 767px) */
+@media only screen and (min-width: 37.5em) and (max-width: 47.9375em) {
+
+
+}
+/*********************************************************************/
+/* other smallScreen, including amazon kindle fire */
+/* and (min-width: 481px) and (max-width: 767px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 47.9375em) {
+
+
+}
+/*********************************************************************/
+/* handheld - small screen - landscape  */
+/* and (min-width: 361px) and (max-width: 480px) */
+@media screen and (min-width: 22.5625em) and (max-width: 30em) {
+
+}
+/*********************************************************************/
+/* samsung s3, samsung s4*/
+/* and (min-width: 321px) and and (width: 360px) */
+@media screen and (min-width: 20.0625em) and (width: 22.5em) {
+	
+}
+/*********************************************************************/
+/* all smallscreen handheld  */
+/* and (min-width: 0px) and (max-width: 480px) */
+@media screen and (min-width: 0em) and (max-width: 30em) {
+
+}
+/*********************************************************************/
+/* Retina Images */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+#footer h4 {
+	background: transparent url("https://web.archive.org/web/20200906230446im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/brown-university-type-footer@2x.png") -1px 0 no-repeat;
+	width: 203px;
+	height: 15px;
+	background-size: 203px 15px;
+}
+}
+
+/*
+     FILE ARCHIVED ON 23:04:46 Sep 06, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:05:37 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.459
+  exclusion.robots: 0.017
+  exclusion.robots.policy: 0.008
+  esindex: 0.011
+  cdx.remote: 10.61
+  LoadShardBlock: 123.364 (3)
+  PetaboxLoader3.datanode: 79.766 (4)
+  load_resource: 113.562
+  PetaboxLoader3.resolve: 91.205
+*/

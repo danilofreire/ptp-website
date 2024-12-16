@@ -1,0 +1,252 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+jQuery(document).ready(function($) {
+
+	var slideShowObj = {
+		slideshow_selector: '.front-slideshow .view-content .item-list ul', 
+		list_length: 0,
+		current: 0,
+		prev: 0,
+		lastClick: 0,	
+		animation_length: 700,
+		autoplay: true,
+
+		/**
+		 * Adds controls to the slideshow
+		 */
+		init: function(self) {
+			self.list_length = $(self.slideshow_selector+' li').length;
+			self.prev = self.list_length;
+			self.addSelectorButtons(self);
+			self.addNextAndPrevBtns(self);
+			self.setVisible(self, 'init');
+		},
+
+		/**
+		 * Helper method
+		 * Adds the previous and next buttons to the slideshow
+		 */
+		addNextAndPrevBtns: function(self) {
+			//build the button elements
+			$('.view-id-frontpage_slideshow.front-slideshow .view-content .item-list').prepend('<nav class="arrows"><a href="#" class="prev">previous</a><a href="#" class="next">next</a></nav>');
+			navNext = $('.front-slideshow .arrows')[0].querySelector('.next');
+			navPrev = $('.front-slideshow .arrows')[0].querySelector('.prev');
+			
+			//click handler for right-side button
+			navNext.addEventListener('click', function(e) {
+				e.preventDefault();
+				self.autoplay = false;
+				//check if img is animated.
+				if (self.isAnimating(self)) {
+					return;
+				}
+
+				self.prev = self.current;
+
+				if (self.current <= 0) {
+					self.current = self.list_length-1;
+				} else {
+					self.current -= 1;
+				}
+				self.setVisible(self, 'next');
+				self.updateSlideshow(self);
+			});
+
+			//click handler for left-side button
+			navPrev.addEventListener('click', function(e) { 
+				e.preventDefault();
+				self.autoplay = false;
+				if (self.isAnimating(self)) {
+					return;
+				}
+
+				self.prev = self.current;		
+
+				if (self.current >= self.list_length-1) {
+					self.current = 0;
+				} else {
+					self.current += 1;
+				}
+				self.setVisible(self, 'prev');
+				self.updateSlideshow(self);
+			});
+		},
+
+		/**
+		 * Determines if an animation is still playing 
+		 */
+		isAnimating: function(self) {
+			var clickTime = new Date().getTime();
+			if (clickTime - self.lastClick < self.animation_length) {
+				return true;
+			}
+			return false;
+		},
+
+		/**
+		 * Helper method. Adds the radio buttons for selecting specific images
+		 */
+		addSelectorButtons: function(self) {
+			var buttons = '';
+
+			for (var i = 0; i < self.list_length; i++) {
+				buttons += '<li id="slideshow-btn-' + i + '" class="slideshow-btn noselect">button</li>';
+			}
+
+			//add buttons to the DOM
+			$('.view-id-frontpage_slideshow.front-slideshow .view-content .item-list').prepend('<ol class="slideshow-btn-ul">'+buttons+'</ol>');
+
+			//init starting slide
+			$('#slideshow-btn-'+self.current).addClass('slideshow-btn-active');
+
+			for (var i = 0; i < self.list_length; i++) {
+				btn = $('#slideshow-btn-'+i);
+				
+				btn.click(function(event) {
+					self.autoplay = false;
+					if (self.isAnimating(self)) {
+						return;
+					}
+
+					btn_num = parseInt($(this).attr('id').slice(-1));
+
+					if (btn_num !== self.current) {
+						self.prev = self.current;
+						self.current = btn_num;
+						self.setVisible(self, 'next');
+						self.updateSlideshow(self);
+					}
+				});
+			}
+		},
+
+		updateSlideshow: function(self) {
+			for (var j = 0; j < self.list_length; j++) {
+				if (j !== self.current) {
+					self.clearClasses(self, $('#slideshow-btn-'+j)[0]);
+				} else {
+					self.clearClasses(self, $('#slideshow-btn-'+j)[0]);
+					$('#slideshow-btn-'+j)[0].className = $('#slideshow-btn-'+j)[0].className + ' slideshow-btn-active';
+				}
+			}
+		},
+
+		/**
+		 * Toggles the classes for the current and previous visible image
+		 */
+		setVisible: function(self, animation) {
+			$(self.slideshow_selector+' li').each(function(index, el) {
+				var img = $(el).find('.field-content img')[0];
+				var text = $(el).find('.views-field-field-frontpage-slide-link-url .field-content a')[0];
+
+				if (index === self.current) {
+					el.style.zIndex = 9;
+					el.style.position = 'relative';
+					self.clearClasses(self, img);
+					self.clearClasses(self, text);
+					img.className = img.className + ' slideshow-img-curr';
+					text.className = text.className + ' slideshow-img-curr';
+					if (animation === 'prev' && animation !== 'init') {
+						img.className = img.className + ' navInPrev';
+						text.className = text.className + ' navInPrev';
+					} else if(animation !== 'init') {
+						img.className = img.className + ' navInNext';
+						text.className = text.className + ' navInNext';
+					}
+				}
+
+				if (index === self.prev) {
+					el.style.zIndex = 8;
+					el.style.position = 'absolute';
+					self.clearClasses(self, img);
+					self.clearClasses(self, text);
+					img.className = img.className + ' slideshow-img-prev';
+					text.className = text.className + ' slideshow-img-prev';
+					if (animation === 'prev' && animation !== 'init') {
+						img.className = img.className + ' navOutPrev';
+						text.className = text.className + ' navOutPrev';
+					} else if(animation !== 'init') {
+						img.className = img.className + ' navOutNext';
+						text.className = text.className + ' navOutNext';				
+					}
+				}
+
+				//hide all other images
+				if (index !== self.prev && index !== self.current) {
+					el.style.zIndex = -1;
+					el.style.position = 'absolute';
+					self.clearClasses(self, img);
+					self.clearClasses(self, text);
+					img.className = img.className + ' slideshow-img-hidden';
+					text.className = text.className + ' slideshow-img-hidden';
+				}
+			});
+			self.lastClick = new Date().getTime();
+		},
+
+		/**
+		 * Removes all animation/slideshow-specific classes from an element
+		 */
+		clearClasses: function(self, el) {
+			el.className = el.className.replace(' slideshow-btn-active', '');
+			el.className = el.className.replace(' slideshow-img-hidden', '');
+			el.className = el.className.replace(' slideshow-img-prev', '');
+			el.className = el.className.replace(' slideshow-img-curr', '');
+			el.className = el.className.replace(' navInPrev', '');
+			el.className = el.className.replace(' navInNext', '');
+			el.className = el.className.replace(' navOutPrev', '');
+			el.className = el.className.replace(' navOutNext', '');
+		}
+	};
+
+
+	if ($('.front-slideshow .view-content .item-list ul').length > 0) {
+	slideShowObj.init(slideShowObj);
+	// sets an autoplay for the images
+	window.setInterval(function(){
+		if (slideShowObj.autoplay) {
+			slideShowObj.prev = slideShowObj.current;		
+
+			if (slideShowObj.current >= slideShowObj.list_length-1) {
+				slideShowObj.current = 0;
+			} else {
+				slideShowObj.current += 1;
+			}
+			slideShowObj.setVisible(slideShowObj, 'next');
+			slideShowObj.updateSlideshow(slideShowObj);
+		}
+	}, 7000);
+}
+});
+
+}
+/*
+     FILE ARCHIVED ON 12:01:09 Feb 18, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:04:18 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.538
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.015
+  esindex: 0.01
+  cdx.remote: 6.359
+  LoadShardBlock: 209.828 (3)
+  PetaboxLoader3.datanode: 115.157 (4)
+  PetaboxLoader3.resolve: 194.376 (2)
+  load_resource: 252.922
+*/

@@ -1,0 +1,758 @@
+/**
+ * $Id: masthead.css 2350 2011-11-01 14:08:55Z jpennypa $
+ * Masthead styles for Ursa Minor
+ * @author John Pennypacker <John_Pennypacker@brown.edu>
+ */
+/****************************** Header ******************************/
+#header-region {
+	display: block !important;
+	border-top: 0;
+	position: relative;
+	z-index: 999;
+}
+#home-wrapper {
+}
+/****************************** Tablet Nav ******************************/
+section#tablet-navigation {
+	display: none;
+}
+a#tablet-menu-button {
+	display: none;
+}
+/****************************** Mobile Nav ******************************/
+a#mobile-menu-button {
+	border-right: none;
+	background: none;
+	width: auto;
+	text-indent: -9999px;
+	position: relative;
+	float: right;
+	background-image: url(../../../../../../../../../../20190124094205im_/https:/www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icons/menu.png);
+	background-position: top;
+	height: 20px;
+	width: 20px;
+	z-index: 999;
+	margin: 25px 0 0 0;
+}
+section#mobile-navigation a.block-edit, 
+section#mobile-navigation .block-printshare,
+section#mobile-navigation .block-brown_social_media-0,
+section#mobile-navigation .block-views-contact_information-block_1 {
+	display: none;
+}
+nav#mobile-nav {
+	margin: 0 5px 0 5px;
+}
+	nav#mobile-nav h2 {
+		display: none;	
+	}
+	nav#mobile-nav h3  {
+		font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+		font-weight: 700;
+		padding: 10px 0 5px 0;
+		margin: 0 0 0 0;
+		color: #FFF;
+		font-size: 1.05em;
+	}
+	nav#mobile-nav h3:before  {
+		content: "+";
+		width: 8px;
+		margin-right: 4px;
+	}
+	nav#mobile-nav .accordion-open h3:before  {
+		content: "-";
+		width: 8px;
+		margin-right: 4px;
+	}
+	nav#mobile-nav h3 a {
+		font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+		color: #FFF;
+		font-size: 1.05em;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	nav#mobile-nav div.item-list {
+		border-bottom: 1px dotted #a79a98;	
+		padding: 3px 0 10px 0;
+	}
+	
+	nav#mobile-nav div.item-list.last {
+		border-bottom: none;
+	}
+	nav#mobile-nav div.site-navigation, nav#mobile-nav div.content {
+		border-bottom: none;
+		padding: 0 0 0 0;
+	}
+	nav#mobile-nav div.list ul {
+		margin: 0 0 0 12px;
+		padding: 0 0 0 0;
+		line-height: 0.95;
+	}
+	nav#mobile-nav div.list ul.menu ul {
+		margin: 10px 0 0 15px;
+		overflow: visible;
+	}
+	nav#mobile-nav div.list ul.menu ul li.last {
+		margin: 0 0 0 0;
+	}
+	nav#mobile-nav ul li {
+		clear: both;
+		margin: 0 0 10px 0;
+		padding: 0 0 0 0;
+		width: 100%;
+		list-style-type: none;
+	}
+	nav#mobile-nav li a {
+		font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+		text-transform: uppercase;
+		font-size: 12px !important;
+		color: #ffcc00;
+		font-weight: 700;
+		display: block;
+	}
+	nav#mobile-nav div.list ul.menu, nav#mobile-nav .item-list ul  {
+		margin: 0 0 0 14px;
+		padding: 0 0 0 0;
+		line-height: 0.95;
+	}
+	nav#mobile-nav .content ul.menu li a {
+		font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+		text-transform: uppercase;
+		font-size: 12px !important;
+		color: #ffcc00;
+		font-weight: 700;
+		display: block;
+	}
+	nav#mobile-nav .content ul.menu ul li a {
+		text-transform: inherit;
+		font-size: 14px !important;
+		color: #FFF;
+		font-weight: bold;
+		display: block;
+	}
+/****************************** Audience Gateways ******************************/
+#audience-gateways {
+	height: 14px;
+}
+#information-for {
+	display: none;	
+}
+/****************************** Brown Masthead ******************************/
+#brown-brand {
+	display: block;
+	clear: left;
+	position: relative;
+	background-color: #3a1e1a;
+	border-top: 2px solid #c00404;
+	min-height: 35px;
+}
+	#brown-brand h1 a {
+		background: none;
+		display: block;
+		text-indent: inherit;
+		width: 30px;
+		height: 39px;
+		position: relative;
+		z-index: 2;
+		top: -8px;
+		left: 0px;
+	}
+	#brown-brand h1 a img {
+		width: 30px;
+		height: 51px;
+	}
+	#brown-brand h1 a span {
+		display: none;
+	}
+#brown-masthead nav#brown-nav {
+	display: none;
+}
+#search-theme-form {
+	display: none;
+}/****************************** Google Search Form ******************************/
+#search-theme-form {
+	display: none;
+}
+/****************************** Topical Navigation ******************************/
+nav {
+	display: none;
+}
+
+/****************************** Tactical Navigation ******************************/
+#tactical-navigation {
+	position: absolute;
+	right: 1em;
+	top: 0;
+}
+#tactical-navigation #tactical-atoz a {
+	width: 6.1875em;
+	text-indent: -999em;
+}
+#tactical-navigation #tactical-atoz a:link, #tactical-navigation #tactical-atoz a:visited {
+	background-position: -636px 0;
+}
+#tactical-navigation #tactical-atoz a:hover, #tactical-navigation #tactical-atoz a:active {
+	background-position: -636px -45px;
+}
+#tactical-navigation #tactical-people a {
+	width: 8.6875em;
+	text-indent: -999em;
+}
+#tactical-navigation #tactical-people a:link, #tactical-navigation #tactical-people a:visited {
+	background-position: -733px 0;
+}
+#tactical-navigation #tactical-people a:hover, #tactical-navigation #tactical-people a:active {
+	background-position: -733px -45px;
+}
+/****************************** Breadcrumbs ******************************/
+#breadcrumbs {
+	clear: left;
+	float: none;
+	background-color: #fff;
+	background: transparent url("../../../../../../../../../../20190124094205im_/https:/www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/white80.png") 0 0 repeat;
+	padding-left: 1em;
+	position: relative;
+}
+	#breadcrumbs li {
+		float: left;
+		background: transparent url("../../../../../../../../../../20190124094205im_/https:/www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/breadcrumb-bullet.png") 0 60% no-repeat;
+		padding: 0 .625em;
+		font-size: 9px;
+		text-transform: uppercase;
+		line-height: 2.25em;
+	}
+		#breadcrumbs li.first {
+			background-image: none;
+			padding-left: 0;
+		}
+	#breadcrumbs a, #breadcrumbs .a {
+		font-family: "LucidaSans-Demi", "Lucida Sans Demibold Roman", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 9px;
+		text-transform: uppercase;
+		background-image: none;
+		color: #2f2a20;
+		letter-spacing: .025em;
+		line-height: 2.25em;
+	}
+		#breadcrumbs a:link, #breadcrumbs a:visited {
+			color: #2f2a20;
+			font-family: "LucidaSans-Demi", "Lucida Sans Demibold Roman", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+		}
+		#breadcrumbs a:hover {
+			color: #c00404;
+	}
+
+
+/******************************************************************************************
+******************************************************************************************
+RESPONSIVE STYLES
+******************************************************************************************
+******************************************************************************************/
+
+
+/* all screens except for handheld and amazon kindle  */
+/* and (min-width: 481px) and (max-width: 99999px) */
+@media screen and (min-width:30.0625em) and (max-width: 999em) {
+/****************************** Audience Gateways ******************************/
+#audience-gateways {
+	height: 29px !important;
+}
+a#mobile-menu-button {
+	display: none;
+}
+#information-for {
+	display: block;	
+}
+/****************************** Brown Masthead ******************************/
+#brown-masthead {
+	display: block;
+	clear: left;
+	position: relative;
+}
+#brown-masthead .marginator {
+	position: relative;
+}
+#brown-brand {
+	display: block;
+	clear: left;
+	position: relative;
+	background-color: #3a1e1a;
+	border-top: .25em solid #c00404;
+	height: 4em;
+}
+	#brown-brand h1 {
+		margin-bottom: 0 !important;
+		width: 450px;
+	}
+	#brown-brand h1 a {
+		background: transparent url("../../../../../../../../../../20190124094205im_/https:/www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/brown-university.png") 0 0 no-repeat;
+		display: block;
+		text-indent: -999em;
+		width: 23.125em;
+		height: 2.75em;
+		position: relative;
+		z-index: 2;
+		top: -15px;
+		width: 450px;
+	}
+/****************************** Google Search Form ******************************/
+#search-theme-form {
+	position: absolute;
+	right: 0; top: 1.375em;
+	display: block;
+}
+#basic-masthead #search-theme-form {
+	top: .75em;
+}
+#search-theme-form fieldset {
+	border: 0; margin: 0; padding: 0;
+}
+#search-theme-form label span {
+	display: none;
+}
+#search-theme-form .search-field {
+	font-size: .75em;
+	width: 19.75em;
+	height: 1.25em;
+	padding: .25em;
+	display: block;
+	float: left;
+	border: 0;
+	border-right: 1px solid #000;
+	-moz-border-radius-topleft: .25em;
+	-webkit-border-top-left-radius: .25em;
+	-moz-border-radius-bottomleft: .25em;
+	-webkit-border-bottom-left-radius: .25em;
+}
+#search-theme-form .search-submit {
+	display: block;
+	float: left;
+}
+/****************************** Topical Navigation ******************************/
+nav {
+	display: block;
+}
+nav .marginator {
+	position: relative;
+}
+nav a {
+	font-family: Georgia, serif;
+	outline: none;
+}
+nav ul {
+	font-size: 1em; /* override default ul */
+	line-height: inherit; /* override default ul */
+	margin: 0; /* override default ul */
+	overflow: auto;
+}
+#topical-navigation {
+	position: relative;
+	clear: left;
+	border-top: .125em solid #3a1e1a; margin-top: -.125em; /* Safari 5 rendering fix */
+	display: block;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+	height: 2.5em; /* 42px / 16px = 2.625em  - .125em border 2.5em */
+}
+nav li {
+	display: block;
+	float: left;
+	margin: 0; padding: 0;
+}
+#topical-navigation li a, #tactical-navigation li a {
+	display: block;
+
+	text-align: left;
+	line-height: 2.375em;
+	position: relative;
+	z-index: 2;
+}
+#topical-navigation li a:link, #topical-navigation li a:visited {
+	color: #fff;
+}
+/****************************** Tactical Navigation ******************************/
+#tactical-navigation {
+	position: absolute;
+	right: 1em;
+	top: 0;
+}
+}
+/*********************************************************************/
+/* average and large desktop  */
+/* and (min-width: 940px) and (max-width: 99999px) */
+@media only screen and (min-width: 58.75em) and (max-width: 999em) {
+#brown-brand {
+	display: block;
+	clear: left;
+	position: relative;
+	background-color: #3a1e1a;
+	border-top: .25em solid #c00404;
+	height: 4em;
+	min-height: 37px;
+}
+#brown-masthead #brown-brand h1 img {
+	display: none;
+}
+/****************************** Topical Navigation ******************************/
+#topical-navigation {
+	position: relative;
+	clear: left;
+	border-top: none;
+	margin-top: -1px;
+	padding-left: 50px;
+	display: block;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.8);
+	background-image: none !important;
+	height: 2.5em;
+	border-bottom: 1px solid #7a7a7a;
+}
+/****************************** Google Search ******************************/
+#search-theme-form {
+	display: block;
+	width: auto;
+}
+}
+/*********************************************************************/
+/* Audience Gateways */
+/* and (min-width: 840px) and (max-width: 99999px) */
+@media only screen and (min-width: 50em) and (max-width: 999em) {
+/****************************** Audience Gateways ******************************/
+#audience-gateways {
+	height: 29px;
+	display: block;
+	padding: 0 0 0 0;
+}
+#audience-gateways #information-for {
+	display: block;
+	height: 29px;
+	overflow: hidden;
+}
+body.admin-menu #audience-gateways #information-for {
+	overflow: visible;
+}
+#audience-gateways h6 {
+	background: none;
+	width: auto;
+	text-indent: inherit;
+	margin-left: 60px !important;
+	padding: 7px 18px 0 0;
+	font-family: 'Vitesse SSm A', 'Vitesse SSm B', serif;
+	font-weight: 400;
+	font-size: 0.6em;
+	text-transform:uppercase;
+	color: #6d6a65;
+	float: left;
+}
+#audience-gateways li {
+	display: block;
+	float: left;
+	line-height: 1.8125em;
+	height: 29px;
+	margin: 0;
+	padding: 0;
+}
+#audience-gateways .first a {
+/*	border-left: 1px solid #eee;*/
+}
+#audience-gateways li a {
+	display: block;
+	float: left;
+	line-height: 1.8125em;
+	height: 29px;
+	margin: 0;
+	padding: 5px 16px;
+	border-right: 1px solid #eee;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	letter-spacing: 0.05em;
+	font-size: 0.6em;
+	font-weight: 700;
+	text-transform:uppercase;
+	color: #56534d;
+	text-decoration: none;
+}
+#audience-gateways li a:hover {
+	color: #FFF;
+	background-color: #c00404;
+}
+}
+/*********************************************************************/
+/* Audience Gateways */
+/* and (min-width: 841px) and (max-width: 939px) */
+@media only screen and (min-width: 52.51em) and (max-width: 58.6875em) {
+#audience-gateways h6 {
+	margin-left: 50px !important;
+	padding: 7px 8px 0 0;
+}
+#audience-gateways li a {
+	padding: 5px 8px;
+}
+nav#tablet-nav div:first-of-type {
+		margin: 0 0 0 0;
+		padding:  10px 0 10px 0;
+}
+nav#tablet-nav div:last-of-type {
+		margin: 0 0 0 0;
+		padding: 10px 0 10px 0;
+}
+}
+/*********************************************************************/
+/* Tablet Nav */
+/* and (min-width: 481px) and (max-width: 840px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 52.5em) {
+
+/****************************** Audience Gateways ******************************/
+#information-for {
+	display: none;	
+}
+section#tablet-navigation {
+	display: block;
+}
+nav#tablet-nav {
+	display: block;
+}
+	a#tablet-menu-button {
+		border-right: none;
+		text-indent: -9999px;
+		position: relative;
+		float: right;
+		background-image: url(../../../../../../../../../../20190124094205im_/https:/www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icons/menu.png);
+		background-position: top;
+		height: 20px;
+		width: 20px;
+		display: block;
+		margin: 4px 0 0 0;
+	}
+	nav#tablet-nav div {
+		width: 100%;
+		margin: 10px 0 0 0;
+		padding:  0 0 10px 0;
+		border-bottom: 1px dotted #aba698;
+	}
+	nav#tablet-nav div:first-of-type {
+		margin: 0 0 0 0;
+		padding:  10px 0 10px 0;
+	}
+	nav#tablet-nav div:last-of-type {
+		border-bottom: none;
+		padding:  0 0 0 0;
+		margin: 10px 0 0 0;
+	}
+	nav#tablet-nav ul {
+		overflow: visible;
+	}
+		nav#tablet-nav li {
+			float: none;
+		}
+			nav#tablet-nav li a {
+				padding: 4px 0;
+				font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+				font-weight: 400;
+				font-size: 0.9em;
+				display: block;
+			}
+		nav#tablet-nav h5 {
+			font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 0.9em;
+		}
+#audience-gateways #information-for {
+	display: none;
+}
+}
+/*********************************************************************/
+/* smaller than desktop, larger than handheld  */
+/* and (min-width: 481px) and (max-width: 939px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 58.6875em) {
+#tactical-navigation li {
+	margin: 3px 0 0 15px !important;
+	float: none;
+}
+#tactical-navigation li.last {
+	margin: 0 0 0 15px !important;
+}
+#tactical-navigation li a {
+	line-height: 1.8;
+}
+}
+/*********************************************************************/
+/* small desktop  */
+/* and (min-width: 801px) and (max-width: 939px) */
+@media only screen and (min-width: 50.0625em) and (max-width: 58.6875em) {
+nav#tablet-nav div:nth-of-type(1) {
+	display: none;
+}
+}
+/*********************************************************************/
+/* tablet/ipad - portrait */
+/* and (min-width: 768px) and (max-width: 700px) */
+@media only screen and (min-width: 48em) and (max-width: 50em) {
+nav#tablet-nav div:nth-of-type(1) {
+	display: none;
+}
+nav#tablet-nav div:last-of-type {
+	margin: 10px 0 -10px 0;
+}
+}
+/*********************************************************************/
+/* amazon kindle and larger */
+/* and (min-width: 600px) and (max-width: 99999px) */
+@media only screen and (min-width: 37.5em) and (max-width: 9999em) {
+#brown-masthead nav#brown-nav {
+	display: block;
+}
+/****************************** Topical Navigation ******************************/
+#topical-navigation li a, #topical-navigation li a:link, #topical-navigation li a:visited, #topical-navigation li a:hover {
+	text-indent: inherit;
+	width: auto;	
+}
+#topical-about-brown {
+	margin-left: 18px;
+}
+#topical-navigation li {
+	margin: 0 15px;
+}
+#topical-navigation li a {
+	font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 1em;	
+	padding: 2px 0 0 0;
+}
+#topical-navigation li a:hover, #topical-navigation li a:active, #topical-navigation li a.active {
+	color: #ffcc00;
+}
+/****************************** Tactical Navigation ******************************/
+#tactical-navigation li a, #tactical-navigation li a:link, #tactical-navigation li a:visited, #tactical-navigation li a:hover {
+	text-indent: inherit;
+	width: auto;
+}
+#tactical-navigation li {
+	margin: 10px 0 0 15px;	
+}
+#tactical-navigation li a {
+	font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 0.6em;	
+	padding: 0 0 0 15px;
+	text-transform: uppercase;
+	color: #FFF;
+	background-image:url(../../../../../../../../../../20190124094205im_/https:/www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icons/tactical-arrows.png);
+	background-repeat: no-repeat;
+	background-position:  0 6px;
+}
+#tactical-navigation li a:hover {
+	background-position:  0 -11px;
+}
+}
+/*********************************************************************/
+/* larger than amazon kindle, smaller than desktop */
+/* and (min-width: 600px) and (max-width: 939px) */
+@media only screen and (min-width: 37.5em) and (max-width: 58.6875em) {
+#brown-brand {
+	height: 64px;
+}
+nav#tablet-nav div:last-of-type {
+	margin: 10px 0 -10px 0;
+}
+nav#tablet-nav div:nth-of-type(2) {
+	display: none;
+}
+ul#topical-navigation {
+	padding: 0 0 0 8px;
+}
+	#topical-navigation li {
+		margin: 0 8px;
+		display: inline-block;
+		float: none;
+	}
+#topical-about-brown a {
+	margin-left: 0px;
+}
+}
+/*********************************************************************/
+/* amazon kindle fire only */
+/* and (min-width: 600px) and (max-width: 767px) */
+@media only screen and (min-width: 37.5em) and (max-width: 47.9375em) {
+ul#topical-navigation {
+	text-align: center;
+	padding: 0 0 0 0;
+}
+	#topical-navigation li {
+		margin: 0 6px;
+	}
+		#topical-navigation li a {
+			font-family: 'Vitesse SSm A', 'Vitesse SSm B', Georgia, serif; 
+			font-weight: 400;
+			text-decoration: none;
+			font-size: 1em;	
+			padding: 2px 0 0 0;
+		}
+nav#tablet-nav div:nth-of-type(1) {
+	display: block;
+}
+}
+/*********************************************************************/
+/* other smallScreen, including amazon kindle fire */
+/* and (min-width: 481px) and (max-width: 767px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 47.9375em) {
+#tactical-navigation {
+	display: none;
+}
+}
+/*********************************************************************/
+/* Larger than small screen, smaller than Amazon Fire */
+/* and (min-width: 481px) and (max-width: 599px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 37.4375em) {
+#brown-brand h1 a {
+	width: 55px !important;
+}
+}
+/*********************************************************************/
+/* handheld - small screen - landscape  */
+/* and (min-width: 361px) and (max-width: 480px) */
+@media screen and (min-width: 22.5625em) and (max-width: 30em) {
+
+}
+/*********************************************************************/
+/* samsung s3, samsung s4*/
+/* and (min-width: 321px) and and (width: 360px) */
+@media screen and (min-width: 20.0625em) and (width: 22.5em) {
+	
+}
+/*********************************************************************/
+/* all smallscreen handheld  */
+/* and (min-width: 0px) and (max-width: 480px) */
+@media screen and (min-width: 0em) and (max-width: 30em) {
+
+}
+/*********************************************************************/
+/* Retina Images */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/*
+     FILE ARCHIVED ON 09:42:05 Jan 24, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:29:55 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.62
+  exclusion.robots: 0.035
+  exclusion.robots.policy: 0.02
+  esindex: 0.015
+  cdx.remote: 17.436
+  LoadShardBlock: 180.006 (3)
+  PetaboxLoader3.datanode: 237.909 (5)
+  load_resource: 386.318 (2)
+  PetaboxLoader3.resolve: 256.529 (2)
+*/

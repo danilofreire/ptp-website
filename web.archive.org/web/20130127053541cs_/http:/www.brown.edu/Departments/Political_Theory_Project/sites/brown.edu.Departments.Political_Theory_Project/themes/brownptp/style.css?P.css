@@ -1,0 +1,1439 @@
+@charset "utf-8"; 
+/* Brown Political Theory Project
+ * Development by Brown Web Services and Schwadesign
+----------------------------------------------------------------
+[Table of contents]
+
+ 0.Reset
+ 1.Global
+ 2.Layout
+ 3.Main
+ 4.Sidebars
+ 5.Header
+ 6.Navigation
+ 7.Nodes
+ 8.Comments
+ 9.Blocks
+10.Footer
+12.CSS Support
+13.Advanced
+
+[Font sizes - based on 75%/12px body]
+36px = 3em
+30px = 2.5em
+24px = 2em
+18px = 1.5em
+16px = 1.333333em
+14px = 1.1667em
+12px = 1em
+11px = .9167em
+10px = .8333em
+
+Equasion for font sizing: 
+-Desired in px ÷ Default (or parent) in px = sizing in em
+
+----------------------------------------------------------------*/
+
+/**
+ * 0.RESET 
+ */
+/* @import "/web/20121010043023cs_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/reset.css"; */
+
+/**
+ * 1.GLOBAL
+ */
+body {
+  background:#0d294e;
+  color:#fff;
+  font:14px/22px Georgia, "Times New Roman", Times, serif;
+  line-height:1.5;
+  margin: 0;
+  padding: 0;
+}
+
+a, a.active, a:visited{
+	text-decoration:none !important;
+	color:#ff7200;
+}
+a:hover{
+	text-decoration:underline;
+}
+
+img{
+	border:none;
+}
+
+/* li { font-family: Georgia, "Times New Roman", Times, serif; } */
+
+#wrapper{
+	width:960px;
+	overflow:hidden;
+	margin:0 auto;
+	text-align: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#header{
+	width:960px;
+	position:relative;
+}
+#header:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#brown{
+	background:#3a1e1a;
+	height:30px;
+	overflow:hidden;
+}
+#brown-logo{
+	position:absolute;
+	right:20px;
+	z-index:210;
+}
+#brown-type{
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/brown-university.gif) no-repeat;
+	margin:7px 0 0 16px;
+	width:144px;
+	height:23px;
+	display:block;
+}
+#project-title{
+	height:60px;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-header.jpg) no-repeat;
+	padding:28px 0 0 54px;
+}
+#project-title:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.page-title{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/visual.png) no-repeat ;
+	height:37px;
+	padding:10px 0 0;
+}
+
+h1.title-type {
+	margin: 0;
+	padding: 0;
+}
+h1.title-type a {
+	margin:0 0 0 113px;
+	display: block;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/title.png) no-repeat;
+	text-indent:-9999px;
+	overflow:hidden;
+	height:19px;
+	width: 325;
+}
+#gallery{
+	width:960px;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-gallery.jpg) no-repeat;
+	height:211px;
+	font-family: Georgia, Times, serif;
+}
+#gallery:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.wrap{
+	width:908px;
+	float:left;
+	height:181px;
+	position:relative;
+	overflow:hidden;
+	padding:16px 0 14px;
+	z-index:1;
+}
+.prev-arrow,
+.next-arrow{
+	display:block;
+	text-indent:-9999px;
+	width:36px;
+	height:219px;
+	margin:-4px 0 -4px;
+	position:relative;
+	cursor:pointer;
+	outline:none;
+	z-index:2;
+}
+.prev-arrow:after,
+.next-arrow:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.prev-arrow{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-prev-arrow.png) no-repeat;
+	float:left;
+	margin-right:-10px;
+}
+.next-arrow{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-next-arrow.png) no-repeat;
+	float:right;
+	margin-left:-10px;
+}
+.prev-arrow span{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bullet.gif) no-repeat;
+	display:block;
+	margin:102px 0 0 6px;
+}
+.next-arrow span{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bullet-r.gif) no-repeat;
+	display:block;
+	margin:102px 0 0 18px;
+}
+.prev-arrow:hover span{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bullet-hover.gif) no-repeat;
+}
+.next-arrow:hover span{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bullet-hover-r.gif) no-repeat;
+}
+#gallery ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:9999px;
+}
+#gallery li{
+	width:168px;
+	height:161px;
+	float:left;
+	display:inline;
+	margin:0 12px 0 0;
+}
+
+#block-views-featured_content-block_1 ul li {
+	position: relative;
+	padding: 10px;
+}
+
+#block-views-featured_content-block_1 ul li.views-row-1 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-yellow.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-2 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-blue.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-3 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-brown.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-4 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-orange.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-5 { background: #83a966; }
+#block-views-featured_content-block_1 ul li.views-row-6 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-yellow.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-7 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-blue.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-8 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-brown.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-9 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-orange.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-10 { background: #83a966; }
+#block-views-featured_content-block_1 ul li.views-row-11 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-yellow.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-12 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-blue.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-13 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-brown.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-14 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-orange.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-15 { background: #83a966; }
+#block-views-featured_content-block_1 ul li.views-row-16 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-yellow.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-17 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-blue.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-18 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-brown.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-19 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-orange.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-20 { background: #83a966; }
+#block-views-featured_content-block_1 ul li.views-row-21 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-yellow.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-22 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-blue.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-23 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-brown.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-24 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-orange.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-25 { background: #83a966; }
+#block-views-featured_content-block_1 ul li.views-row-26 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-yellow.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-27 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-blue.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-28 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-brown.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-29 { background: url('/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-orange.jpg') top center; }
+#block-views-featured_content-block_1 ul li.views-row-30 { background: #83a966; }
+
+#block-views-featured_content-block_1 ul li a { color: #fff; }
+
+#block-views-featured_content-block_1 ul li .views-field-tid {
+	font: 10px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: right;
+	margin: 0 0 6px 0;
+}
+#block-views-featured_content-block_1 ul li .views-field-title { 
+	font-size: 13px;
+	margin: 0 0 5px 0;
+	line-height: 1.2em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#block-views-featured_content-block_1 ul li .views-field-title a {
+	font-weight: normal;
+}
+#block-views-featured_content-block_1 ul li .views-field-title .large {
+	font-size: 18px;
+}
+#block-views-featured_content-block_1 ul li .views-field-field-je-date-value {
+	position: absolute;
+	bottom: 24px;
+}
+#block-views-featured_content-block_1 ul li .views-field-field-je-date-value-1 {
+	position: absolute;
+	bottom: 10px;
+}
+
+#block-views-featured_content-block_1 ul li .views-field-field-tagline-value {
+	line-height: 1.1em;
+}
+
+#block-views-featured_content-block_1 ul li .views-field-field-tagline-value .highlight {
+	position: absolute;
+	bottom: 9px;
+	width: 162px;
+	background-color: #000;
+	font-size: 12px;
+	color: #fff;
+	padding: 4px;
+	/* for IE */
+	filter:alpha(opacity=75);
+	/* CSS3 standard */
+	opacity:0.75;
+}
+
+#block-views-featured_content-block_1 ul li .views-field-field-tagline-value .plain {
+	font-style: italic;
+	font-size: 12px;
+}
+
+
+#block-views-featured_content-block_1 ul li .views-field-field-je-date-value,
+#block-views-featured_content-block_1 ul li .views-field-field-je-date-value-1 {
+	font: 11px Helvetica, Arial, sans-serif;
+	color: #eee;
+	font-weight: bold;
+}
+
+/* Homepage Content view */
+
+#block-views-home_content-block_1 .views-row-1 h3 {
+	color:#F7BC09;
+	font-size:24px;
+	font-weight:normal;
+	margin:0;
+}
+
+#block-views-home_content-block_1 .views-row-2 h3 {
+	color:#FF7200;
+	font-size:24px;
+	font-weight:normal;
+	margin:0;
+}
+
+#block-views-home_content-block_1 .views-row {
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #1f4e71;
+	margin-bottom: 10px;
+}
+
+#block-views-home_content-block_1 .views-row-last {
+	padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+#block-views-home_content-block_1 .views-row .views-field-view-node {
+	margin-top: 5px;
+}
+
+#main{
+	width:960px;
+	overflow:hidden;
+	background:#002148 url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-main.gif) repeat-x;
+}
+#main .inner{
+	width:960px;
+	overflow:hidden;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/background-logo.gif) no-repeat 100% 100%;
+	min-height:375px;
+	padding:34px 0 127px;
+}
+* html #main .inner{
+	height:375px;
+	overflow:visible;
+}
+
+/***************************
+ * SIDEBAR format -- start *
+ ***************************/
+
+/* Janus Links */
+#main #block-menu-primary-links > div.content > ul.menu > li.last {
+	color: #FF7200 ! important;
+}
+
+/*#main #block-menu-primary-links div.content > ul.menu > li.last > a:active, 
+#main #block-menu-primary-links div.content > ul.menu > li.last > a:visited, 
+#main #block-menu-primary-links div.content > ul.menu > li.last > a:hover {
+	color: #FF7200;
+	text-decoration: none ! important;
+}*/
+
+#main #block-menu-primary-links .content > .menu > .last a:active, 
+#main #block-menu-primary-links .content > .menu > .last a:visited, 
+#main #block-menu-primary-links .content > .menu > .last a:hover,
+#main #block-menu-primary-links .content > .menu > .last a {
+	color: #FF7200;
+	text-decoration: none !important;
+}
+
+#main #block-menu-primary-links .content > .menu > .last ul li.last a {
+	color: #FFF;
+	text-decoration: none !important;
+}
+
+#main #block-menu-primary-links .content > .menu > .last ul li.last a:hover {
+	color: #FF7200;
+	text-decoration: none !important;
+}
+
+#block-menu-primary-links div.content ul.menu li.last ul li.leaf, 
+#block-menu-primary-links div.content ul.menu li.last ul li.leaf a:active, 
+#block-menu-primary-links div.content ul.menu li.last ul li.leaf a:visited, 
+#block-menu-primary-links div.content ul.menu li.last ul li.leaf a  {
+	color: #FFFFFF ! important;
+}
+
+#block-menu-primary-links .content > .menu > li.last > .menu > .leaf a:hover {
+	color: #FF7200 ! important;
+	text-decoration: none;
+}
+
+/* PTP Links */
+#block-menu-primary-links h3,
+#block-user-1 h3, 
+#block-menu-primary-links div.content ul.menu li.first, 
+#block-menu-primary-links div.content ul.menu li, 
+#block-menu-primary-links div.content ul.menu li.last   {
+	font: 11px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	/*padding-left: 10px;*/
+}
+
+/*#block-menu-primary-links ul.menu>li.first, 
+#block-menu-primary-links ul.menu>li.last   {
+	border-bottom:1px solid #61758e;
+}*/
+
+#block-menu-primary-links h3,
+#block-user-1 h3, 
+#block-menu-primary-links div.content ul.menu li.first, 
+#block-menu-primary-links div.content ul.menu li	{
+	color: #f7bc09;
+}
+
+#block-menu-primary-links div.content ul.menu li.first a:active, 
+#block-menu-primary-links div.content ul.menu li.first a:visited {
+	color: #f7bc09;
+	text-decoration: none;
+}
+
+#block-menu-primary-links div.content ul.menu li.first ul li, 
+#block-menu-primary-links div.content ul.menu li.first ul li a:active, 
+#block-menu-primary-links div.content ul.menu li.first ul li a:visited,
+#block-menu-primary-links div.content ul.menu li.first a:hover, 
+#block-menu-primary-links div.content ul.menu li.first ul li a:hover {
+	color: #f7bc09;
+	text-decoration: none;
+}
+
+/* donate block */
+#block-menu-secondary-links h3,
+#block-menu-secondary-links, 
+#block-menu-secondary-links div.content ul.menu li.first, 
+#block-menu-secondary-links div.content ul.menu li, 
+#block-menu-secondary-links div.content ul.menu li.last   {
+	font: 11px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	/*padding-left: 10px;*/
+}
+#block-menu-secondary-links h3,
+#block-menu-secondary-links div.content ul.menu li.first, 
+#block-menu-secondary-links div.content ul.menu li	{
+	color: #f7bc09;
+}
+
+#block-menu-secondary-links div.content ul.menu li.first a:active, 
+#block-menu-secondary-links div.content ul.menu li.first a:visited {
+	color: #f7bc09;
+	text-decoration: none;
+}
+
+#block-menu-secondary-links div.content ul.menu li.first ul li, 
+#block-menu-secondary-links div.content ul.menu li.first ul li a:active, 
+#block-menu-secondary-links div.content ul.menu li.first ul li a:visited {
+	color: #FFFFFF;
+}
+
+#block-menu-secondary-links div.content ul.menu li.first a:hover, 
+#block-menu-secondary-links div.content ul.menu li.first ul li a:hover {
+	color: #f7bc09;
+	text-decoration: none;
+}
+
+
+/*
+==test content ==========================
+#block-menu-secondary-links .menu li.first a {
+	color: #f7bc09;
+}
+
+#block-menu-secondary-links .menu li.first a:hover {
+	color: #f7bc09;
+	text-decoration: none;
+}
+#block-menu-secondary-links .menu li.first a:hover {
+	color: #f7bc09;
+	text-decoration: none;
+}
+
+
+
+*/
+
+
+/* calendar block */
+#block-menu-menu-calendar {
+	margin: 0;
+}
+
+#block-menu-menu-calendar .menu li a {
+	color: #969660;
+}
+
+#block-menu-menu-calendar .menu li a:hover {
+	color: #969660;
+	text-decoration: none;
+}
+
+
+
+/*search block leftnav*/
+#block-search-0{
+	margin: 10px 0 20px;
+	border-top:1px solid #61758e;
+}
+form#search-block-form{
+	padding:15px 0 0;
+	border: none;
+}
+#search-block-form label{
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/label-search.gif) no-repeat;
+	height:8px;
+	display:block;
+	margin:0 0 0 10px;
+}
+#search-block-form input.form-submit{
+	width:18px;
+	height:16px;
+	margin:18px 0 0 5px;
+	float:left;
+	display:inline;
+}
+#search-block-form input.form-text{
+	width:110px;
+	height:16px;
+	border:0;
+	font:12px/22px Georgia, "Times New Roman", Times, serif;
+	padding:0 0 0 4px;
+	float:left;
+	margin:17px 0 0 8px;
+}
+
+/* PTP and Janus Links */
+#block-menu-primary-links div.content ul.menu li.first ul li,
+#block-menu-primary-links div.content ul.menu li.last ul li {
+	text-transform: uppercase;
+}
+
+#block-menu-primary-links div.content ul.menu li ul.menu li ul.menu li ul.menu li {
+	font: 10px Helvetica, Arial, sans-serif;
+	line-height: 0.9em;
+}
+
+/* nav links */
+#block-menu-primary-links ul, #block-menu-primary-links ul li,
+#block-menu-secondary-links ul, #block-menu-secondary-links ul li,
+#block-user-1 ul, #block-user-1 ul li {
+	list-style: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+#block-menu-primary-links .menu,
+#block-menu-secondary-links .menu,
+#block-menu-menu-calendar .menu,
+#block-user-1 .menu {
+	margin:0;
+	padding:8px 0 24px 10px;
+	list-style:none;
+	border-top:1px solid #61758e;
+	overflow:hidden;
+	height:1%;
+	font: 11px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#block-menu-primary-links .menu li,
+#block-menu-secondary-links .menu li,
+#block-menu-menu-calendar .menu li,
+#block-user-1 .menu li {
+	margin:12px 0 0;
+	line-height: 1.1em;
+}
+
+#block-menu-primary-links .menu li .menu,
+#block-menu-secondary-links .menu li .menu,
+#block-user-1 .menu li .menu {
+	margin:0;
+	padding:5px 0 10px 10px;
+	list-style:none;
+	border: none;
+	height:1%;
+	font: 11px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+#block-menu-primary-links .menu a,
+#block-menu-secondary-links .menu a,
+#block-user-1 .menu a {
+	display:block;
+	color: #fff;
+	outline: none;
+}
+
+#block-menu-primary-links .menu a:hover,
+#block-menu-primary-links .menu a.active,
+#block-menu-secondary-links .menu a:hover,
+#block-menu-secondary-links .menu a.active,
+#block-user-1 .menu a:hover,
+#block-user-1 .menu a.active {
+	color: #FF7200;
+	text-decoration: none;
+}
+
+#block-menu_block-1 ul, #block-menu_block-1 ul li {
+	list-style: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+#block-menu_block-1 .menu {
+	margin:0;
+	padding:16px 0 24px 9px;
+	list-style:none;
+	border-top:1px solid #61758e;
+	border-bottom:1px solid #61758e;
+	overflow:hidden;
+	height:1%;
+	font: 11px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#block-menu_block-1 .menu li {
+	margin:12px 0 0;
+}
+
+#block-menu_block-1 .menu a {
+	display:block;
+	color: #fff;
+}
+
+#block-menu_block-1 .menu a:hover,
+#block-menu_block-1 .menu a.active {
+	color: #FF7200;
+	text-decoration: none;
+}
+
+/* Primary Navigation block */
+
+#block-menu-primary-links,
+#block-menu-secondary-links,
+#block-user-1 { margin: 0 0 0 0px; }
+
+/* Sidebar General Format */
+.sidebar{
+	width:150px;
+	overflow:hidden;
+	float:left;
+	margin:0 66px 0 44px;
+	display:inline;
+}
+
+.sidebar h4.theory-project{
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/side-political-th-pro.gif) no-repeat;
+	height:27px;
+	margin:7px 0 30px 10px;
+}
+
+/*************************
+ * SIDEBAR format -- end *
+ *************************/
+
+
+/*************************************
+ * MAIN CONTENT AREA format -- start *
+ *************************************/
+.main-content{
+	width:432px;
+	float:left;
+	padding:0 30px 0 0;
+	overflow:hidden;
+	font-weight:normal;
+}
+body.sidebar-left .main-content{
+	float:right;
+	padding:0 30px 0 0;
+	overflow:hidden;
+	font-weight:normal;
+	width: 660px;
+}
+.main-content h1{
+	margin:0 0 .67em 0;
+	color:#ff7200;
+	font-size:24px;
+	font-weight:normal;
+}
+.main-content h2{
+	margin:0;
+	color:#ff7200;
+	font-size:24px;
+	font-weight:normal;
+}
+.main-content h2.with-tabs {
+	margin: 0 0 10px 0;
+}
+.main-content h3{
+	color:#617b8b;
+	font-size:20px;
+	font-weight:normal;
+}
+.main-content h4{
+	color:#617b8b;
+	font-size:16px;
+	font-weight:normal;
+}
+.main-content h5{
+	color:#969660;
+	font-size:14px;
+	font-weight:bold;
+}
+.main-content h6{
+	color:#969660;
+	font-size:14px;
+	font-weight:normal;
+	font-style: italic;
+}
+.main-content h7{
+	color:#969660;
+	font-size:14px;
+	font-weight:normal;
+}
+.main-content p{
+	margin:12px 0 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+}
+
+.main-content a {
+	color:#ff7200 !important;
+}
+
+/* Janus Home */
+div.image-boxes .bordered img {
+	border: 3px solid #002148;
+}
+
+div.image-boxes .bordered:hover img {
+	border: 3px solid #FF7200;
+}
+
+div.image-boxes .row {
+	clear: both;
+}
+
+div.image-boxes .first_column {
+	float: left;
+}
+
+div.image-boxes .last_column {
+	float: right;
+}
+
+div.image-box {
+	margin: 5px;
+}
+
+div.image-boxes{
+	width: 425px;
+}
+
+/*
+ * people
+ */
+div.view-People div.views-row{
+	margin-bottom: 2.5em;
+}
+
+div.view-People.view-display-id-page_4 div.views-row {
+	margin-bottom: .9em;
+}
+
+div.view-People.view-display-id-page_4 span.views-field-title {
+	font-weight: bold;
+}
+
+div.view-People.view-display-id-page_4 div.views-field-field-phd-credentials-value,
+div.view-People.view-display-id-page_4 div.views-field-field-url-url {
+	font-size: .9em;
+	padding-left: 15px;
+	color: #C1C1C1;
+}
+
+div.view-People div.views-field-field-thumbnail-fid{
+	float: right;
+}
+
+div.view-People div.views-row-odd div.views-field-field-thumbnail-fid{
+	float: left;
+}
+
+div.view-People div.views-field-field-thumbnail-fid img{
+	margin: 0 .5em;
+	border: 1px;
+	border-color: #c1c1c1;
+}
+
+div.view-People div.views-field-field-title-value, 
+div.view-People div.views-field-field-dept-value {
+	font-size:12px;
+	color:#90A8B6;
+}
+
+div.view-People div.views-field-field-role-value {
+	font-size:16px;
+	color:#F7BC09;
+}
+
+div.node-person div.person-intro{
+	color:#90A8B6;
+	font-size:12px;
+}
+div.node-person div.field-field-website{
+	border-top: 1px solid #61758E;
+	margin-top: 12px;
+	padding-top: 6px;
+}
+
+
+/*
+ * events
+ */
+.main-content h3 {
+	clear:both;
+}
+
+.main-content h3.events-header{
+	margin: 20px 0 0 0;
+}
+
+/*div.view-events {
+	margin-bottom: 1.5em;
+}*/
+
+div.view-events div.views-row, 
+div.view-janus-events div.views-row{
+	margin-bottom: 2.5em;
+	clear:both;
+}
+div.view-events div.views-field-field-thumbnail-fid, 
+div.view-janus-events div.views-field-field-thumbnail-fid{
+	float: left;
+}
+
+div.view-events div.views-field-field-thumbnail-fid img, 
+div.view-janus-events div.views-field-field-thumbnail-fid img{
+	margin: .5em .5em .5em 0;
+	border: 1px;
+	border-color: #c1c1c1;
+}
+div.view-events div.views-row div.views-field-title, 
+div.view-janus-events div.views-row div.views-field-title{
+	clear:both;
+}
+div.view-events div.views-field-field-je-speakers-value,
+div.view-events div.views-field-field-je-date-value{
+	color: #c1c1c1;
+	font-size: 12px;
+	font-style: italic;
+}
+
+div.view-events div.views-field-field-je-speakers-value label {
+	font-weight: bold;
+}
+
+div.view-event-images{
+	border: 2px;
+	border-color: #ffffff;
+	background: #c0c0c0;
+	margin: 2.5em;
+	font: 12px Helvetica, Arial, sans-serif;
+	color: #393939;
+}
+
+div.view-event-images a, div.view-event-images a:active{
+	color: #393939;
+	text-decoration: none;
+}
+
+div.view-event-images a:hover{
+	color: #ff7200;
+}
+
+div.view-event-images div.item-list ul li a, div.view-event-images div.item-list ul li a:active {
+	color: #393939;
+	text-decoration: none;
+}
+
+div.view-event-images div.item-list ul li a:hover {
+	color: #ff7200;
+}
+
+div.view-event-images div.views-row, div.view-event-images div.item-list{
+	text-align: center;
+}
+
+div.view-event-images img{
+	margin: 1em;
+}
+
+/* calendar */
+
+.view-calendar ul.links { display: none; }
+.view-calendar .view-footer { text-align: right; }
+.calendar-calendar .inner {
+	background-image: none !important;
+	height:auto !important;
+	margin:0;
+	min-height:6em !important;
+	width: auto !important;
+	padding:0 0 0 0 !important;
+}
+
+.calendar-calendar td .inner div.calendar div, 
+.calendar-calendar td .inner div.calendar div a {
+	background-color: #fff;
+}
+
+.calendar-calendar div.date-nav {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+}
+
+.calendar-calendar td.week,
+.calendar-calendar th.week { display: none; }
+
+.calendar-calendar td.empty { background-color: #eee; }
+
+.view-calendar .feed-icon { padding-top: 5px; }
+
+/*
+ * News
+ */
+
+div.view-News div.views-row{
+	margin-bottom: 2.5em;
+	clear:both;
+}
+div.view-News div.views-row div.views-field-timestamp{
+	color: #c1c1c1;
+	font-size: 12px;
+	font-style: italic;
+}
+div.view-News div.views-field-field-thumbnail-fid{
+	float: left;
+}
+div.view-News div.views-row div.views-field-title{
+	clear:both;
+}
+
+.highlights{
+	margin:-18px 0 0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;
+}
+.highlights li{
+	float:left;
+	width:188px;
+	height:138px;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/bg-links-li.gif) no-repeat;
+	padding:3px 0 0 3px;
+	margin:45px 45px 0 0;
+	position:relative;
+}
+.highlights strong{
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	left:12px;
+	height:25px;
+}
+.highlights .lectures{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/lectures.png) no-repeat;
+	width:84px;
+}
+.highlights .conversations{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/conversations.png) no-repeat;
+	width:131px;
+}
+.highlights .open-seminars{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/oimagespen-seminars.png) no-repeat;
+	width:126px;
+}
+.highlights .jpu-debates{
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/jpu-debates.png) no-repeat;
+	width:105px;
+}
+.sidecontent{
+	width:212px;
+	overflow:hidden;
+	float:left;
+	padding:0;
+}
+.sidecontent .get-involved{
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/btn-get-involved.gif) no-repeat;
+	margin:0;
+	display:block;
+	height:52px;
+	width:212px;
+}
+.sidecontent .upcoming-events{
+	text-indent:-9999px;
+	overflow:hidden;
+	background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/upcoming-events.gif) no-repeat;
+	margin:34px 0 0;
+	height:9px;
+}
+
+/* Upcoming Events block */
+
+#block-views-events-block_3 {
+	text-align: left;
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#c1c1c1;
+	font-size:12px;
+	line-height:18px;
+}
+
+#block-views-events-block_3 .views-row {
+	margin: 0 0 17px 0;
+}
+
+#block-views-events-block_3 h3 {
+	font: 11px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #617b8b;
+	line-height: 1.5em;
+	margin: 20px 0 12px 0;
+}
+
+#block-views-events-block_3 .views-field-tid {
+	color:#90a8b6;
+	font-size:11px;
+	line-height:18px;
+	font-weight:normal;
+	text-transform:uppercase;
+	display:block;
+}
+
+#block-views-events-block_3 .views-field-field-je-date-value {
+	font-style: italic;
+}
+
+#block-views-events-block_3 .views-field-title a {
+	color: #C1C1C1;
+}
+
+#block-views-events-block_3 .more-link a {
+	color: #617b8b;
+	font: 10px Helvetica, Arial, sans-serif;
+}
+
+.events{
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#c1c1c1;
+	font-size:12px;
+	line-height:18px;
+}
+.events li{
+	margin:20px 0 0;
+}
+.events strong{
+	font-weight:normal;
+}
+.events a{
+	color:#90a8b6;
+	font-size:11px;
+	line-height:18px;
+	font-weight:normal;
+	text-transform:uppercase;
+	display:block;
+}
+.sidecontent .events p{
+	margin:0 17px 0 0;
+}
+.sidecontent .sidenav{
+	font:13px/36px Helvetica, Arial, sans-serif;
+	margin:40px 0 0;
+	padding:0 0 0 10px;
+	list-style:none;
+}
+.sidecontent .sidenav a{
+	color:#648198;
+}
+
+
+/* Address Information Block */
+/* address block container */
+div#block-block-4 {
+	font-size:10px;
+	margin:8px 0 24px 0px;
+	padding-left: 10px;
+	overflow:hidden;
+}
+div#block-block-4 ul {
+	list-style-image:none;
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0;
+	padding:0;
+} 
+div#block-block-4 ul li {
+	color: #fff;
+}
+
+/* name, address, phone, email container */ 
+div#block-block-4 {
+	border-top:1px solid #61758e;
+}
+
+div#block-block-4 ul.contactInfo {
+	padding-top: 20px;
+}
+div#block-block-4 ul.contactInfo li {
+	font-family: Arial, Helvetica, sans-serif;
+}
+div#block-block-4 ul.contactInfo li.departmentName{
+	font-weight:bold;
+}
+div#block-block-4 ul.contactInfo ul.adr{
+	margin-bottom:1em;
+}
+div#block-block-4 address{
+	font-size:8px;
+}
+
+div#block-block-4 a {
+	color:#ff7200 !important;
+}
+
+#footer{
+	width:940px;
+	overflow:hidden;
+	font:9px/22px Helvetica, Arial, sans-serif;
+	color:#61758e;
+	padding:6px 0 20px 20px;
+}
+#footer address{
+	font-style:normal;
+	display:inline;
+}
+
+#footer a {
+	color:#61758e;
+}
+
+
+/*
+ * NODES
+**/
+
+div.comment {
+	margin: 10px 0;
+}
+
+h3.comment-title {
+	margin: 3px 0 0;
+}
+
+span.submitted {
+	font-size: .9em;
+	font-style: italic;
+}
+
+
+
+/*
+ * PAGER
+**/
+ul.pager li a, ul.pager li a:visited, ul.pager li a:active {
+	color: #90A8B6
+}
+ul.pager li a:hover {
+	color: #ffffff
+}
+
+
+/**
+ * BLOG
+ */
+
+.view-blog {  }
+.view-blog .views-row { border-bottom: 1px dotted #1F4E71; margin: 0 0 10px 0; padding: 0 0 10px 0; }
+.view-blog .views-row-last { border-bottom: none; }
+.view-blog .views-field-title { font-size: 1.25em; }
+.view-blog span.views-field-created,
+.view-blog span.views-field-name,
+.view-blog span.views-field-comment-count { font-size: .9em; color: #C1C1C1; }
+.view-blog .views-field-body { margin-top: 10px; }
+
+/* related posts block */
+
+#block-views-blog-block_1 {
+	padding: 10px 0;
+}
+
+#block-views-blog-block_1 h3 {
+	color:#617B8B;
+	font:bold 11px/1.5em Helvetica,Arial,sans-serif;
+	letter-spacing:1px;
+	margin:20px 0 12px;
+	text-transform:uppercase;
+}
+
+#block-views-blog-block_1 .views-field-title {
+	font-size:12px;
+	line-height:16px;
+	list-style:none outside none;
+	text-align:left;
+}
+
+#block-views-blog-block_1 .views-field-title a { color: #C1C1C1; }
+#block-views-blog-block_1 .views-field-name,
+#block-views-blog-block_1 .views-field-created { font-size: .9em; color: #C1C1C1; font-style: italic; }
+#block-views-blog-block_1 .view-blog .views-row {
+	border-bottom: none;
+	margin: 0 0 5px 0; padding: 0;
+}
+
+
+
+/**
+ * 11.CSS SUPPORT
+ */
+/*
+span.clear       { clear: both; display: block; font-size: 0; height: 1px; line-height: 0; margin-bottom: -1px; }
+.clear           { clear: both; }
+.clear-block     { display: block; }
+
+.clearfix:after,
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
+.clearfix,
+.container       { display: block; }
+
+.float-left      { float: left; }
+.float-right     { float: right; }
+.img-left        { float: left; margin: 1.5em 1.5em 1.5em 0; }
+.img-right       { float: right; margin: 1.5em 0 1.5em 1.5em; }
+
+.first           { margin-left: 0; padding-left: 0; }
+.last            { margin-right: 0; padding-right: 0; }
+.top             { margin-top: 0; padding-top: 0; }
+.bottom          { margin-bottom: 0; padding-bottom: 0; }
+
+.text-left       { text-align: left; }
+.text-right      { text-align: right; }
+.text-center     { text-align: center; }
+.text-justify    { text-align: justify; }
+
+.bold            { font-weight: bold; }
+.italic          { font-style: italic; }
+.underline       { border-bottom: 1px solid; }
+.highlight       { background: #ffc; }
+.quiet           { color: #666; }
+.loud            { color: #000; }
+.added           { background: #060; color: #fff; }
+.removed         { background: #900; color: #fff; }
+.small           { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.large           { font-size: 1.2em; line-height: 1.25em; margin-bottom: 1.25em; }
+
+.nopadding       { padding: 0; }
+.noindent        { margin-left: 0; padding-left: 0; }
+.nobullet        { background: none; list-style: none; list-style-image: none; }
+
+.wrap            { width: 950px; margin: 0 auto; }
+
+.hide            { display: none; }
+*/
+/**
+ * 12.ADVANCED
+ */
+ 
+/* lists
+ol{margin:0 0 1.5em;padding:0;}
+ol li{margin:0 0 0 1.5em;}
+ul{margin:0 0 1.5em;padding:0;}
+ul li{background:transparent url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/menu-leaf.gif) no-repeat 1px .4em;list-style-image:none;list-style-type:none;margin:0;padding:0 0 0 1.5em;}
+li ol,li ul,ul ul,ol ol{margin:0;}
+ul.menu,.item-list ul{margin:0 0 1.5em;padding:0;}
+ul.menu ul,.item-list ul ul{margin:0;}
+ul.menu li,.item-list ul li,li.leaf{background:transparent url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/menu-leaf.gif) no-repeat 1px .4em;list-style-image:none;list-style-type:none;margin:0;padding:0 0 0 1.5em;}
+ul li.expanded{background:transparent url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/menu-expanded.gif) no-repeat 1px .35em;}
+ul li.collapsed{background:transparent url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/menu-collapsed.gif) no-repeat 0 .35em;}
+ul li.leaf a,ul li.expanded a,ul li.collapsed a{display:block;}
+ul li.fake-leaf{font-size:1em;font-weight:bold;}
+ul.inline li{background:none;margin:0;padding:0 1em 0 0;}
+dl{margin:0 0 1.5em;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:1.5em;}
+*/
+
+ul li{list-style-image: none !important;}
+ul.menu li,.item-list ul li,li.leaf{list-style-image: none !important; list-style-type: none !important;}
+li.expanded{list-style-image: none !important; list-style-type: none;}
+ul li.expanded{list-style-image: none !important;}
+ul li.collapsed{list-style-image: none !important;}
+
+
+/* forms & fieldsets */
+input{color:#494949;font:1em Verdana, sans-serif;}
+textarea,select{color:#494949;font:1em Verdana, sans-serif;}
+fieldset ul.clear-block li{background-image:none;margin:0;padding:0;}
+fieldset{background:none;border:1px solid #ccc;margin:1em 0;padding:1em;}
+fieldset legend{padding:0 0.5em;}
+html.js fieldset.collapsed{background:transparent;padding-bottom:.6em;padding-top:0;}
+html.js fieldset.collapsible legend a{background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/menu-expanded.gif) no-repeat 0 50%;}
+html.js fieldset.collapsed legend a{background:url(/web/20121010043023im_/http://www.brown.edu/Departments/Political_Theory_Project/sites/brown.edu.Departments.Political_Theory_Project/themes/brownptp/images/menu-collapsed.gif) no-repeat 0 50%;}
+.form-checkboxes,.form-radios,.form-checkboxes .form-item,.form-radios .form-item{margin:.25em 0;}
+.form-button,.form-submit{margin:1em .5em 1em 0;}
+.confirmation .form-submit,.search-form .form-submit,.poll .form-submit,fieldset .form-button,fieldset .form-submit,.sidebar .form-button,.sidebar .form-submit,table .form-button,table .form-submit{margin:0 0 1.2em;}
+#autocomplete li{cursor:pointer;margin:0;padding:2px;}
+#autocomplete li.selected{background:#027ac6;color:#fff;}
+
+/* content revisions */
+td.revision-current{background:#90A8B6;}
+
+/* admin tab links */
+#tabs-wrapper{border-bottom:0px solid #ccc;margin:0 0 .75em;padding:0;font-size: .8em;}
+ul.primary{border-bottom:1px solid #eee;margin:0;padding:.25em 0;}
+ul.primary li{background:none;border-top:3px solid #ccc;margin:0 .5em 0 0;padding:.25em 0;}
+ul.primary li.active{background:#eee;}
+ul.primary li:hover{background:#f5f5f5;}
+ul.secondary{background:#eee;border:none;margin:0;padding:.5em 1em;}
+ul.secondary li{background:none;border:none;display:inline;line-height:2em;margin:0;padding:0 1em 0 0;}
+ul.primary li a,ul.primary li.active a,ul.primary li a:hover,ul.primary li a:visited{background:none;border:0;margin:0;padding:0 1em;text-decoration:none;}
+ul.secondary li a,ul.secondary li a:visited{background:none;border:0;margin:0;padding:0;text-decoration:none;}
+ul.secondary li.active a,ul.secondary li a:hover{text-decoration:underline;}
+ul.primary li.active a,ul.secondary li.active a{font-weight:bold;text-decoration:none;}
+
+/* admin styling */
+div.admin,div.admin .left,div.admin .right,div.admin-panel,div.admin-panel .body,div.admin .expert-link{margin:0;padding:0;}
+div.admin .left{float:left;width:48%;}
+div.admin .right{float:right;width:48%;}
+div.admin-panel .description,.form-item .description{color:#666;font-size:0.9167em;line-height:1.636364em;margin:0 0 1.63636em;padding:0;}
+div.admin-panel { }
+body.admin dt{font-weight:normal;}
+body.admin dd{color:#898989;font-size:.9167em;line-height:1.636364em;}
+.more-help-link {font-size:.8333em;padding:0.2em 0 0.1em;}
+.block-region {font-size:0.8333em;line-height:1.5em;margin:0;padding:0.15em 0.5em;}
+
+/* tables */
+#forum thead th {border-bottom:3px solid #ccc;}
+#forum td.posts,#forum td.topics,#forum td.replies,#forum td.pager{text-align:left;}
+#forum tr td.forum{background-position:4px 9px;}
+.forum-topic-navigation{background:none;border:none;border-bottom:1px solid #ccc;margin-bottom:1em;padding:5px;}
+body.admin table{margin:0 0 1.4em;width:100%;}
+body.admin thead th{border-bottom:2px solid #ccc;font-weight:bold;padding:0 1em 0 0;}
+body.admin tbody{border-top:none;}
+body.admin td,body.admin th{padding:.3em .5em;vertical-align:middle;}
+body.admin tr.even,body.admin tr.odd,body.admin tbody th{border:solid #ccc;border-width:1px 0;background: none;}
+body.admin tr.odd td.active{background-color:none;}
+body.admin tr.even td.active{background-color:none;}
+body.admin tr.odd,body.admin tr.info{background-color:none;}
+body.admin tr.even{background-color:none;}
+body.admin tr.drag{background-color:none;}
+body.admin tr.drag-previous{background-color:#ffd;}
+body.admin td.region,body.admin td.module,body.admin td.container,body.admin td.category{background-color:none;border-bottom:1px solid #ccc;border-top:1em solid none;color:#666;font-weight:bold;}
+body.admin tr:first-child td.region,body.admin tr:first-child td.module,body.admin tr:first-child td.container,body.admin tr:first-child td.category{border-top-width:0;}
+body.admin table.sticky-header{margin:0 0 0 1px;z-index:1;background-color: #0D294E;}
+body.admin table.sticky-header th{padding-top:.5em;}
+span.form-required{color:#ffae00;}
+tr.even, tr.odd { background: none; }
+
+/* messages */
+.messages{background-color:#fff;border:1px solid #b8d3e5;}
+.messages,.preview,div.warning,div.error{margin:0 0 1.5em;padding:8px 1em;}
+.messages ul{margin:0;}
+.preview{background-color:#1f4e71;border:1px solid #e5e58f;margin:10px 0 0 0;}
+.preview .node{background-color:#fcfce8;}
+div.status{border-color:#c7f2c8;color:#33a333;}
+div.error,tr.error{background-color:#fcc;color:#a30000;}
+.form-item input.error,.form-item textarea.error{border:1px solid #c52020;color:#363636;}
+
+/* status report */
+table.system-status-report tr.error,table.system-status-report tr.error th{background-color:#fcc;border-color:#ebb;color:#200;}
+table.system-status-report tr.warning,table.system-status-report tr.warning th{background-color:#ffd;border-color:#eeb;}
+table.system-status-report tr.ok,table.system-status-report tr.ok th{background-color:#dfd;border-color:#beb;}
+table.system-status-report th{padding-bottom:6px;padding-top:6px;}
+table.system-status-report th,table.system-status-report tr.merge-up td{padding-left:30px;}
+/*
+     FILE ARCHIVED ON 04:30:23 Oct 10, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:07:15 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.676
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.009
+  esindex: 0.012
+  cdx.remote: 9.441
+  LoadShardBlock: 160.585 (3)
+  PetaboxLoader3.datanode: 92.71 (4)
+  PetaboxLoader3.resolve: 90.22 (2)
+  load_resource: 88.792
+*/

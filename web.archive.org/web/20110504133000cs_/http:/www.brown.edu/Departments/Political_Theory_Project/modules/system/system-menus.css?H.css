@@ -1,0 +1,71 @@
+/* $Id: system-menus.css,v 1.1 2007/10/05 14:50:25 goba Exp $ */
+
+ul.menu {
+  list-style: none;
+  border: none;
+  text-align:left; /* LTR */
+}
+ul.menu li {
+  margin: 0 0 0 0.5em; /* LTR */
+}
+li.expanded {
+  list-style-type: circle;
+  list-style-image: url(../../../../../../../20110414082248im_/http:/www.brown.edu/Departments/Political_Theory_Project/misc/menu-expanded.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.collapsed {
+  list-style-type: disc;
+  list-style-image: url(../../../../../../../20110414082248im_/http:/www.brown.edu/Departments/Political_Theory_Project/misc/menu-collapsed.png); /* LTR */
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.leaf {
+  list-style-type: square;
+  list-style-image: url(../../../../../../../20110414082248im_/http:/www.brown.edu/Departments/Political_Theory_Project/misc/menu-leaf.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li a.active {
+  color: #000;
+}
+td.menu-disabled {
+  background: #ccc;
+}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+ul.links.inline {
+  display: inline;
+}
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+.block ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em; /* LTR */
+}
+
+/*
+     FILE ARCHIVED ON 08:22:48 Apr 14, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:06:33 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.56
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.011
+  cdx.remote: 6.961
+  LoadShardBlock: 105.918 (3)
+  PetaboxLoader3.datanode: 77.371 (4)
+  PetaboxLoader3.resolve: 144.914 (2)
+  load_resource: 122.927
+*/

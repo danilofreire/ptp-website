@@ -1,0 +1,55 @@
+
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 47px;
+  left: 47px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(https://web.archive.org/web/20110802210226im_/http://www.brown.edu/Departments/Political_Theory_Project/misc/farbtastic/wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .overlay {
+  background: url(https://web.archive.org/web/20110802210226im_/http://www.brown.edu/Departments/Political_Theory_Project/misc/farbtastic/mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden;
+  background: url(https://web.archive.org/web/20110802210226im_/http://www.brown.edu/Departments/Political_Theory_Project/misc/farbtastic/marker.png) no-repeat;
+}
+
+
+/*
+     FILE ARCHIVED ON 21:02:26 Aug 02, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:22:43 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.784
+  exclusion.robots: 0.033
+  exclusion.robots.policy: 0.02
+  esindex: 0.011
+  cdx.remote: 9.544
+  LoadShardBlock: 166.992 (3)
+  PetaboxLoader3.resolve: 140.872 (3)
+  PetaboxLoader3.datanode: 719.069 (4)
+  load_resource: 711.279
+*/

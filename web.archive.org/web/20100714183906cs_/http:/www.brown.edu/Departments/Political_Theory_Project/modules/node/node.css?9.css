@@ -1,0 +1,64 @@
+
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+#node-admin-filter ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#node-admin-buttons {
+  float: left; /* LTR */
+  margin-left: 0.5em; /* LTR */
+  clear: right; /* LTR */
+}
+td.revision-current {
+  background: #ffc;
+}
+.node-form .form-text {
+  display: block;
+  width: 95%;
+}
+.node-form .container-inline .form-text {
+  display: inline;
+  width: auto;
+}
+.node-form .standard {
+  clear: both;
+}
+.node-form textarea {
+  display: block;
+  width: 95%;
+}
+.node-form .attachments fieldset {
+  float: none;
+  display: block;
+}
+.terms-inline {
+  display: inline;
+}
+
+/*
+     FILE ARCHIVED ON 18:55:17 May 14, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:53:33 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.468
+  exclusion.robots: 0.015
+  exclusion.robots.policy: 0.007
+  esindex: 0.008
+  cdx.remote: 67.725
+  LoadShardBlock: 119.875 (3)
+  PetaboxLoader3.datanode: 118.931 (4)
+  PetaboxLoader3.resolve: 64.402 (2)
+  load_resource: 85.862
+*/

@@ -1,0 +1,77 @@
+#brown-social-media ul {
+	margin: 0;
+	padding: 0;
+}
+#brown-social-media li {
+	margin: 0 !important; /* override default li */
+	padding: 0 !important;
+	list-style: none !important;
+}
+
+
+#socialmedia-links a {
+	background-color: transparent;
+	/*background-image: url("/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/facebook-twitter-sprite.png");*/
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+	width: 36px;
+	height: 30px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+	text-indent: -999em;
+	border-radius: 2px;
+}  
+#socialmedia-links #facebook-link {
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-facebook.png");
+}
+
+
+#socialmedia-links #twitter-link {
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-twitter.png");
+}
+
+#socialmedia-links #youtube-link {
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-youtube.png");
+}
+#socialmedia-links #googleplus-link {
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-googleplus.png");
+}
+#socialmedia-links #instagram-link {
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-instagram.png");
+}
+#socialmedia-links #flickr-link {
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-flickr.png");
+}
+#socialmedia-links #linkedin-link{
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-linkedin.png");
+}
+#socialmedia-links #vimeo-link{
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-vimeo.png");
+}
+
+#socialmedia-links #email-link{
+	background-image:url("https://web.archive.org/web/20161204073545im_/https://www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_social_media/theme/img/icon-email.png");
+	width: 141px;
+	height:72px;
+}
+/*
+     FILE ARCHIVED ON 07:35:45 Dec 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:30:40 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.525
+  exclusion.robots: 0.017
+  exclusion.robots.policy: 0.008
+  esindex: 0.01
+  cdx.remote: 6.37
+  LoadShardBlock: 99.272 (3)
+  PetaboxLoader3.datanode: 71.852 (4)
+  PetaboxLoader3.resolve: 55.987 (2)
+  load_resource: 31.998
+*/

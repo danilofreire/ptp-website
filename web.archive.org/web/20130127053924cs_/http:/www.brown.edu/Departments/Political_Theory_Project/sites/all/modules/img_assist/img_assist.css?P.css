@@ -1,0 +1,48 @@
+/* $Id: img_assist.css,v 1.6.4.1 2008/07/22 23:08:13 sun Exp $ */
+
+span.inline-left {
+  display: block;
+  float: left;
+  margin: 5px 5px 5px 0px;
+}
+span.inline-right {
+  display: block;
+  float: right;
+  margin: 5px 0px 5px 5px;
+}
+span.inline-center {
+  display: block;
+  text-align: center;
+}
+span.inline .caption {
+  display: block;
+}
+.image-clear {
+  display: block;
+  clear: both;
+  height: 1px;
+  line-height: 0px;
+  font-size: 0px;
+  margin-bottom: -1px;
+}
+
+/*
+     FILE ARCHIVED ON 04:29:44 Oct 10, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:38:15 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.81
+  exclusion.robots: 0.039
+  exclusion.robots.policy: 0.023
+  esindex: 0.015
+  cdx.remote: 32.303
+  LoadShardBlock: 244.75 (3)
+  PetaboxLoader3.datanode: 206.593 (4)
+  load_resource: 159.335
+  PetaboxLoader3.resolve: 88.063
+*/

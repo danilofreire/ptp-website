@@ -1,0 +1,70 @@
+
+ul.menu {
+  list-style: none;
+  border: none;
+  text-align:left; /* LTR */
+}
+ul.menu li {
+  margin: 0 0 0 0.5em; /* LTR */
+}
+li.expanded {
+  list-style-type: circle;
+  list-style-image: url(https://web.archive.org/web/20200906230450im_/https://www.brown.edu/academics/political-theory-project/misc/menu-expanded.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.collapsed {
+  list-style-type: disc;
+  list-style-image: url(https://web.archive.org/web/20200906230450im_/https://www.brown.edu/academics/political-theory-project/misc/menu-collapsed.png); /* LTR */
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li.leaf {
+  list-style-type: square;
+  list-style-image: url(https://web.archive.org/web/20200906230450im_/https://www.brown.edu/academics/political-theory-project/misc/menu-leaf.png);
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
+}
+li a.active {
+  color: #000;
+}
+td.menu-disabled {
+  background: #ccc;
+}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+ul.links.inline {
+  display: inline;
+}
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+.block ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em; /* LTR */
+}
+
+/*
+     FILE ARCHIVED ON 23:04:50 Sep 06, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:05:08 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.494
+  exclusion.robots: 0.016
+  exclusion.robots.policy: 0.008
+  esindex: 0.01
+  cdx.remote: 149.972
+  LoadShardBlock: 496.547 (3)
+  PetaboxLoader3.datanode: 148.344 (4)
+  PetaboxLoader3.resolve: 380.887 (3)
+  load_resource: 52.319
+*/

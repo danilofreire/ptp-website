@@ -1,0 +1,2616 @@
+/* $Id: style.css 2447 2011-11-14 14:20:21Z jpennypa $ */
+
+/**************************************************************************************************
+* Brown University Department Template Screen Styles 2014 Design Revamp
+* Pawtucket drupal theme based on Ursa Minor and Garland
+*
+*
+* em calculations based on default font size of 16px; and a 21px baseline
+* paragraph copy is .875em (14px) and leading is 1.5em (21px).
+* 
+* ****      NB:  DO NOT STYLE #body-content                   ****
+* ****      IT'S A PAGE ANCHOR AT THE TOP OF THE CONTENT      ****
+* ****      AND IT LOOKS DIFFERENT ON EVERY PAGE              ****
+* 
+* @author John Pennypacker <John_Pennypacker@brown.edu>
+* @author Jeremy Spurr <Jeremy_Spurr@brown.edu> 
+**************************************************************************************************/
+
+
+/****************************** Reset ******************************/
+html, body, header, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+.headlines-nav a, #more-news-button a {
+	outline: none;
+}
+/* html5 elements */
+article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, nav, main, section {
+	display: block;
+}
+
+
+/******************************************************************************************
+******************************************************************************************
+REVISED URSA MINOR STYLES
+******************************************************************************************
+******************************************************************************************/
+
+
+/****************************** Body ******************************/
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	background-color: #fff;
+	min-width: 320px;
+	margin: 0;
+}
+ul.access {
+	position: absolute;
+	top: -999px;
+	line-height: 1;
+	margin-bottom: 0;
+}
+/* Firefox will not render an address area properly, so style the contents, not the <address> */
+.vcard {
+	font-style: normal;
+	font-size: .9125em;
+	margin-bottom: 2em;
+}
+.vcard .type {
+	font-weight: normal;
+}
+.vcard span, .no-wrap {
+	white-space: nowrap; /* helps keep United States on one line */
+}
+
+/****************************** Logged In ******************************/
+#body-content div#tabs-wrapper ul {
+	margin: 10px 0 15px 0px;
+}
+body.admin-menu {
+	margin-top: 60px !important;
+}
+.admin-vertical {
+	
+}
+/****************************** Admin ******************************/
+div#admin-toolbar {
+	z-index: 9999;
+}
+div.admin-panel,
+div.admin-panel .description,
+div.admin-panel .body,
+div.admin,
+div.admin .left,
+div.admin .right,
+div.admin .expert-link,
+div.item-list,
+.menu {
+  margin: 0;
+  padding: 0;
+}
+.admin-se .main-column {
+	padding-top: .75em;
+}
+div.admin .left {
+  float: left; /* LTR */
+  width: 48%;
+}
+div.admin .right {
+  float: right; /* LTR */
+  width: 48%;
+}
+div.admin-panel {
+}
+div.admin-panel .description {
+  margin-bottom: 1.5em;
+}
+div.admin-panel dl {
+  margin: 0;
+}
+div.admin-panel dd {
+  margin-top: -.2em;
+  margin-bottom: .65em;
+}
+table.system-status-report th {
+  border-color: #aba698;
+}
+#autocomplete li {
+	font-size: .75em;
+	color: #2f2a20;
+}
+#autocomplete li.selected, tr.selected td, tr.selected td.active {
+  background: #c00404;
+  color: #fff;
+}
+
+tr.selected td a:link, tr.selected td a:visited, tr.selected td a:active {
+  color: #d3e7f4;
+}
+
+tr.taxonomy-term-preview {
+  opacity: 0.5;
+}
+tr.taxonomy-term-divider-top {
+  border-bottom: none;
+}
+tr.taxonomy-term-divider-bottom {
+  border-top: 1px dotted #CCC;
+}
+dl.admin-list {
+	font-size: .75em;
+}
+dl.admin-list dd {
+	margin-bottom: 1.5em;
+}
+#admin-menu img.admin-menu-icon {
+	display: none;
+}
+#admin-menu ul li.admin-menu-icon:first-child {
+	background-color: pink;
+	height: 22px;
+	width: 22px;
+	background: transparent url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icon-tiny-brown-shield.png") 50% 50% no-repeat;
+}
+#admin-menu {
+	font-size: 11px;
+}
+.admin-only {
+			background-color: #efece4;
+}
+	.admin-only h6 {
+		font-size: .75em;
+
+	}
+	.admin-only .submitted {
+		float: none;
+		clear: both;
+		margin-bottom: 0;
+	}
+/* wysiwyg button alignment fix */
+.defaultSkin .mceSeparator {
+  margin: 0px 4px !important;
+}
+/****************************** Common Classes ******************************/
+.none {
+	display: none;
+}
+.block {
+	display: block;
+}
+.clear {
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.no-bullet        { background: none; list-style: none; list-style-image: none; }
+.small           { font-size: .8em; line-height: 1.875em; }
+.large           { font-size: 1.2em; line-height: 1.25em; }
+.highlight       { background: #ffc; }
+.shaded {
+	margin: 0 0 1em;
+	padding: 1em;
+	background-color: #eeece6;
+}
+.alert, .error, .reminder {
+	padding: .5em .875em .125em;
+	margin-bottom: .875em;
+}
+.alert, .error {
+	background-color: #ffc;
+	color: #900;
+	border-color: #900;
+	font-weight: bold;
+}
+.error {
+	background-color: #fed;
+}
+.note { /* same size as blockquote p */
+	font-size: .75em; 
+	line-height: 1.75;
+}
+span.inline {
+	padding: 0;
+	display: block;
+}
+.inline-left {
+	float: left;
+	margin: 0 .75em .75em 0;
+}
+.inline-right {
+	float: right;
+	margin: 0 0 .75em .75em;
+}
+.inline-center {
+	float: none;
+	display: block;
+	margin: 0 auto .75em;
+}
+.inline img {
+	margin: 1px;
+	border: 3px solid #fff;
+	display: block;
+}
+/*************************************** Buttons *********************************/
+a.button, .button, a.button:visited, .button:visited  {
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;	
+	border-radius: 5px;	
+	padding: 5px 10px;
+	font-size: 16px;
+	display: inline-block;
+ 	background-color: #989283;	
+	border: 1px solid #989283;
+	color: #FFF !important;
+	text-decoration: none !important;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	margin: 0 0 15px 0;
+}
+a.button, a.button:visited {
+	padding: 5px 20px 5px 10px;
+	background-image:url(https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icons/button-arrow.png);
+	background-repeat:no-repeat;
+	background-position: 98% 50%;
+}
+a.button:hover, .button:hover {
+ 	background-color: #2F2A20;
+}
+a.button.email-button, a.button.email-button:visited {
+	background-image:url(https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icons/mailto.gif) !important;
+}
+a.small-button, .small-button, a.small-button:visited, .small-button:visited {
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;	
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 9px;	
+	display: inline-block;	
+	background-color: #27210e;
+	color: #FFF;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	margin: 0 0 15px 0;
+	border: 1px solid #181409;
+}
+a.small-button:hover, .small-button:hover {	
+	background-color: #181409;
+}
+a.large-button, .large-button, a.large-button:visited, .large-button:visited  {
+	-moz-border-radius: 5px;	
+	-webkit-border-radius: 5px;	
+	border-radius: 5px;		
+	padding: 5px 10px;
+	font-size: 16px;
+	display: inline-block;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	background-color: #989283;
+	border: 1px solid #635c4c;
+	color: #FFF;
+	text-decoration: none;
+	margin: 0 0 15px 0;
+}
+a.large-button:hover, .large-button:hover {
+	background-color: #635c4c;
+}
+a.large-button:hover, .large-button:hover {
+	background-color: #635c4c;
+}
+/****************************** Images ******************************/
+.content span.inline img {
+	margin: 1px;
+	border: 3px solid #fff;
+}
+.content img {
+	max-width: 100%;
+	height: auto;
+}
+.content a img {
+	border: 0;
+}
+/****************************** Forms ******************************/
+input {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  	font: 12px/100% Verdana, sans-serif;
+  	color: #494949;
+}
+textarea, select {
+  font: 12px/160% Verdana, sans-serif;
+  color: #494949;
+}
+span.form-required {
+  color: #c00404;
+}
+span.submitted, .description {
+  font-size: 0.75em;
+  line-height: 1.75em;
+  margin-bottom: 0.75em;
+  color: #2f2a20;
+}
+.form-item .description {
+	font-size: .625em;
+	color: #666;
+}
+.field-prefix {
+  font-size: 0.75em;
+  line-height: 1.75em;
+}
+.messages, .preview {
+  margin: .75em 0 .75em;
+  padding: .5em 1em;
+}
+
+.messages ul {
+  margin: 0;
+}
+
+div.draft-message {
+	background-color: #f2d7d7;
+	border: .1em solid #c00404;
+	text-align: center;
+}
+.form-checkboxes, .form-radios, .form-checkboxes .form-item, .form-radios .form-item {
+  margin: 0.25em 0;
+}
+#rules-admin-form-edit-rule .event, #rules-admin-form-edit-rule .conditions, #rules-admin-form-edit-rule .condition, #rules-admin-form-edit-rule .logical-op-and, #rules-admin-form-edit-rule .logical-op-or, #rules-admin-form-edit-rule .actions, #rules-admin-form-edit-rule .action {
+	font-size: .75em;
+}
+form#views-bulk-operations-form--1 div#edit-force-wrapper{
+        display: none;
+}
+/* WebForm Styles */
+.webform-client-form {
+	font-size: 1.25em;
+}
+.webform-client-form p,
+.webform-client-form legend {
+	font-size: 1.2em;
+}
+/****************************** Font Face Styles ******************************/
+
+/****************************** Text & Headers ******************************/
+.content p {
+	line-height: 1.5em;
+	margin-bottom: 1.4em;
+}
+p.no-space {
+	margin-bottom: 0;
+}
+p.bio-name {
+	font: bold 1.125em/1.5em Georgia,serif;
+	margin-bottom: 0;
+	color: #2f2a20;
+}
+p.bio-title {
+	font: bold 1.0625em/1.5em Georgia,serif;
+	margin-bottom: 0;
+	color: #2f2a20;
+}
+p.bio-intro {
+	clear: left;
+}   
+h1, h2, h3, h4, h5, h6 {
+	color: #2f2a20;
+}
+.banner-text h1 .site-title {
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.1em;
+	letter-spacing: 0em;
+	margin: 0 0 0 0;
+	color: #FFF;
+	display: block;
+	min-height: 30px;
+}
+	.banner-text h1 {
+		font-size: 1em;
+		padding: 0 0 0 0;
+		line-height: 0.2;
+	}
+	.banner-text h1 a {
+		text-decoration: none;
+		text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+	}
+h1.article-title {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 1.75em;
+	font-weight: normal !important;
+	line-height: 1.2em;
+	border-bottom: 1px solid #c00404;
+	margin: .75em .675em 0.4em 0;
+	padding-bottom: .2865em;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #2f2a20;
+}
+#body-content h1 {	
+	font: bold 1.25em/1.5em "Lucida Sans", serif; /* 20px */
+	margin-bottom: .6em; /* 20*1.5=30; 42px-30px=12px; 12px/20px = .6em */
+}
+
+h2 {	
+	font-size:  1.1em; /* */
+	line-height: 1.2;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	margin-bottom: .5em; 
+}
+	.content h2 {	
+		font-size:  1.7em; /*  */
+		line-height: 1.2;
+		font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+		font-weight: 700;
+		margin-bottom: .2em;
+	}
+	.content h2.huge {	
+		font-size:  3.5em; /* 22px */
+		margin-bottom: .6em;
+	}
+	h2.sIFR-replaced {
+		margin-bottom: 0;
+	}
+#body-content h3 {	
+	font: bold 1.125em/1.3125em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+	margin-bottom: 1em;
+}
+#body-content h4 {	
+	font: bold 1.125em/1.3125em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+	margin-bottom: 0; /* 16*1.5=24; 42px-24px=18px; 18px/16px = 1.125em */
+}
+#body-content h5 {	
+	font: bold 1em/1.3125em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+	margin-bottom: 0; /* 16*1.3125=21; 21px-21px=0; 0/16px = 0 */
+	}
+#body-content h6 {	
+	font: bold .9375em/1.4em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 13px */
+}
+strong, b {
+	font-weight: bold;
+}
+em, i  {
+	font-style: italic;	
+}
+/* this is a style that matches the column heading in the styleguide */
+.column-header {
+	font: normal .875em/1.4em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 12px */
+	background-color: #eeece6;
+	border-bottom: .1em solid #aba698;
+	line-height: 1.5em;
+	padding: .5em;
+	text-transform: uppercase;
+}
+.content, #first-time, .help, article .links li a, .submitted {
+	color:#2f2a20;
+	font-size:.75em;
+}
+.main-article {
+	font-family: Georgia, Times, serif;
+	font-size:.875em;
+}
+article .content {
+	font-family:Georgia, Times, serif;
+	font-size:1em;
+}
+.content, p, div.p, .content ul, .content ol, .content dl {
+	line-height:1.5em;
+	margin-bottom:1.5em;
+}
+.fieldset-wrapper p, fieldset p {
+	font-size:.75em;
+}
+.main-column .view-content .views-row {
+	font-size:.75em;
+}
+.main-column .feed-icon, .node-type-list {
+	font-size:.75em;
+}
+.main-column .view-content .views-row h4 {
+	font-size:1.333333em;
+}
+.main-column .view-content .views-row h5 {
+	font-size:1.33333em;
+}
+.main-column .view-content .views-row h6 {
+	font-size:1.25em;
+}
+.mb {
+	color:#2f2a20;
+	line-height:1.5em;
+	margin-bottom:1.3125em;
+}
+li ul, li ol, li dl, li p, li h1, li h2, li h3, li h4, li h5, li h6, p ol, p ul, p dl, dl dl {
+	font-size:inherit;
+	line-height:1.5em;
+}
+.content, #first-time, .help, article .links li a, .submitted {
+	color: #2f2a20;
+	font-size: .75em; /* 12px */
+}
+
+.content, .content p, div.p, ul, ol, dl {
+	line-height: 1.5em; /* 21px (our baseline) */
+	margin-bottom: 1.5em;
+}
+.fieldset-wrapper p, fieldset p {
+	font-size: .75em; /* 12px */
+}
+.main-column .view-content .views-row {
+	font-size: .75em; /* 12px */
+}
+.main-column .feed-icon, .node-type-list  {
+	font-size: .75em;
+}
+
+.main-column .view-content .views-row h4 {
+	/* Because views-row is small, we need to re-enalrge headlines within it.  
+	   I'd call this a bug */
+	font-size: 1.333333em; /* 16px */
+}
+.main-column .view-content .views-row h5 {
+	/* Because views-row is small, we need to re-enalrge headlines within it.  
+	   I'd call this a bug */
+	font-size: 1.33333em; /* 16px */
+}
+.main-column .view-content .views-row h6 {
+	/* Because views-row is small, we need to re-enalrge headlines within it.  
+	   I'd call this a bug */
+	font-size: 1.25em; /* 15px */
+}
+/****************************** Links ******************************/
+a:link { color: #c00404; text-decoration: none; }
+a:visited { color: #b78080; text-decoration: none; color: #966; }
+a:hover { color: #300; text-decoration: underline; }
+a:active { color: #e00; text-decoration: underline; }
+
+article .links li a {
+	color: #c00404;
+}
+/****************************** Document Icons ******************************/
+article a[href$=".xls"], article a[href$=".doc"], article a[href$=".pdf"], article a[href$=".txt"], article a[href$=".phps"], 
+article a[href$=".jpg"], article a[href$=".gif"], article a[href$=".png"], article a[href$=".tif"]  {
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 1.5em;
+}
+article a[href$=".xls"]		{ background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/img/icons/page_white_excel.png"); }
+article a[href$=".doc"]		{ background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/img/icons/page_white_word.png"); }
+article a[href$=".pdf"]		{ background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/img/icons/page_white_acrobat.png"); }
+article a[href$=".txt"]		{ background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/img/icons/page_white_text.png"); }
+article a[href$=".phps"]	{ background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/img/icons/page_white_php.png"); }
+/*
+a[href$=".jpg"], a[href$=".gif"], a[href$=".png"], a[href$=".tif"] 
+					{ background-image: url("/web/20161204073547im_/https://www.brown.edu/img/icons/page_white_camera.png"); }
+*/
+/****************************** Lists ******************************/
+#body-content .content ul {
+	list-style-type: disc;
+	margin: 0 0 15px 30px;
+}
+	#body-content .content ul li {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		margin: 0 0 5px 0;
+	}
+#body-content .content ol {
+	list-style-type: decimal;
+	margin: 0 0 15px 30px;
+}
+	#body-content .content ol li {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		margin: 0 0 5px 0;
+	}
+#body-content .content ul.two-col  { /* 2 col */
+	-moz-column-count: 2;
+	-moz-column-gap: 15px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 15px;
+	column-count: 2;
+	column-gap: 15px;
+	padding: 0px;
+	margin: 0px;
+	width: 80%;
+}
+	#body-content .content ul.two-col li { 
+		
+	}
+#body-content .content ul.link-list {
+	margin: 15px 0 15px 0px;
+}
+	#body-content .content ul.link-list li {
+		padding: 0 0 0 12px;
+		font-size: 13px;
+		background-image:url(https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/images/bg-primary-nav-arrow.png);
+		background-repeat:no-repeat;
+		background-position: 0px 4px;
+		height: 14px;
+		margin: 0 0 10px 0;
+	}
+.content ul {
+	list-style-type: disc;
+}
+.content ol {
+	list-style-type: decimal;
+}
+	.content ol ol {
+		list-style-type: lower-alpha;
+	}
+	.content ol ol ol  {
+		list-style-type: lower-roman;
+	}
+li.roman-upper { list-style-type: upper-roman; }
+li.roman-lower { list-style-type: lower-roman; }
+li.alpha-upper { list-style-type: upper-alpha; }
+li.alpha-lower { list-style-type: lower-alpha; }
+li.greek-lower { list-style-type: lower-greek; }
+.content ul ul,
+.content ol ol {
+	margin-bottom: 0;
+	margin-left: 1em;
+}
+li {
+	margin-left: 1.5em;
+}
+li ul, li ol, li dl, li p, li h1, li h2, li h3, li h4, li h5, li h6,
+p ol, p ul, p dl, 
+dl dl {
+	font-size: inherit; 
+	line-height: 1.5em;
+}
+dt { font-style: italic; }
+dd { 
+	line-height: 1.125em;
+	margin-left: 1.75em;
+}
+.node-type-list dd {
+	margin-bottom: .5em;
+}
+.tabs li {
+	font-size: .75em;
+	margin-left: 0;
+	top: 2px;
+	position: relative;
+}
+.tabs li a {
+	border-top-left-radius: .25em;
+	border-top-right-radius: .25em;
+}
+/* LIST COLUMNS */
+.list-columns {
+	overflow: auto;
+}
+	.list-columns ol, .list-columns ul{
+		width: 33%;
+		float: left;
+		list-style: none;
+		margin: 0; padding: 0;
+	}
+	.list-columns ol li {
+		margin-left: 0;
+	}
+	
+#body-content .content .item-list ul.pager li {
+	background-image: none;
+	display: inline;
+	list-style-type: none;
+	padding: 0.5em;
+	float: left;
+}
+/****************************** Tables ******************************/
+table { 
+	margin-bottom: 1.5em;
+	color: #2f2a20;
+	width: 100%;
+	border: .1em solid #d7d5d3;
+	border-width: .1em 0 0 .1em;
+	border-collapse: collapse;
+}
+	table ul, table ol, table dl, table p, table h1, table h2, table h3, table h4, table h5, table h6 {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+		font-size: 1em; 
+		line-height: 1.5em;
+	}
+/* browser support for this is limited */
+tr:nth-child(even), tr.even, tr.even {
+	background-color: #efece4;
+}
+tr:nth-child(odd), tr.odd, tr.odd {
+	background-color: #fff;
+}
+th, td { 
+	font-size: .75em; /* 12px */
+	line-height: 1.3125em; /* 21px (our baseline) */
+	padding: 0 1em;
+	line-height: 1.428571em;
+	border-bottom: .1em solid #aba698;
+	border-right: .1em solid #aba698;
+}
+td .description, td label {
+	font-size: inherit;
+}
+th, td, table caption {
+	font: normal .875em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	border: .1em solid #d7d5d3;
+	border-width: 0 .1em .1em 0;
+	vertical-align: top;
+}
+th, td, table caption {
+	font-size: .75em;
+}
+thead th { 
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #aba698;
+	padding: 1.25em; /* 15px padding / 12px font-size = 1.25; */
+}
+td, tbody th {
+	padding: .875em;
+}
+tbody th, tbody th  {
+	font-weight: bold;
+}
+
+th, thead th, tbody th {
+	border-color: #d7d5d3
+}
+.numeric { text-align: right; }
+
+/* nested tables */
+td td, td th {
+	font-size: 1em;
+}
+td thead th {
+	padding: .875em;
+}
+tr.info {
+  background-color: #edf5fa;
+}
+tr.drag {
+  background-color: #fffff0;
+}
+
+tr.drag-previous {
+  background-color: #ffd;
+}
+
+tr.odd td.active {
+  background-color: #ddecf5;
+}
+
+tr.even td.active {
+  background-color: #e6f1f7;
+}
+td.region, td.module, td.container, td.category {
+  border-top: 1.5em solid #fff;
+  border-bottom: 1px solid #b4d7f0;
+  background-color: #d4e7f3;
+  color: #455067;
+  font-weight: bold;
+}
+tr:first-child td.region, tr:first-child td.module, tr:first-child td.container, tr:first-child td.category {
+  border-top-width: 0;
+}
+.table-container {
+	width: 100%;
+	overflow-y: auto;
+	_overflow: auto;
+	margin: 0 0 20px 0;
+}
+.table-container table {
+	margin-bottom: 0;
+}
+.table-container::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+.table-container::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 3px solid #fff;
+	background-color: rgba(0, 0, 0, .3);
+}
+/****************************** Quotes ******************************/
+blockquote {
+	padding-left: 2.25em;
+	font-style: italic;
+	line-height: 1.25em;
+	margin: 0;
+}
+	blockquote p {
+		font-size: 1em;  /* same size as .note */
+		line-height: 1.75em;
+		margin-bottom: 1em;
+	}
+	
+	blockquote cite {
+		display: block;
+		text-align: right;
+	}
+	blockquote cite:before {
+		content: "\2014 ";
+	}
+cite {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: .75em; /* 10px */
+	font-style: normal;
+	text-transform: uppercase;
+}
+.pullquote {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 1.25em; /* 18px  ish */
+	font-style: italic;
+	float: left;
+	width: 45%;
+	color: #aba698;
+	padding-left: 0;
+	padding-right: 1em;
+}
+	blockquote.pullquote p {
+		line-height: 1.5em;
+		color: #aba698;
+	}
+	.pullquote cite {
+		display: inline;
+		color: #2f2a20;
+		font-size: .625em; /* 10px */
+		font-weight: bold;
+	}
+	.pullquote cite:before {
+		content: "";
+	}
+/****************************** Other Elements ******************************/
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+sub, sup {
+	font-size: .75em;
+	line-height: 0;
+}
+dfn, abbr, acronym {
+	font-style: italic;
+	text-decoration: none;
+	border-bottom: 1px dotted #333; 
+}
+samp, kbd, code {
+	font: normal inherit Monaco, Courier, monospace;
+	white-space: pre;
+}
+samp, kbd {
+	color: #000;
+}
+code {
+	color: #006;
+}
+var, .vars {
+	color: #060;
+}
+abbr { 
+	font-style: inherit;
+}
+label, legend {
+	font-size: .75em;
+	line-height: 1.75em;
+	font-weight: normal;
+}
+/****************************** General Layout ******************************/
+.marginator, .the-bar.block {
+	max-width: 940px;
+	min-width: 310px;
+	width: 94%;
+	margin: 0 auto 0 auto;
+}
+.wrapper {
+	position: relative;
+}
+/****************************** Ultibanner ******************************/
+section#ultibanner {
+	position: relative;
+}
+section#ultibanner .content {
+	margin-bottom: 0;
+}
+section#ultibanner .block-ultibanner img.imagefield {
+	width: 100% !important;
+	height: auto !important;
+}
+section#ultibanner a.block-edit {
+	display: none;
+}
+/****************************** Banner ******************************/
+#ultibanner {
+	min-height: 40px;
+}
+section#banner {
+	overflow: hidden;
+	position: relative;
+	height: auto;
+	min-height: 40px;
+	line-height: 0.8;
+}
+	section#banner img {
+		width: 100%;
+		height: auto;
+	}
+	.robust-banner { /** Homepage Banner **/
+		
+	}
+		.robust-banner .banner-text h1 {
+	
+		}
+	section#banner.sub-banner {
+
+	}
+.banner-text {
+	position: absolute;
+	left: 0.5em;
+	bottom: 0.25em;
+	z-index: 99;
+	min-width: 66%;
+}
+.banner-text h1 {
+	font-size: 1em;
+	padding: .5em 0 0 0;
+}
+.banner-text h1.sIFR-replaced {
+	margin-bottom: 0;
+}
+.banner-text h1 a {
+	font-size: 2em;
+}
+.banner-text h1 a img {
+	margin-right: .25em;
+	height: 20px;
+	width: auto;
+}
+.robust-banner .banner-subtext {
+	font-size: .875em;
+}
+.banner-subtext {
+	font-size: .75em;
+}
+.banner-text h1 a:link, .banner-text h1 a:visited, .banner-text .banner-subtext {
+	color: #fff;
+}
+.banner-text h1 a:link, .banner-text h1 a:visited, .banner-text .mission {
+
+
+}
+.banner-text .bare-banner-link {
+	text-indent: -999em;
+	display: block;
+	float: none;
+	width: 50%;
+	margin: 0 -1em;
+}
+.reminder {
+	background-color: #eeece6;
+	color: #2f2a20;
+	margin: 1em 1em 1em 0;
+}
+	.reminder h2 {
+		font-weight: normal;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+		margin-bottom: .25em;
+	}
+/****************************** Content ******************************/
+#content {
+	display: block;
+	background-color: #fff;
+	clear: both;
+}
+.main-columns {
+	width: 100%;
+	margin-right: 0em;
+	float: left;
+}
+	.second-column {
+		width: 100%;
+		float: none;
+		margin: 0 0 0 0;
+		padding: 15px 0 0 0;
+	}
+#content-bottom {
+	clear: both;
+	display: block;
+}
+/****************************** Sidebar Left ******************************/
+.fake-leaf {
+	font-size: inherit;
+}
+#sidebar-left .leaf, #sidebar-left .collapsed, #sidebar-left .expanded {
+	padding: 0;
+	list-style: none;
+	list-style-position: outside;
+}
+.menu {
+	list-style-position: outside;
+}
+
+#sidebar-left {
+	border-top: 5px solid #c00404;
+}
+	#sidebar-left .site-navigation h2:first-of-type {
+		display: none;
+	}
+	#sidebar-left .menu {
+		list-style: none;
+		font-size: 1em;
+		margin-bottom: .5em;
+		padding: 0;
+	}
+	#sidebar-left .menu li {
+		border-bottom: 1px dotted #aba698;
+		margin-left: 0;
+	}
+	#sidebar-left .menu li ul {
+		margin: 0;
+		list-style: none;
+	}
+	#sidebar-left .menu li li {
+		margin-left: 1em;
+		border-bottom: 0;
+	}
+	#sidebar-left .menu li a {
+		display: block;
+		padding: .625em 0;
+		line-height: 1.5em;
+	}
+	
+	#sidebar-left .menu li a:hover {
+		background-color: #eeece6;
+	}
+	#sidebar-left .menu li a.active:link {
+		color: #2f2a20;
+	}
+	
+	#sidebar-left .collapsed {
+		list-style-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/menu-collapsed.png") !important;
+		list-style-type: disc;
+	}
+	#sidebar-left .expanded {
+		list-style-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/menu-expanded.png") !important;
+		list-style-type: disc;
+	}
+
+.first-column {
+	width: 100%;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0 0 40px 0;
+	display: inline-block;
+}
+	.first-column  h5 {
+		display: block;
+		margin: 0 0 0 0;
+		padding: 5px 0 5px 5px;
+		background-color: #c00404;
+		color: #FFF;
+		font-size: 1em;
+		line-height: 1;
+		font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+		font-weight: 700;
+	}
+.block-brown_social_media-0 {
+	border-bottom: 1px dotted #aba698;
+	border-top: 1px dotted #aba698;
+	padding: 10px 0 10px 0;
+}
+
+#sidebar-left .menu {
+	list-style: none;
+	font-size: 1em;
+	margin-bottom: .5em;
+	padding: 0;
+	background-color: #f8f8f8; /*eeece6*/
+}
+#sidebar-left .menu li a {
+	display: block;
+	padding: .625em 4px;
+	line-height: 1.5em;
+}
+.sidebar .block {
+  margin-bottom: 1.5em;
+}
+
+.help {
+	background-color: #eeece6;
+	color: #2f2a20;
+	padding: 1em;
+}
+.page-tools a {
+	font-family: Georgia, Times, serif;
+	font-size: .6875em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.page-tools span {
+	display: block;
+	margin-top: .5em;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	font-size: .9em;
+}
+.page-tools a:link {
+	color: #3a1e1a;
+}
+.print-this-page, .share-this-page {
+	padding-left: 1.375em;
+	position: relative;
+}
+.print-this-page {
+	background: transparent url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icon-print.png") 0 50% no-repeat;
+}
+.share-this-page {
+	background: transparent url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icon-share-this.png") 0 50% no-repeat;
+}
+.page-tools .sIFR-replaced {
+	background-position: 0 10%;
+}
+.page-tools .sIFR-replaced {
+	background-position: 0 10%;
+}
+#print-share:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: left;
+	visibility: hidden;
+}
+.page-tools-png a {
+	position: relative;
+	font-family: Georgia, Times, serif;
+	font-size: .6875em;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/page-tools-sprite.png");
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	display: block;
+	width: 140px;
+	height: 28px;
+}
+.print-this-page {
+	background-position: 0 0;
+}
+.share-this-page {
+	background-position: 0 -27px;
+}
+.print-this-page:hover {
+	background-position: -160px 0;
+}
+.share-this-page:hover {
+	background-position: -160px -27px;
+}
+/****************************** Sidebar Right ******************************/
+.third-column {
+	width: 100%;
+	float: left;
+	padding-top: 0;
+	z-index: 999 !important;
+}
+/****************************** Content Bottom ******************************/
+#content-bottom {
+	width: 100%;
+	margin: 0 auto 20px auto;
+}
+#content-bottom .view-content {
+	
+}
+.the-bar.block h2 {
+	margin-bottom: 0.5em !important;
+}
+/****************************** Homepage ******************************/
+
+
+/****************************** News ******************************/
+.teaser-title {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 1.3333em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+	display: block;
+	clear: left;
+}
+article .details {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+}
+
+/****************************** Articles ******************************/
+article.main-article {
+	padding-bottom: 4.5em;
+}
+.item-list article.main-article {
+	padding-bottom: 0;
+}
+article.main-article .intro {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	line-height: 1.3125em; /* same 21px baseline */
+	margin-bottom: 1.3125em; /* same 21px baseline */
+}
+h1.article-title {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 1.75em; /* px */
+	font-weight: normal !important;
+	line-height: 1.2em;
+	border-bottom: 1px solid #c00404;
+	margin: .75em .675em 0 0;
+	padding-bottom: .2865em; /* 10px */
+}
+	h1.article-title .eyebrow {
+		display: block;
+		font-size: .3333em; /* 36px / 3 = 12 */
+		color: #363636;
+		margin-bottom: -.75em;
+	}
+.article-list {
+	display: block;
+	padding: 0;
+}
+.article-list article {
+	display: block;
+	clear: left;
+	border-top: 1px dotted #000;
+	padding: .625em 0 1em;
+}
+.article-list h2 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-weight: normal;
+	margin-bottom: .125em;
+}
+h5.eyebrow {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-weight: bold;
+	font-size: .875em;
+	text-transform: uppercase;
+}
+.distributed-date {
+	text-transform: uppercase;	
+	font-size: .875em;
+}
+article .group-related-files legend, article .group-related-media legend, article .group-related-links legend {
+	font: bold 1em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+}
+/*
+article .group-related-files, article .group-related-media, article .group-related-links {
+	font: normal .875em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; 
+}
+*/
+
+.group-related-files a {
+	padding-right: 0;
+	background-image: none;
+}
+.main-article {
+	font-family: Georgia, Times, serif;
+	font-size: .875em; /* 14px */
+}
+article .content {
+	font-family: Georgia, Times, serif;
+	font-size: 1em; /* 14px */
+}
+/****************************** Thumbnail ******************************/
+.thumbnail-wrapper, .photo-wrapper {
+	background-color: #efece4;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
+	max-width: 100%;
+}
+.thumbnail-wrapper .thumbnail {
+	float: none;
+	margin: 0;
+}
+.thumbnail-wrapper .caption, .photo-wrapper .caption {
+	margin: 0;
+	padding: .625em .5em .5em;
+	font-size: .75em;
+	line-height: 1.5em;
+	display: block;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+}
+.caption .credit {
+	font-style: italic;
+}
+.image-title {
+	display: block;
+}
+.thumbnail {
+	float: left;
+	border: 1px solid #d7d6d2;
+	margin: 0 .625em .5em 0;
+}
+	.thumbnail img {
+		display: block;
+		float: left;
+		margin: 0; padding: 0;
+	}
+/****************************** Gallery ******************************/
+.gallery-page .reminder {
+	margin: 0 0 1em;
+	background-color: #ccc6b7;
+	position: relative;
+}
+.gallery-page h1.article-title {
+	margin: 1.75em 0 0 0;
+}
+.gallery-page .reminder h6 {
+	font-style: normal;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-size: 1em;
+	float: left;
+	margin: 0 .5em 0 0;
+}
+.gallery-page .reminder .content {
+	margin-bottom: 0;
+	padding: .75em 0;
+}
+#more-top-tags {
+	display: block;
+	position: absolute;
+	top: 1.375em;
+	right: 1em;
+}
+	#more-top-tags a { 
+		display: block;
+		padding-right: 15px;
+		background: transparent url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/bullet-red.png") 100% 50% no-repeat;
+	}
+	#more-top-tags a:hover { 
+		background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/bullet-orange.png");
+	}
+.view-gallery ul {
+	padding: 1em 0;
+	margin: 0;
+}
+.view-gallery .image-gallery-nodes ul.images li { /* more specific than images.css */
+	font-size: 1em;
+	width: 13.75em;
+	height: auto;
+	padding: 0;
+	margin: 0 1.25em 1em 0;
+	text-align: left;
+	display: block;
+	float: left;
+}
+.view-gallery .image-gallery-nodes ul.images li.views-row-4,
+.view-gallery .image-gallery-nodes ul.images li.views-row-8 { 
+	margin-right: 0;
+}
+/* in case we ever want to enforce line breaks after 4 items... */
+.view-gallery .image-gallery-nodes ul.images li.views-row-5 { 
+	clear: left;
+}
+
+.view-gallery .image-gallery-nodes ul.images li .field-content {
+	font-size: .75em;
+}
+
+.view-gallery .image-gallery-nodes ul.images li .views-field-field-eyebrow-value {
+	font-weight: bold;
+}
+.view-gallery .image-gallery-nodes ul.images li .views-field-tid,
+.view-gallery .image-gallery-nodes ul.images li .views-field-field-eyebrow-value,
+.view-gallery .image-gallery-nodes ul.images li .views-field-type,
+.view-gallery .image-gallery-nodes ul.images li .separator {
+	font-size: .825em;
+	text-transform: uppercase;
+}
+.view-gallery .views-admin-links {
+	float: left;
+	width: 50%;
+}
+/****************************** Nodes and Comments ******************************/
+.node {
+  margin: 0 0 1.5em;
+  padding: 1.5em 0;
+}
+article.node { padding: 0; }
+
+ul.links li, ul.inline li {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0; /* LTR */
+  padding-right: 1em; /* LTR */
+  background-image: none;
+}
+.node .links, .comment .links {
+  text-align: left; /* LTR */
+}
+.node .links ul.links li, .comment .links ul.links li {}
+.terms ul.links li {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 1em;
+}
+.picture, .comment {
+  float: right; /* LTR */
+  clear: right; /* LTR */
+  padding-left: 1em; /* LTR */
+}
+.new {
+  color: #ffae00;
+  font-size: 0.92em;
+  font-weight: bold;
+  float: right; /* LTR */
+}
+.preview .node, .preview .comment, .sticky {
+  margin: 0;
+  padding: 0.5em 0;
+  border: 0;
+  background: 0;
+}
+.sticky {
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #e0e5fb;
+  margin-bottom: 2em;
+}
+#comments {
+  position: relative;
+  top: -1px;
+  border-bottom: 1px solid #e9eff3;
+  margin: -1.5em -25px 0;
+  padding: 0 25px;
+}
+#comments h2.comments {
+  margin: 0 -25px;
+  padding: .5em 25px;
+}
+.comment {
+  margin: 0 -25px;
+  padding: 1.5em 25px 1.5em;
+  border-top: 1px solid #e9eff3;
+}
+.indented {
+  margin-left: 25px; /* LTR */
+}
+.comment h3 a.active {
+  color: #494949;
+}
+.node .content, .comment .content {
+  margin: 0.6em 0;
+}
+/****************************** Views overrides ******************************/
+table.view-enabled td.view-name, table.view-enabled td.view-ops { 
+	background-color: #eeece6;
+}
+.views-admin-links {
+	display: block;
+	width: 70%;
+}
+div.view div.views-admin-links {
+	font-size: .625em;
+}
+div.view:hover div.views-hide {
+	margin-top: 0;
+}
+.MsoNormal {
+	background-color: pink;
+}
+.apple-style-span {
+	background-color: yellow;
+}
+/****************************** Blocks ******************************/
+.block-edit {
+	display: block;
+	float: left;
+	text-indent: -999em;
+	margin: 0 .5em .25em 0;
+	background: transparent url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icon-edit-block.png") 50% 50% no-repeat;
+	width: 20px; height: 20px;
+	border: 1px solid #fff;
+}
+.menu-edit {
+	background-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/icon-edit-menu.png");
+}
+.block-edit:link, .block-edit:visited {
+}
+
+.block-edit:hover {
+	border-color: #aba698;
+}
+/****************************** Vertical Tabs Styles ******************************/
+.vertical-tab-button {
+	font-size: .75em;
+}
+.vertical-tabs-list strong {
+	text-transform: capitalize;
+}
+/****************************** Aggregator Module ******************************/
+#aggregator {
+  margin-top: 1em;
+}
+#aggregator .feed-item-title {
+	/**
+		same as common H3; 
+		duplicated here because aggregator module overrides it otherwise 
+	**/
+	font: bold 1.0625em/1.5em Georgia, serif; /* 17px */
+	margin-bottom: .9705em; /* 17*1.5=25.5; 42px-25.5px=16.5px; 16.5px/17px = .970588em */
+}
+#aggregator .feed-item-body {
+	font-size: .75em;
+}
+#aggregator .feed-item-date {
+	font-size: .625em;
+}
+#aggregator .feed-item-body img {
+	float: left;
+	clear: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+#aggregator .feed-item-categories {
+}
+#aggregator .feed-item-meta {
+}
+/****************************** Color Module ******************************/
+#palette .form-item {
+  border: 1px solid #fff;
+}
+#palette .item-selected {
+  border: 1px solid #d9eaf5;
+}
+/****************************** Menu Module ******************************/
+tr.menu-disabled {
+  opacity: 0.5;
+}
+tr.odd td.menu-disabled {
+  background-color: #edf5fa;
+}
+tr.even td.menu-disabled {
+  background-color: #fff;
+}
+/****************************** Poll Module ******************************/
+.poll .text, .poll .total, .advpoll .text, .advpoll .total {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-weight: bold;
+}
+.poll .choice-header {
+	display: none;
+}
+.poll .bar {
+  background: #fff url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/bg-bar-trans.png") repeat-x 0 0;
+  border: solid #efece4;
+  border-width: 0 1px 1px;
+  height: 1.5em;
+}
+.poll .bar .foreground {
+  background: #c00404 url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/bg-bar-stripes.png") repeat-x 0 0;
+  height: 100%;
+}
+
+.poll .percent {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  font-size: .75em;
+}
+.poll .vote-form .choices, .poll .vote-choices {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	margin: 0;
+}
+.poll .vote-form .choices .option, .poll .vote-choices .option {
+  font-size: 1em;
+	font-weight: bold !important;
+}
+/****************************** Autocomplete ******************************/
+#autocomplete li {
+  cursor: default;
+  padding: 2px;
+  margin: 0;
+}
+/****************************** Collapsible Fieldsets ******************************/
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #847d6a;
+  background: #f9f8f3;
+}
+fieldset.vertical-tabs-pane {
+  background: #fff;
+}
+.body-field-wrapper {
+}
+/* Targets IE 7. Fixes background image in field sets. */
+*:first-child+html fieldset {
+  padding: 0 1em 1em;
+  background-position: 0 .75em;
+  background-color: transparent;
+}
+*:first-child+html fieldset > .description, *:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top: 1em;
+}
+fieldset legend {
+  /* Fix disappearing legend in FFox */
+  display: block;
+}
+
+*:first-child+html fieldset legend, *:first-child+html fieldset.collapsed legend {
+  display: inline;
+}
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: .6em;
+}
+html.js fieldset.collapsible legend a {
+  padding-left: 1em; /* LTR */
+  background: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/menu-expanded.png") 0 50% no-repeat; /* LTR */
+}
+html.js fieldset.collapsed legend a {
+  background: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/menu-collapsed.png") 0 50% no-repeat; /* LTR */
+}
+/****************************** Syndication icons and block ******************************/
+#block-node-0 h2 {
+  float: left; /* LTR */
+  padding-right: 20px; /* LTR */
+}
+#block-node-0 img, .feed-icon {
+  float: right; /* LTR */
+  padding-top: 4px;
+}
+#block-node-0 .content {
+  clear: right; /* LTR */
+}
+/****************************** Login Block ******************************/
+#user-login-form {
+  text-align: center;
+}
+#user-login-form ul {
+  text-align: left; /* LTR */
+}
+/****************************** User Profiles ******************************/
+.profile {
+  margin-top: 1.5em;
+}
+.profile h3 {
+  border-bottom: 0;
+  margin-bottom: 1em;
+}
+.profile dl {
+  margin: 0;
+}
+.profile dt {
+  font-weight: normal;
+  color: #898989;
+  font-size: 0.92em;
+  line-height: 1.3em;
+  margin-top: 1.4em;
+  margin-bottom: 0.45em;
+}
+.profile dd {
+  margin-bottom: 1.6em;
+}
+/****************************** Dashboard Styles ******************************/
+.control-panel-group {
+	width: 45%;
+	float: left;
+}
+.content-control-group, .editor-control-group {
+	clear: left;
+	margin-right: 8%;
+}
+.control-panel-group li {
+	font-size: .75em;
+	list-style: none;
+	margin-left: 0;
+}
+.control-panel-group li a:link, .control-panel-group li a:visited {
+	color: #fff;
+	background-color: #aba698;
+	padding: .25em 1em;
+	margin: 0 1em .5em 0;
+	display: block;
+	-moz-border-radius: .25em;
+	-webkit-border-radius: .25em;
+	border-radius: .25em;
+}
+.contributor-control-group li a:link, .contributor-control-group li a:visited {
+	background-color: #645e50;
+}
+.editor-control-group li a:link, .editor-control-group li a:visited {
+	background-color: #0f4683;
+}
+.admin-control-group li a:link, .admin-control-group li a:visited {
+	background-color: #0f833d;
+}
+.control-panel-group li a:hover, .control-panel-group li a:active {
+	color: #fff;
+	background-color: #c00404;
+	text-decoration: none;
+}
+/****************************** Color Module: Don't touch ******************************/
+/**
+ * Generic elements.
+ */
+.messages {
+  background-color: #fff;
+  border: 1px solid #b8d3e5;
+  font-size: .75em;
+  padding: 1em !important;
+}
+.preview {
+  background-color: #fff;
+  border: 1px solid #e5e58f;
+}
+div.status {
+  color: #33a333;
+  border-color: #c7f2c8;
+}
+div.error, tr.error {
+  color: #a30000;
+  background-color: #FFCCCC;
+}
+.form-item input.error, .form-item textarea.error {
+  border: 1px solid #c52020;
+  color: #363636;
+}
+tr.dblog-user {
+  background-color: #fcf9e5;
+}
+tr.dblog-user td.active {
+  background-color: #fbf5cf;
+}
+tr.dblog-content {
+  background-color: #fefefe;
+}
+tr.dblog-content td.active {
+  background-color: #f5f5f5;
+}
+tr.dblog-warning {
+  background-color: #fdf5e6;
+}
+tr.dblog-warning td.active {
+  background-color: #fdf2de;
+}
+tr.dblog-error {
+  background-color: #fbe4e4;
+}
+tr.dblog-error td.active {
+  background-color: #fbdbdb;
+}
+tr.dblog-page-not-found, tr.dblog-access-denied {
+  background-color: #d7ffd7;
+}
+tr.dblog-page-not-found td.active, tr.dblog-access-denied td.active {
+  background-color: #c7eec7;
+}
+/**
+ * Status report colors.
+ */
+table.system-status-report tr.error, table.system-status-report tr.error th {
+  background-color: #fcc;
+  border-color: #ebb;
+  color: #200;
+}
+table.system-status-report tr.warning, table.system-status-report tr.warning th {
+  background-color: #ffd;
+  border-color: #eeb;
+}
+table.system-status-report tr.ok, table.system-status-report tr.ok th {
+  background-color: #dfd;
+  border-color: #beb;
+}
+#-relatedcontent-form div, #-relatedcontent-form-view div {
+	font-size: .75em; 
+}
+#-relatedcontent-form div table, #-relatedcontent-form-view div table {
+	font-size: 1.25em; 
+}
+/** 
+ * Color Module override (hide preview since it doesn't work well with Brown's design)
+ */
+#color_scheme_form h2, #color_scheme_form #preview, #edit-palette-base-wrapper, #edit-palette-link-wrapper .lock {
+	display: none;
+}
+/** here's a pretty grody hack to change the hard-coded color names **/
+#edit-palette-bottom-wrapper label {
+	text-indent: -999em
+}
+#edit-palette-bottom-wrapper label:before {
+	content: "Tint color: ";
+	display: block;
+	text-indent: 0;
+}
+/****************************** Calendar Widget ******************************/
+.third-column .block-calwidget {
+	background-color: #aba698;
+	padding: 0 .75em 1em .625em;
+	position: relative;
+	display: block;
+	z-index: 3;
+}
+.block-calwidget h2 {
+	text-align: center;
+	margin: 0 !important;
+	padding: .25em 0 !important;
+	text-transform: uppercase;
+	font-size: 1.05em;
+	padding-top: .6em;
+	line-height: 1.2em;
+	color: #FFF;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+}
+.events-list * {
+	color: #fff;
+}
+.events-list a:link, .events-list a:visited {
+	color: #fff;
+}
+#sidebar-right > #calendar {
+
+}
+.block-calwidget h2.sIFR-replaced object {
+	max-width: 218px;
+}
+.block-calwidget .content {
+	padding: .75em .75em 1em .625em;
+	border-top: 1px solid #cdcac1;
+}
+.events-list .date {
+	clear: left;
+	margin-bottom: 1em;
+	border-bottom: 1px dotted #fff;
+	height:100%;
+}
+.events-list .date:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+.events-list .date h5 {
+	float: left;
+/*	clear: left;  */
+	text-align: left;
+	padding-bottom: 1em;
+}
+.events-list .month {
+	display: block;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 0 0 6px 0;
+	font-weight: bold;
+	text-align: center;
+}
+.events-list .day {
+	display: block;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Vitesse SSm A', 'Vitesse SSm B', serif;
+	width: 38px;  /* this leaves room for the sIFR text  */
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+}
+.events-list .date ul {
+	margin-left: 4.25em;
+	list-style-image: url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/bullet-calendar-block.png");
+}
+.events-list .more-events {
+	background: transparent url("https://web.archive.org/web/20161204073547im_/https://www.brown.edu/academics/political-theory-project/sites/all/themes/pawtucket/img/bullet-orange.png") 0 5px no-repeat;
+	padding-left: 1.25em;
+	text-align: left;
+	display: block;
+	float: right;
+	width: auto;
+}
+.events-list .more-events span {
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	font-size: .9em;
+	text-transform: uppercase;
+	text-align: left;
+	width: auto;
+	color: #FFF;
+}
+.events-list .no-events {
+	font-size: .75em;
+	margin-bottom: 1em;
+	border: 0;
+}
+.third-column .block-calwidget .block-edit {
+	border: 1px solid #aba698;
+}
+.third-column .block-calwidget .block-edit:hover {
+	border-color: #fff;
+}
+/****************************** Search Results ******************************/
+.main-column .search-field {
+	font-size: .75em;
+	width: 14.625em;
+	padding: 0 .5em !important;
+	height: 1.75em;
+	line-height: 1.25em;
+	display: block;
+	float: left;
+	border: 0;
+	border-right: 1px solid #8d8572;
+	-moz-border-radius-topleft: .25em;
+	-webkit-border-top-left-radius: .25em;
+	-moz-border-radius-bottomleft: .25em;
+	-webkit-border-bottom-left-radius: .25em;
+}
+.main-column .search-submit {
+	display: block;
+	float: left;
+}
+.main-column #edit-query-wrapper {
+	float: left;
+	padding: 0;
+	margin-top: 10px;
+}
+.main-column #edit-query {
+	height: 1.5em;
+	margin: 0;
+}
+.main-column .search-submit {
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+.search-results .title {
+	font-style: normal;
+}
+.search-results dd, .search-results dd p {
+	font-size: inherit;
+}
+
+#body-content .view-id-news .news_story {
+	border-bottom: 1px solid rgb(229, 229, 229);
+	padding-bottom: 2.2em;
+	margin-bottom: 1.9em;
+}
+/****************************** News Block in Second Column ******************************/
+.block-views .view-id-news {
+	font-size: 16px;
+}
+/****************************** Tiny MCE Overrides ******************************/
+.wysiwyg-toggle-wrapper a {
+	padding-left: 1.5em;
+	font-size: .75em; 
+	background: transparent url("https://web.archive.org/web/20161204073547im_/https://brown.edu/img/icons/style_edit.png") 0 0 no-repeat;
+}
+body#tinymce, #tinymce td, #tinymce pre { font-size:inherit;}
+body#tinymce {
+	background: #fff;
+	padding: .375em;
+}
+body.mceForceColors {background: #fff; color: #000;}
+#tinymce p, #tinymce li {
+	font-size: .875em;
+	font-family: Georgia, Times, serif;
+}
+#tinymce li li {font-size: 1em}
+#tinymce h3 {	
+	font: bold 1.125em/1.3125em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+	margin-bottom: 1em;
+}
+#tinymce h4 {	
+	font: bold 1.125em/1.3125em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+	margin-bottom: 0; /* 16*1.5=24; 42px-24px=18px; 18px/16px = 1.125em */
+}
+#tinymce h5 {	
+	font: bold 1em/1.3125em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 16px */
+	margin-bottom: 0; /* 16*1.3125=21; 21px-21px=0; 0/16px = 0 */
+	}
+#tinymce h6 {	
+	font: bold .9375em/1.4em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; /* 13px */
+	margin-bottom: 0; /* 15*1.466666em=21; 42px-21px=21px; 21px/15px = 1.4em */
+}
+#tinymce table { 
+	margin-bottom: 1.5em;
+	color: #2f2a20;
+	width: 100%;
+	border: .1em solid #d7d5d3;
+	border-width: .1em 0 0 .1em;
+	border-collapse: collapse;
+}
+#tinymce table ul, #tinymce table ol, #tinymce table dl, #tinymce table p, #tinymce table h1, #tinymce table h2, #tinymce table h3, #tinymce table h4, #tinymce table h5, #tinymce table h6 {
+	font-size: 1em; 
+	line-height: 1.5em;
+}
+/* browser support for this is limited */
+#tinymce tr:nth-child(even), #tinymce tr.even, tr.even {
+	background-color: #efece4;
+}
+#tinymce th, #tinymce td, #tinymce caption { 
+	font: normal .75em "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	line-height: 1.3125em; /* 21px (our baseline) */
+	padding: .875em;
+	line-height: 1.428571em;
+	border: .1em solid #d7d5d3;
+	border-width: 0 .1em .1em 0;
+	vertical-align: top;
+}
+#tinymce td .description, #tinymce td label {
+	font-size: inherit;
+}
+#tinymce thead th { 
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #aba698;
+	padding: 1.25em; /* 15px padding / 12px font-size = 1.25; */
+}
+#tinymce tbody th  {
+	font-weight: bold;
+}
+#tinymce th, #tinymce thead th, #tinymce tbody th {
+	border-color: #d7d5d3
+}
+#tinymce .numeric { text-align: right; }
+
+/****************************** Msc. ******************************/
+#join-list {
+	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 2.5em;
+}
+.pager li {
+	font-size: 1em;
+	border-width: 0 !important;
+}
+.terms {
+  float: right; /* LTR */
+}
+.meta {
+	clear: both;
+}
+/****************************** Slideshow ******************************/
+#content .content ul.slideshow {
+	list-style-type: none !important;
+	margin: 0 0 0 0 !important;
+	background-color: #000;
+	height: 177px !important;
+	overflow: hidden;
+}
+ul.slideshow img {
+	margin: 0 0 0 0 !important;
+	border: none !important;
+	max-width: 100%;
+	width: 100%;
+}
+#content .content ul.slideshow li.brown-slide {
+	margin: 0 0 0 0;
+	list-style: none;
+	width: 100% !important;
+	height: auto !important;
+	background: none !important;
+}
+.brown-slide h2, .brown-slide h3 {
+	font-size: 1.5em !important;
+	color: #fff;
+	margin: .75em 1em;
+}
+.slideshow-controls-arrow {
+	display: block;
+	position: relative;
+	background-color: #000;
+}
+/****************************** The Bar ******************************/
+.content ul.jcarousel-list {
+	list-style-type: none;
+}
+.view-thebar .jcarousel-skin-default .jcarousel-clip-horizontal, 
+.view-thebar .jcarousel-skin-default .jcarousel-container-horizontal {
+	width: 100% !important;
+}
+.view-thebar .jcarousel-skin-default ul li.jcarousel-item {
+	 padding: 0 5px 5px 5px !important; 
+	 border: 2px solid #FFF !important;
+	 border-top: none !important;
+	box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.jcarousel-skin-default .jcarousel-item-horizontal {
+	margin: 0 0 0 0 !important;
+}
+.view-thebar .jcarousel-skin-default ul li.no-image.jcarousel-item.jcarousel-item-horizontal {
+	 padding: 0 1% 5px 1% !important; 
+	 height: 200px !important;
+	 width: 46%;
+	 margin: 0 1% 5px 1%;
+}
+.view-thebar .jcarousel-skin-default ul li.no-image.jcarousel-item.jcarousel-item-horizontal ~ .view-thebar .jcarousel-skin-default ul li.no-image.jcarousel-item.jcarousel-item-horizontal {
+	 padding: 0 1% 2px 1% !important; 
+}
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-item, .jcarousel-skin-default .jcarousel-container-vertical .jcarousel-item {
+	width: 48% !important;
+}
+.content ul.jcarousel-list img.imagecache-bar_item_image_default {
+	width: 100% !important;
+	height: auto !important;
+}
+.view-thebar .views-field-title a {
+	font-size: 1.4em;
+}
+.jcarousel-skin-default .jcarousel-container-horizontal {
+	height: 200px !important;
+	padding: 0 0 0 0 !important;
+	margin: 0 !important;
+}
+
+/******************************************************************************************
+******************************************************************************************
+RESPONSIVE STYLES
+******************************************************************************************
+******************************************************************************************/
+
+/*********************************************************************/
+/* smaller than desktop */
+/* and (min-width: 1px) and (max-width: 939px) */
+@media only screen and (min-width: 0.1em) and (max-width: 58.6875em) {
+/****************************** Slideshow ******************************/
+div.brown-slide-collection {
+	margin: 0 0 20px 0 !important;
+}
+div.brown-slide-collection .collection-wrapper {	
+	position: relative;
+}
+#s-nav {
+	background-color: #000;
+	text-align: center;	position: absolute;
+	bottom: -26px;
+	width: 100%;	z-index: 999;
+	left: 0;
+}
+.thumb-nav-sec {
+
+}
+.dot-nav-sec {
+	position: absolute;
+	bottom: -4px;
+	width: 100%;
+	background-color: #000;
+	z-index: 990;	
+}
+.number-nav-sec {
+	line-height: 46px;
+	position: absolute;
+	bottom: -4px;
+	width: 100%;
+	background-color: #000;
+	z-index: 990;
+}
+.slideshow-controls {
+	bottom: 42px;
+	z-index: 999;
+}
+.arrow-nav-sec {
+	
+}
+}
+/* all screens except for handheld and amazon kindle  */
+/* and (min-width: 481px) and (max-width: 99999px) */
+@media screen and (min-width:30.0625em) and (max-width: 999em) {
+.marginator, .the-bar.block {
+	width: 94%;
+}
+.sub-banner {
+
+}
+section#banner.robust-banner {
+	top: 0;
+}
+section#mobile-navigation {
+	display: none;	
+}
+.first-column  h5 {
+	display: none;
+}
+#sidebar-left .menu {
+	background-color: inherit;
+}
+#sidebar-left  h2 {
+
+}
+h1.article-title {
+	margin: .75em .675em 0 0;
+}
+/****************************** Banner ******************************/
+.banner-text {
+	left: 1em;
+	bottom: 0.75em;
+}
+.banner-text h1 a {
+	font-size: 2em;
+}
+h1.article-title {
+	margin: 1.75em .675em 0 0;
+}
+#ultibanner {
+	min-height: 120px;
+}
+/****************************** Content ******************************/
+.no-left-column.no-left-column {
+	float: left !important;
+	width: 100% !important;
+}
+/****************************** Slideshow ******************************/
+#content .content ul.slideshow {
+	height: 287px !important;
+}
+/****************************** The Bar ******************************/
+.view-thebar {
+	border-top: 2px solid #cdc5b8;
+	margin-top: -28px;
+	padding-top: 20px;
+	height: 200px;
+	overflow: hidden;
+}
+.content ul.jcarousel-list {
+	list-style-type: none;
+	padding: 0 0 0 0 !important;
+}
+.view-thebar .jcarousel-skin-default .jcarousel-clip-horizontal, .view-thebar .jcarousel-skin-default .jcarousel-container-horizontal {
+	width: 94% !important;
+	padding: 0 3% 0 3% !important;
+}
+.view-thebar .jcarousel-skin-default ul li.jcarousel-item {
+	 border: 2px solid #FFF !important;
+	 border-top: none !important;
+	box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.jcarousel-skin-default .jcarousel-container-horizontal .jcarousel-item, .jcarousel-skin-default .jcarousel-container-vertical .jcarousel-item {
+	width: 160px !important;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 55px;
+	left: 10px !important;
+	background-position: 0 0;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal {
+	position: absolute;
+	top: 55px;
+	right: 10px !important;
+	background-position: 0 -32px;
+}
+.views-admin-links {
+	display: none !important;
+}
+}
+/*********************************************************************/
+/* average and large desktop  */
+/* and (min-width: 940px) and (max-width: 99999px) */
+@media only screen and (min-width: 58.75em) and (max-width: 999em) {
+.marginator, .the-bar.block {
+	width: 98%;
+}
+.banner-text {
+	bottom: 1em;
+	width: 66%;
+}
+.banner-text h1 a {
+	font-size: 2.5em;
+}
+.banner-text h1 a img {
+	height: auto;
+}
+.banner-text h1 .site-title {
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1em;
+/*	min-height: 70px;*/
+}
+/****************************** Content ******************************/
+.main-columns {
+	width: 77%;
+	margin-right: 0;
+	float: left;
+}
+.second-column {
+	width: 69%;
+	margin-right: 4%;
+	float: right;
+}
+.first-column {
+	width: 23%;
+	margin-right: 4%;
+	float: left;
+}
+.third-column {
+	width: 23%;
+	float: right;
+}
+.block-brown_social_media-0 {
+	border-bottom: none;
+	border-top: none;
+	padding: 0 0 0 0;
+}
+.no-right-column { /* has no right column, but might have a left column; replaces .main-columns */
+	width: 100%;
+	float: left;
+	margin: 0 0 0 0;
+}
+	.no-right-column .first-column {
+		width: 23%;
+		margin-right: 4%;
+		float: left;
+	}
+	.no-right-column .second-column {
+		width: 73%;
+		float: right;
+		margin: 0 0 0 0;
+	}
+.columns .no-left-column {
+	float: none;
+	width: 100%;
+	margin: 0;
+}
+/****************************** Calendar Widget ******************************/
+.third-column .block-calwidget {
+ /*	margin-top: -1.75em !important; per PAUR 2011-02-08 */
+}
+
+/****************************** The Bar ******************************/
+
+.view-thebar .jcarousel-skin-default .jcarousel-clip-horizontal, .view-thebar .jcarousel-skin-default .jcarousel-container-horizontal {
+	width: 900px !important;
+	padding: 0 0 0 0 !important;
+	margin: auto !important;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal {
+	left: -24px !important;	
+}
+.jcarousel-skin-default .jcarousel-next-horizontal {
+	right: -24px !important;
+}
+.view-thebar .jcarousel-skin-default ul li.jcarousel-item {
+	width: 180px !important;
+}
+}
+
+/*********************************************************************/
+/* smaller than desktop, larger than handheld  */
+/* and (min-width: 481px) and (max-width: 939px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 58.6875em) {
+.banner-text h1 .site-title {
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	font-size: 1.1em;
+	line-height: 1em;
+}
+#ultibanner {
+	min-height: 80px;
+}
+.main-columns, .columns {
+	width: 100%;
+	margin-right: 0;
+	float: left;
+}
+.second-column, .no-right-column .second-column {
+	width: 63%;
+	margin-right: 4%;
+	float: right;
+}
+.first-column, .no-right-column .first-column {
+	width: 29%;
+	margin-right: 4%;
+	float: left;
+}
+.third-column {
+	padding-top: 1.75em;
+	width: 63%;
+	float: right;
+	margin-right: 4%;
+}
+}
+/*********************************************************************/
+/* small desktop  */
+/* and (min-width: 801px) and (max-width: 939px) */
+@media only screen and (min-width: 50.0625em) and (max-width: 58.6875em) {
+#ultibanner {
+	min-height: 120px;
+}
+.second-column, .no-right-column .second-column {
+	width: 73%;
+}
+.first-column, .no-right-column .first-column {
+	width: 19%;
+}
+.third-column {
+	width: 73%;
+}
+}
+/*********************************************************************/
+/* tablet/ipad - portrait */
+/* and (min-width: 768px) and (max-width: 800px) */
+@media only screen and (min-width: 48em) and (max-width: 50em) {
+
+}
+/*********************************************************************/
+/* amazon kindle and larger */
+/* and (min-width: 600px) and (max-width: 99999px) */
+@media only screen and (min-width: 37.5em) and (max-width: 9999em) {
+/****************************** Banner ******************************/
+/*section#banner {
+	margin-top: -2.5em !important;
+}*/
+.robust-banner {
+	margin-top: -2.5em !important;
+}
+section#banner.sub-banner {
+	margin-top: -4em !important;
+}
+body.front section#ultibanner {
+	margin-top: -2.5em !important;
+}
+section#ultibanner {
+	margin-top: -4em !important;
+}
+}
+/*********************************************************************/
+/* larger than amazon kindle, smaller than desktop */
+/* and (min-width: 600px) and (max-width: 939px) */
+@media only screen and (min-width: 37.5em) and (max-width: 58.6875em) {
+.banner-text h1 .site-title {
+	font-size: 1.2em;
+}
+}
+/*********************************************************************/
+/* ipad portrait only */
+/* and (width: 768px) */
+@media only screen and (width: 48em) {
+/****************************** Slideshow ******************************/
+#content .content ul.slideshow {
+	height: 242px !important;
+}
+}
+/*********************************************************************/
+/* amazon kindle fire only */
+/* and (min-width: 600px) and (max-width: 767px) */
+@media only screen and (min-width: 37.5em) and (max-width: 47.9375em) {
+.banner-text h1 .site-title {
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif; 
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1em;
+}
+#ultibanner {
+	min-height: 100px;
+}
+/****************************** Slideshow ******************************/
+#content .content ul.slideshow {
+	height: 227px !important;
+}
+}
+/*********************************************************************/
+/* other smallScreen, including amazon kindle fire */
+/* and  (min-width: 481px) and (max-width: 767px) */
+@media only screen and (min-width: 30.0625em) and (max-width: 47.9375em) {
+#brown-masthead #brown-brand h1 a {
+	width: 180px;
+}
+.banner-text h1 {
+	font-size: 0.8em;
+}
+h1.article-title {
+	margin: 1em .675em 0 0;
+}
+/****************************** Banner ******************************/
+.banner-text h1 .site-title {
+	font-size: 1em;
+	line-height: 1em;
+}
+}
+/*********************************************************************/
+/* handheld - small screen - landscape  */
+/* and (min-width: 361px) and (max-width: 480px) */
+@media screen and (min-width: 22.5625em) and (max-width: 30em) {
+/****************************** Slideshow ******************************/
+#content .content ul.slideshow {
+	height: 227px !important;
+}
+}
+/*********************************************************************/
+/* samsung s3, samsung s4*/
+/* and (min-width: 321px) and and (width: 360px) */
+@media screen and (min-width: 20.0625em) and (max-width: 22.5em) {
+	
+}
+/*********************************************************************/
+/* all smallscreen handheld  */
+/* and (min-width: 0px) and (max-width: 480px) */
+@media screen and (min-width: 0em) and (max-width: 30em) {
+body {
+	overflow-x: hidden;
+	max-width: 480px;
+}
+/****************************** The Bar ******************************/
+.content ul.jcarousel-list {
+	width: 100% !important;
+}
+#content-bottom .view-content {
+	display: inline-block;
+}
+.view-thebar .jcarousel-skin-default .jcarousel-clip-horizontal, .view-thebar .jcarousel-skin-default .jcarousel-container-horizontal {
+	height: auto;
+	clear: both;
+	display: inline-block;
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal, .jcarousel-skin-default .jcarousel-next-horizontal {
+	display: none;
+}
+}
+/*********************************************************************/
+/* smallscreen portrait  */
+/* and (min-width: 0px) and (max-width: 320px) */
+@media screen and (min-width: 0em) and (max-width: 20em) {
+body {
+	overflow-x: hidden;
+	max-width: 320px;
+}
+
+}
+/*********************************************************************/
+/* Retina Images */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/*
+     FILE ARCHIVED ON 07:35:47 Dec 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:30:56 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.473
+  exclusion.robots: 0.017
+  exclusion.robots.policy: 0.008
+  esindex: 0.01
+  cdx.remote: 98.983
+  LoadShardBlock: 162.397 (3)
+  PetaboxLoader3.datanode: 124.258 (4)
+  PetaboxLoader3.resolve: 112.293 (2)
+  load_resource: 89.58
+*/

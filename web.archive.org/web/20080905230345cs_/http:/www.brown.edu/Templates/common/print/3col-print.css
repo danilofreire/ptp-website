@@ -1,0 +1,100 @@
+body	{
+	margin-left:.75in;
+	margin-right:.75in;
+	margin-top:.5in;
+	margin-bottom:.5in;
+	padding: 0;
+	border: 0;
+	text-align: left;
+	color: #000;
+	font-family:Times, "Times New Roman", sans-serif;
+	line-height:110%;
+	background: white;
+	font-size: 13 pt; /* Should be expressed in pt, not px or em. This is print, not screen */
+	
+	}
+	 
+/* Things not to print */	   
+#navbar	{ /* Don't print the navigation bar */
+	display: none;
+	}
+	
+#quicklinks { /* Useless when printed, so don't print */
+	display: none;
+	}	
+	
+.none	{ /* Don't print the test which is displayed on older browsers */
+	display:none;
+	}	
+	
+/* Text styles, sizes, and fonts */	
+a:link, a:visited { /* Note that this allows for slightly lighter (red), bold links for easy reading */
+   color: #520;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+   }
+	
+#main h3 	{
+	font-size:1em;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+	
+#sidebar {
+	font-size: 10pt;
+	border-top: 1px solid black;
+	margin-top:.25in;
+	padding-top:.25in;
+	}		
+	
+	
+#footer 	{
+	display:none;
+	}
+	
+
+/* Image styles */
+img		{
+	border: 0;
+    display: block;
+	}
+	
+#homepage	{
+	font-family:Times, "Times New Roman", sans-serif;
+	line-height:110%;
+	font-size: 11pt; /* Should be expressed in pt, not px or em. This is print, not screen */
+	
+		}	
+	
+p.facultytitle,
+p.facultycontact,
+p.facultyListing,
+p.facultyname
+	{
+	font-family:Times, "Times New Roman", sans-serif;
+	line-height:110%;
+	background: white;
+	font-size: 12pt; /* Should be expressed in pt, not px or em. This is print, not screen */
+
+}
+/*
+     FILE ARCHIVED ON 23:06:53 Sep 16, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:10:15 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.794
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.01
+  esindex: 0.013
+  cdx.remote: 6.051
+  LoadShardBlock: 145.886 (6)
+  PetaboxLoader3.datanode: 151.069 (7)
+  load_resource: 145.895
+  PetaboxLoader3.resolve: 107.669
+*/

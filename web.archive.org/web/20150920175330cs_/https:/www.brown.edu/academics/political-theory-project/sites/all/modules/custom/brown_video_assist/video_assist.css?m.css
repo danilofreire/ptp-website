@@ -1,0 +1,48 @@
+/* $Id$ */
+
+span.inline-left {
+  display: block;
+  float: left;
+  margin: 5px 5px 5px 0px;
+}
+span.inline-right {
+  display: block;
+  float: right;
+  margin: 5px 0px 5px 5px;
+}
+span.inline-center {
+  display: block;
+  text-align: center;
+}
+span.inline .caption {
+  display: block;
+}
+.image-clear {
+  display: block;
+  clear: both;
+  height: 1px;
+  line-height: 0px;
+  font-size: 0px;
+  margin-bottom: -1px;
+}
+
+/*
+     FILE ARCHIVED ON 09:51:50 Sep 06, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:26:58 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.759
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.012
+  esindex: 0.014
+  cdx.remote: 7.356
+  LoadShardBlock: 59.318 (3)
+  PetaboxLoader3.datanode: 87.09 (5)
+  load_resource: 124.248 (2)
+  PetaboxLoader3.resolve: 72.011 (2)
+*/

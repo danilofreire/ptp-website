@@ -1,0 +1,403 @@
+.main-column .view-Events {
+	max-width: 510px;
+	margin-bottom: 60px;
+}
+.field-field-event-location,
+.event-time {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	line-height: 1.5em;
+}
+.field-field-event-location {
+	margin-bottom: 1em;
+}
+
+
+/* Events - Teaser */
+div.event-teaser {
+	margin: 2% 0;
+	display: inline-block;
+	width: 100%;
+	font-size: 1.175em;
+	font-family: Georgia, Times, serif;
+}
+.super-events-list div.event-content {
+	margin: 2% 0;
+}
+.super-events-list div.event-content *{
+	margin: 0;
+}
+.super-events-list div.event-teaser h3 {
+	font-size: 1.3em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+.super-events-list div.event-teaser .event-description p {
+	margin-top: 1em;
+	font-size: 1em !important;
+}
+.super-events-list div.event-content img {
+	padding: 3px;
+	border: 1px solid #efece4;
+	margin: 0 0;  
+	float: right;
+}
+.main-column .view-content .views-row .event-teaser .event-time h5,
+.main-column .view-content .views-row .event-teaser .event-location h5 {
+	font-size: 1em;
+}
+.main-column  .event-teaser h3 {
+	font-size: .975em;
+}
+.main-column  .event-teaser .event-content .event-time h5,
+.main-column  .event-teaser .event-content .event-location h5 {
+	font-size: .75em;
+}
+.main-column .event-teaser .event-content .event-description p {
+font-size: .75em;
+	margin-top: 1em;
+}
+
+/* Events - Full */
+
+.event figure.thumbnail-wrapper {
+	padding-bottom: 0;
+}
+.event figure.thumbnail-wrapper a {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.event figure.thumbnail-wrapper .caption p {
+	margin-bottom: .25em;
+}
+
+div.content.event-content #title {
+	font-size:= 2em;
+}
+div.content.event-content .one-line-attachments, .field-field-event-gallery-images {
+	width: 100%;
+	background-color: #efece4;
+	margin: 5% 0;
+}
+
+div.content.event-content .one-line-attachments .field-items .field-item-eventfile {
+	background-color: #FFF;
+	margin: 3% 0%;
+}
+
+div.content.event-content .block-attachments {
+	padding: 5% 1%%;
+}
+
+div.content.event-content .field-field-event-gallery-images .field-items{
+	width: 25%%;
+}
+
+.main-article-event .terms {
+	font-size: 1em;
+	font-family: Georgia, Times, serif;
+	float: none;
+}
+.main-article-event .terms ul.links li {
+	padding: 0;
+}
+.main-article-event .terms a {
+	font-size: 13px;
+}
+.main-article-event .terms li:after {
+	content: ',';
+}
+.main-article-event .terms ul.links li:last-child:after {
+	content: '';
+}
+
+.super-event-gallery-item a[href$=".jpg"], 
+.super-event-gallery-item a[href$=".gif"], 
+.super-event-gallery-item a[href$=".png"], 
+.super-event-gallery-item a[href$=".tif"] {
+	padding-right: 0;
+}
+
+.super-event-gallery {
+clear: both;
+}
+
+.super-event-attachments,
+.super-event-links {
+	margin-bottom: 3em;
+}
+.super-event-categories {
+	margin-bottom: 60px;
+}
+.super-event-video h3,
+.super-event-gallery h3 {
+	margin-top: 1.25em;
+}
+
+.super-event-video-item {
+	margin-bottom: 1em;
+}
+
+.super-event-video {
+	margin-bottom: 3em;
+}
+
+/**
+ * Enhanced Events (adapted from calwidget css)
+ */
+.block .super-events-list a {
+	color: #fff;
+}
+
+.sidebar .super-events-list {
+	color: #fff;
+}
+
+.sidebar .super-events-list .item-list {
+	clear: left;
+	margin-bottom: 1em;
+	border-bottom: 1px dotted #fff;
+}
+.sidebar .super-events-list .item-list:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+
+
+.sidebar .super-events-list .date h5 {
+	color: #fff;
+	float: left;
+	clear: left;
+	padding-bottom: 1em;
+	text-align: left;
+	width: 38px;  /* this leaves room for the sIFR text  */
+	margin-left: -.5em;
+}
+
+.sidebar .super-events-list .month {
+	display: block;
+	text-transform: uppercase;
+	font-size: .75em;
+	font-weight: bold;
+	text-align: center;
+}
+.sidebar .super-events-list .day {
+	display: block;
+	font-size: 1.5em;
+	font-weight: 100;
+	font-family: 'Vitesse A', 'Vitesse B', Georgia, serif;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+
+.sidebar #events {
+	background-color: #aba698;
+	padding: 0 10px 0em 10px;
+	float: left;
+	width: 200px;
+}
+.sidebar .view-Events h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #ffffff;
+	padding-top: .6em;
+	line-height: 1.75em;
+}
+.sidebar .view-Events h2.sIFR-replaced {
+	height: 24px;
+}
+.sidebar .view-Events h2.sIFR-replaced object {
+	max-width: 218px;
+}
+
+.sidebar .view-Events h2 {
+	margin-bottom: 8px;
+}
+.sidebar .view-Events .content {
+	border-top: 1px solid #fff;
+	padding-top: 10px;
+}
+
+
+
+.super-events-list .item-list ul {
+	list-style-image: url("../../../../../../../../../../../../20160122000058im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/custom/features/events/theme/bullet-calendar-block.png");
+}
+.super-events-list ul li {
+	list-style-image: url("../../../../../../../../../../../../20160122000058im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/custom/features/events/theme/bullet-calendar-block.png");
+	margin: 0 0 0.25em 3.5em;
+}
+.upcoming-events ul li {
+	list-style-image: none;
+	margin: 0 0 0 0;
+
+}
+
+.super-events-list .more-wrapper {
+	background: transparent url("../../../../../../../../../../../../20160122000058im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/custom/features/events/theme/bullet-orange.png") 0 2px no-repeat;
+	padding-left: 0;
+	text-align: right;
+	display: block;
+	float: right;
+	letter-spacing: .18em;
+	width: 160px;
+}
+
+.super-events-list .more-link span {
+	font-family: Georgia, Times, serif;
+	font-size: .6875em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+.super-events-list .views-admin-links {
+	max-width: 200px !important;
+}
+article.main-article-event.sticky {
+	border: 0;
+}
+
+.events-archive-navigation {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+.events-archive-navigation li {
+	background: transparent url("../../../../../../../../../../../../20160122000058im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/custom/features/events/theme/bullet-red.png") 0 2px no-repeat;
+	list-style: none;
+	margin-bottom: .125em;
+	margin-left: 0;
+	padding-left: 1.5em;
+}
+
+.event-icons {
+	float: right;
+}
+
+.super-event-gallery:after {
+	clear: both;
+	content: '.';
+	display: block;	
+	color:#ffffff;
+}
+.super-event-gallery-item {
+	float: left;
+	margin: 0px 25px 20px 0;
+}
+
+
+.upcoming-events {
+	font-size: 12px;
+	padding: 10px 0 0;
+}
+.upcoming-events h5 {
+	float: left;
+	margin-right: 10px;
+}
+.upcoming-events h5:after {
+	content: ': ';
+}
+.upcoming-events li {
+	display: inline-block;
+	margin-left: 0;
+	padding-left: 0;
+}
+.upcoming-events li:after {
+	content: ' | ';
+}
+.upcoming-events li.last:after {
+	content: '';
+}
+
+.sIFR-active .sidebar h2 {
+border-bottom: 1px dotted #fff;
+margin: 0 auto .5em auto;
+color:#ffffff;
+padding: .5em 0 0 0;
+line-height: 1em;
+}
+.super-events-list .more-link {
+background-image: url(../../../../../../../../../../../../20160122000058im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/custom/features/events/theme/bullet-orange.png);
+background-position: 0 2px;
+background-repeat: no-repeat;
+text-align: left;
+float:left;
+padding: 0 0 0 25px;
+margin: 0em 0 0 3.125em;
+}
+
+/** upcoming events "button styles" **/
+.upcoming-events h5 {
+	display: none;
+}
+.upcoming-events ul {
+	text-align: right;
+}
+.upcoming-events li  {
+	margin-left: .5em;
+}
+
+.upcoming-events li .a, .upcoming-events li .a {
+	background-color: #c00404;
+	color: #fff;
+	display: inline-block;
+	padding: .5em 1em;
+	border-radius: .25em;
+}
+.upcoming-events li:after {
+	content: '';
+}
+.upcoming-events li a {
+	background-color: #efece5;
+	color: #c00404;
+	display: inline-block;
+	padding: .5em 1em;
+	border-radius: .25em;
+}
+
+/* bb add */
+.views-exposed-form .views-exposed-widget .form-submit {
+	margin-top: 2.7em;
+}
+.event-description span.thumbnail-wrapper.inline.inline-right {
+	margin: 0 0 0 1em;
+	padding: 0;
+}
+.sidebar .super-events-list .day {
+	margin: 0 0 0 .5em;
+}
+div#event-archives {
+	padding: 0 1em 0 1em;
+}
+ul.events-archive-navigation li {
+	margin-left: 1.5em;
+}
+/*
+     FILE ARCHIVED ON 00:00:58 Jan 22, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:12:55 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.533
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.01
+  esindex: 0.01
+  cdx.remote: 11.788
+  LoadShardBlock: 209.944 (3)
+  PetaboxLoader3.datanode: 89.14 (4)
+  PetaboxLoader3.resolve: 204.101 (2)
+  load_resource: 159.847
+*/

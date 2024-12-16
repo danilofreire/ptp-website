@@ -1,0 +1,569 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.view-frontpage-slideshow {
+	overflow: hidden;
+	margin-top: 0;
+}
+
+.front-slideshow .view-content .item-list:before {
+	background-color: rgb(45, 45, 45);
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+}
+
+
+/* some specific styles for the topical nav that gets wrapped into the slideshow*/
+#topical-navigation {
+	background-color: rgb(36,131,168) !important;
+	border-bottom: none !important;
+}
+
+#home-wrapper #topical-navigation {
+	box-shadow: 0px 2px 1px rgba(28, 77, 107, 0.83) !important;
+}
+
+#tactical-navigation li a, #tactical-navigation li a:link, #tactical-navigation li a:visited, #tactical-navigation li a:hover {
+	background-position: 0 -11px;
+}
+
+/*----------------------------------------
+/           Homepage Slideshow
+/----------------------------------------*/
+
+.front-slideshow .view-content .item-list ul {
+	list-style: none !important;
+}
+
+.front-slideshow .view-content .item-list ul li {
+	list-style: none;
+	margin: 0;
+}
+
+/**, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}*/
+
+.front-slideshow .view-content .item-list ul li {
+    list-style: none;
+    margin: 0;  
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    overflow: hidden;
+    max-width: 940px;
+    width: 100%;
+}
+
+.front-slideshow .view-content .item-list {      
+    position: relative;
+}
+
+.front-slideshow .view-content .item-list > ul {
+    width: 100%;
+    max-width: 940px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    max-height: 337px;
+}
+
+.front-slideshow .view-content .item-list ul li .views-field-field-news-image-fid {
+    min-width: 100%; 
+    max-width: none; position: absolute; 
+    left: 50%; 
+    -webkit-transform: translateX(-50%); 
+    transform: translateX(-50%);
+}
+
+.front-slideshow .view-content .item-list ul li .views-field-field-news-image-caption-value {
+   position: relative;
+	margin-top: 60%;
+	width: 50%;
+}
+
+
+/*text underneath slide images*/
+.views-field-field-frontpage-slide-link-url span a {
+	color: rgb(255, 255, 255);
+	font-size: 1.6em;
+	font-family: georgia, serif;
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+	line-height: 1.5em;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+	opacity: 1;
+	font-style: italic;
+	-webkit-transform: translate3d(0, 0, 0);  
+	-moz-transform: translate(0, 0);  
+	-ms-transform: translate(0, 0);  
+	-o-transform: translate(0, 0);  
+	transform: translate3d(0, 0, 0);
+}
+
+.views-field-field-frontpage-slide-link-url span a:hover {
+	opacity: .6;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+.views-field-field-frontpage-slide-link-url span {
+	display: block;
+	overflow: hidden;
+}
+
+.views-field-field-frontpage-slide-link-url span::before {
+	content: 'POLITICAL THEORY PROJECT';
+	display: block;
+	position: absolute;
+	top: 14%;
+	font-size: 1.75em;
+	line-height: 1.1em;
+	width: 45%;
+	font-family: serif;
+	color: rgb(202, 224, 234);
+	letter-spacing: 3px;
+	background: url("../../../../../../../../../../20151222021432im_/http:/www.brown.edu/academics/political-theory-project/sites/brown.edu.academics.political-theory-project/modules/custom/super_duper_slideshow/ptp-logo.svg") left center no-repeat;
+	padding-left: 7.5em;
+	margin-left: -11%;
+	z-index: 12;
+}
+
+.views-field-field-frontpage-slide-image-fid {
+	overflow: hidden;
+	line-height: 0;
+	width: 100%;
+	padding-left: 32%;
+	-webkit-transform: translate3d(0, 0, 0);   
+	-moz-transform: translate(0, 0);          
+	-ms-transform: translate(0, 0);           
+	-o-transform: translate(0, 0);              
+	transform: translate3d(0, 0, 0);
+}
+
+
+.views-field-field-frontpage-slide-link-url {
+	background-color: rgb(36,131,168);
+	width: 32%;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 17% 0% 4% 7%;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+         -o-transform: translate(0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.views-field-field-frontpage-slide-link-url:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	border-right: transparent 10.7em solid;
+	border-top: rgb(36,131,168) 29em solid;
+	position: absolute;  top: 0;
+	left: 100%;
+	-webkit-transform: translate3d(0, 0, 0);  
+	-moz-transform: translate(0, 0);  
+	-ms-transform: translate(0, 0);  
+	-o-transform: translate(0, 0);  
+	transform: translate3d(0, 0, 0);
+	z-index: 11;
+}
+
+/*navigation arrows*/
+nav.arrows {
+    position: absolute;
+    top: 37%;
+    width: 100%;    
+    left: 0;
+    display: none;
+}
+
+@media (min-width: 760px) {
+	nav.arrows {
+		display: block;
+	}
+}
+
+a.prev {
+    background: url("../../../../../../../../../../20151222021432im_/http:/www.brown.edu/academics/political-theory-project/sites/brown.edu.academics.political-theory-project/modules/custom/super_duper_slideshow/img/left-arrow2.svg") no-repeat 20% 50%;
+    color: white;
+    height: 6em;
+    width: 3em;
+    text-indent: -9999em;
+    background-size: contain;
+    z-index: 99;
+	position: relative;
+    background-color: #7cb5cb;
+    box-sizing: border-box;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-size: 1.8em;
+    display: inline-block;
+}
+a.next {
+ 	background: url("../../../../../../../../../../20151222021432im_/http:/www.brown.edu/academics/political-theory-project/sites/brown.edu.academics.political-theory-project/modules/custom/super_duper_slideshow/img/right-arrow2.svg") no-repeat 80% 50%;
+    color: white;
+    height: 6em;
+    width: 3em;
+    text-indent: -9999em;
+    background-size: contain;
+    z-index: 99;
+	position: relative;
+    background-color: #7cb5cb;
+    box-sizing: border-box;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    
+ 	background-size: 1.8em;
+    float: right;
+    display: inline-block;
+}
+
+
+/*slideshow buttons*/
+ol.slideshow-btn-ul {
+	list-style: none;
+	line-height: 0;
+	margin: 0 !important;
+	display: none;
+	position: absolute;
+	width: auto;
+	bottom: 3.7em;
+	right: 3em;
+}
+
+.slideshow-btn {
+	float: left;
+	display: inline-block;
+	margin: 1px 3px;
+	text-indent: -99999px;
+	height: 12px;
+	width: 12px;
+	background-color: rgb(145, 145, 145);
+	border-radius: 10px;
+	cursor: pointer;
+	z-index: 999;
+	position: relative;
+}
+
+.slideshow-btn-active {
+	background-color: rgb(211, 86, 86) !important;
+}
+
+.slideshow-btn-container {
+    width: inherit;
+}
+
+/*----------------------------------------
+/            The @ Media Queries
+/----------------------------------------*/
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+	.views-field-field-frontpage-slide-link-url {
+		width: 43%;
+	}
+	.views-field-field-frontpage-slide-link-url:after {
+		border-right: transparent 6.7em solid;
+		border-top: rgb(36,131,168) 20em solid;
+	}
+	.views-field-field-frontpage-slide-link-url span a {
+		font-size: 1em;
+	}
+	.views-field-field-frontpage-slide-link-url {
+		padding: 24% 0% 4% 7%;
+	}
+	.views-field-field-frontpage-slide-link-url span::before {
+		font-size: 1.1em;
+		background-size: contain;
+		padding-left: 6.5em;
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+	.views-field-field-frontpage-slide-link-url span a {
+		font-size: 1em;
+	}
+	.views-field-field-frontpage-slide-link-url {
+		padding: 21% 0% 4% 7%;
+	}
+	.views-field-field-frontpage-slide-link-url span::before {
+		font-size: 1.4em;
+		background-size: contain;
+		padding-left: 6.5em;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+	.views-field-field-frontpage-slide-link-url span a {
+		font-size: 1.2em;
+		line-height: 1.4em;
+	}
+	.views-field-field-frontpage-slide-link-url {
+		padding: 21% 0% 4% 7%;
+	}
+	.views-field-field-frontpage-slide-link-url span::before {
+		font-size: 1.4em;
+		background-size: contain;
+		padding-left: 6.5em;
+	}
+}
+
+
+
+
+
+
+
+/*----------------------------------------
+/            Slideshow Keyframes
+/----------------------------------------*/
+
+.item-list .navOutNext {
+-webkit-animation: slideOutScaleRight 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: slideOutScaleRight 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .navInNext {
+opacity: 1;
+	-webkit-animation: slideInFromLeft 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: slideInFromLeft 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .navOutPrev {
+	-webkit-animation: slideOutScaleLeft 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: slideOutScaleLeft 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .navInPrev {
+	opacity: 1;
+	-webkit-animation: slideInFromRight 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: slideInFromRight 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .views-field-field-frontpage-slide-link-url .navOutNext {
+	opacity: 1;
+	-webkit-animation: scaleUp 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleUp 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .views-field-field-frontpage-slide-link-url .navInNext {
+	opacity: 1;
+	-webkit-animation: scaleDownUp 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleDownUp 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .views-field-field-frontpage-slide-link-url .navOutPrev {
+	opacity: 1;
+	-webkit-animation: scaleDown 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleDown 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item-list .views-field-field-frontpage-slide-link-url .navInPrev {
+	opacity: 1;
+	z-index: 1001;
+	-webkit-animation: scaleDownUp 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleDownUp 1.2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+
+
+@-webkit-keyframes scaleUp {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+@keyframes scaleUp {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes scaleDownUp {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes scaleDownUp {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes scaleDown {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+	}
+}
+
+@keyframes scaleDown {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+@-webkit-keyframes scaleUpDown {
+	from {
+		-webkit-transform: scale(1.2);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes scaleUpDown {
+	from {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes slideOutScaleRight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: translateX(100%) scale(0.9);
+		opacity: 0;
+	}
+}
+
+@keyframes slideOutScaleRight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: translateX(100%) scale(0.9);
+		transform: translateX(100%) scale(0.9);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideInFromLeft {
+	from {
+		-webkit-transform: translateX(-100%);
+	}
+	to {
+		-webkit-transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes slideOutScaleLeft {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: translateX(-100%) scale(0.9);
+		opacity: 0;
+	}
+}
+
+@keyframes slideOutScaleLeft {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: translateX(-100%) scale(0.9);
+		transform: translateX(-100%) scale(0.9);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideInFromRight {
+	from {
+		-webkit-transform: translateX(100%);
+	}
+	to {
+		-webkit-transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromRight {
+	from {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+/*
+     FILE ARCHIVED ON 02:14:32 Dec 22, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:54:36 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.732
+  exclusion.robots: 0.031
+  exclusion.robots.policy: 0.015
+  esindex: 0.016
+  cdx.remote: 8.933
+  LoadShardBlock: 126.838 (3)
+  PetaboxLoader3.resolve: 512.463 (4)
+  PetaboxLoader3.datanode: 115.715 (5)
+  load_resource: 630.195 (2)
+*/

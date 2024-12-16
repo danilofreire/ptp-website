@@ -1,0 +1,70 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+
+Drupal.behaviors.textarea = function(context) {
+  $('textarea.resizable:not(.textarea-processed)', context).each(function() {
+    // Avoid non-processed teasers.
+    if ($(this).is(('textarea.teaser:not(.teaser-processed)'))) {
+      return false;  
+    }
+    var textarea = $(this).addClass('textarea-processed'), staticOffset = null;
+
+    // When wrapping the text area, work around an IE margin bug.  See:
+    // http://jaspan.com/ie-inherited-margin-bug-form-elements-and-haslayout
+    $(this).wrap('<div class="resizable-textarea"><span></span></div>')
+      .parent().append($('<div class="grippie"></div>').mousedown(startDrag));
+
+    var grippie = $('div.grippie', $(this).parent())[0];
+    grippie.style.marginRight = (grippie.offsetWidth - $(this)[0].offsetWidth) +'px';
+
+    function startDrag(e) {
+      staticOffset = textarea.height() - e.pageY;
+      textarea.css('opacity', 0.25);
+      $(document).mousemove(performDrag).mouseup(endDrag);
+      return false;
+    }
+
+    function performDrag(e) {
+      textarea.height(Math.max(32, staticOffset + e.pageY) + 'px');
+      return false;
+    }
+
+    function endDrag(e) {
+      $(document).unbind("mousemove", performDrag).unbind("mouseup", endDrag);
+      textarea.css('opacity', 1);
+    }
+  });
+};
+
+
+}
+/*
+     FILE ARCHIVED ON 01:58:14 Oct 23, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:46:23 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.473
+  exclusion.robots: 0.016
+  exclusion.robots.policy: 0.007
+  esindex: 0.012
+  cdx.remote: 6.14
+  LoadShardBlock: 247.363 (3)
+  PetaboxLoader3.datanode: 224.539 (4)
+  PetaboxLoader3.resolve: 123.898 (2)
+  load_resource: 114.864
+*/

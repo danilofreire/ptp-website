@@ -1,0 +1,65 @@
+/* $Id: node.css,v 1.5 2008/01/25 21:21:44 goba Exp $ */
+
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+#node-admin-filter ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#node-admin-buttons {
+  float: left; /* LTR */
+  margin-left: 0.5em; /* LTR */
+  clear: right; /* LTR */
+}
+td.revision-current {
+  background: #ffc;
+}
+.node-form .form-text {
+  display: block;
+  width: 95%;
+}
+.node-form .container-inline .form-text {
+  display: inline;
+  width: auto;
+}
+.node-form .standard {
+  clear: both;
+}
+.node-form textarea {
+  display: block;
+  width: 95%;
+}
+.node-form .attachments fieldset {
+  float: none;
+  display: block;
+}
+.terms-inline {
+  display: inline;
+}
+
+/*
+     FILE ARCHIVED ON 18:57:06 May 27, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:03:53 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.696
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.012
+  esindex: 0.014
+  cdx.remote: 10.956
+  LoadShardBlock: 191.48 (3)
+  PetaboxLoader3.datanode: 85.752 (4)
+  PetaboxLoader3.resolve: 200.384 (2)
+  load_resource: 172.405
+*/

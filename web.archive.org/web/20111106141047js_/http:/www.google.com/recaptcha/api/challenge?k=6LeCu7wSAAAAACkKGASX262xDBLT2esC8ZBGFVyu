@@ -1,0 +1,47 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+
+var RecaptchaState = {
+    site : '6LeCu7wSAAAAACkKGASX262xDBLT2esC8ZBGFVyu',
+    challenge : '03AHJ_VutA6_x3EVfMhayOQtGgG2N9bFYXIxc8ViN15f0pKXBqqFeTa7Amt1rsA4OL--thqfAOBRXoWp5Y5MCVINdpO64uN-5gwnvXUt_bXdht1Xw4ciJo0dq56lr5DZOmA3Y-x44bD4lfWz02SK7f-DXmqcA-TcYmHg',
+    is_incorrect : false,
+    programming_error : '',
+    error_message : '',
+    server : 'https://web.archive.org/web/20111230233731/http://www.google.com/recaptcha/api/',
+    timeout : 1800
+};
+
+document.write('<scr'+'ipt type="text/javascript" s'+'rc="' + RecaptchaState.server + 'js/recaptcha.js"></scr'+'ipt>');
+
+
+}
+/*
+     FILE ARCHIVED ON 23:37:31 Dec 30, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:42:04 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.51
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.012
+  esindex: 0.009
+  cdx.remote: 8.699
+  LoadShardBlock: 103.564 (3)
+  PetaboxLoader3.datanode: 106.249 (4)
+  load_resource: 108.529
+  PetaboxLoader3.resolve: 54.012
+*/

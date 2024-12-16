@@ -1,0 +1,127 @@
+.lw_widget h3 {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.75em;
+  text-align: center;
+  color: #3B302C;
+  margin-bottom: 1em; }
+  .lw_widget h3::after {
+    display: block;
+    content: "";
+    clear: both;
+    background-color: #98A4AE;
+    height: 2px;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: .45em;
+    opacity: 0.7; }
+.lw_widget ul {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  list-style-type: none !important;
+  margin-left: 0;
+  padding-left: 0; }
+  .lw_widget ul li {
+    margin-left: 0; }
+    .lw_widget ul li:last-child .lw_compact_content {
+      border-bottom: none !important; }
+.lw_widget .lw_compact_content {
+  border-bottom: .5px solid #eee;
+  padding-bottom: 1.25em;
+  margin-bottom: 1.25em; }
+  .lw_widget .lw_compact_content .lw_calendar_date .cal_date {
+    display: block;
+    text-align: center;
+    line-height: 1;
+    float: left;
+    margin-top: .2em;
+    margin-right: 10px; }
+    .lw_widget .lw_compact_content .lw_calendar_date .cal_date .cal_date_month {
+      display: block;
+      font-size: 1em;
+      text-transform: uppercase;
+      color: #98A4AE; }
+    .lw_widget .lw_compact_content .lw_calendar_date .cal_date .cal_date_day {
+      display: block;
+      font-size: 2em;
+      font-weight: bold;
+      color: #3B302C;
+      letter-spacing: .25px; }
+  .lw_widget .lw_compact_content .lw_compact_info {
+    overflow: hidden;
+    border-left: 1px solid #dfe3e6;
+    padding-left: .5em; }
+    .lw_widget .lw_compact_content .lw_compact_info .lw_events_time {
+      font-size: 1em;
+      letter-spacing: .5px;
+      color: #3B302C;
+      opacity: 0.85; }
+    .lw_widget .lw_compact_content .lw_compact_info .lw_events_title {
+      font-family: Helvetica, Arial, Verdana, sans-serif;
+      font-size: 1.1em;
+      text-transform: none !important;
+      margin: 1px 0 3px; }
+      .lw_widget .lw_compact_content .lw_compact_info .lw_events_title a, .lw_widget .lw_compact_content .lw_compact_info .lw_events_title a:link, .lw_widget .lw_compact_content .lw_compact_info .lw_events_title a:visited {
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: -.15px; }
+      .lw_widget .lw_compact_content .lw_compact_info .lw_events_title a:hover, .lw_widget .lw_compact_content .lw_compact_info .lw_events_title a:active, .lw_widget .lw_compact_content .lw_compact_info .lw_events_title a:focus {
+        text-decoration: underline; }
+    .lw_widget .lw_compact_content .lw_compact_info .lw_events_location {
+      font-family: "Times New Roman", Georgia, serif;
+      font-size: .85em;
+      font-style: italic;
+      line-height: 1.4; }
+.lw_widget .lw_calendar_link a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: .6px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #C00404;
+  border-width: 0;
+  box-shadow: inset 0 0 0 1px transparent;
+  padding: 12px 25px 12px 20px;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: color .25s, background .25s, border .25s, box-shadow .25s; }
+  .lw_widget .lw_calendar_link a:hover {
+    background-color: #8e0303; }
+.lw_widget.lw_compact.no-lines .lw_compact_content {
+  border-bottom: none;
+  padding-bottom: 1em;
+  margin-bottom: 1em; }
+.lw_widget.lw_compact.bg-gray {
+  background-color: #F7F7F7; }
+  .lw_widget.lw_compact.bg-gray h3 {
+    background-color: #eee;
+    padding: .75em .5em; }
+    .lw_widget.lw_compact.bg-gray h3::after {
+      background-color: transparent;
+      margin-top: 0; }
+  .lw_widget.lw_compact.bg-gray ul {
+    padding: .5em .75em; }
+
+/*# sourceMappingURL=events.css.map */
+
+/*
+     FILE ARCHIVED ON 04:13:08 Apr 08, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:44:31 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.798
+  exclusion.robots: 0.034
+  exclusion.robots.policy: 0.02
+  esindex: 0.013
+  cdx.remote: 4.868
+  LoadShardBlock: 124.308 (3)
+  PetaboxLoader3.datanode: 93.436 (4)
+  PetaboxLoader3.resolve: 64.877 (2)
+  load_resource: 65.584
+*/

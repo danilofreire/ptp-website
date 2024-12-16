@@ -1,0 +1,81 @@
+.page-tools a {
+	font-family: Georgia, Times, serif;
+	font-size: .6875em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.page-tools span {
+	display: block;
+	margin-top: .5em;
+}
+.page-tools a:link {
+	color: #3a1e1a;
+}
+.print-this-page, .share-this-page {
+	padding-left: 1.375em;
+	position: relative;
+}
+
+.page-tools .sIFR-replaced {
+	background-position: 0 10%;
+}
+
+
+.page-tools .sIFR-replaced {
+	background-position: 0 10%;
+}
+
+#print-share:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: left;
+	visibility: hidden;
+}
+
+.page-tools-png a {
+	position: relative;
+	font-family: Georgia, Times, serif;
+	font-size: .6875em;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-image: url("../../../../../../../../../../../20160122000437im_/http:/www.brown.edu/academics/political-theory-project/sites/all/modules/custom/brown_printshare/theme/page-tools-sprite.png");
+	background-repeat: no-repeat;
+	text-indent: -999em;
+	display: block;
+	width: 140px;
+	height: 28px;
+}
+.print-this-page {
+	background-position: 0 0 !important;
+}
+.share-this-page {
+	background-position: 0 -27px !important;
+}
+.print-this-page:hover {
+	background-position: -160px 0 !important;
+}
+.share-this-page:hover {
+	background-position: -160px -27px !important;
+}
+
+/*
+     FILE ARCHIVED ON 00:04:37 Jan 22, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:12:42 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.477
+  exclusion.robots: 0.016
+  exclusion.robots.policy: 0.007
+  esindex: 0.009
+  cdx.remote: 297.612
+  LoadShardBlock: 415.465 (3)
+  PetaboxLoader3.datanode: 107.698 (4)
+  PetaboxLoader3.resolve: 1320.969 (2)
+  load_resource: 1028.092
+*/

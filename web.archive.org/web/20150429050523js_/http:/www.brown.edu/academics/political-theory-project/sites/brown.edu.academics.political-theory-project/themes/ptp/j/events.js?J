@@ -1,0 +1,47 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+jQuery(document).ready(function($) {
+
+if ($('.super-event-categories').length > 0) {
+	$('.super-event-categories').insertBefore('.article-title');
+}
+
+if ($('#event-icon-button').length > 0) {
+	$('#event-icon-button').click(function() {
+    	$('.event-icons').toggleClass('moveLeft');
+	});
+}
+
+});
+
+}
+/*
+     FILE ARCHIVED ON 19:42:46 May 08, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:28:45 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.651
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.009
+  esindex: 0.013
+  cdx.remote: 7.732
+  LoadShardBlock: 139.716 (3)
+  PetaboxLoader3.datanode: 60.729 (4)
+  PetaboxLoader3.resolve: 180.485 (2)
+  load_resource: 110.244
+*/

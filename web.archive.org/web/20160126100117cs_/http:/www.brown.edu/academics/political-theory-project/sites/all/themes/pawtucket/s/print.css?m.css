@@ -1,0 +1,218 @@
+/* $Id: print.css 2350 2011-11-01 14:08:55Z jpennypa $ */
+
+/**
+ * Ursa, for Drupal 6.0
+ */
+
+body, input, textarea, select {
+  color: #000;
+  background: none;
+}
+
+
+/* hides navigation, calendar, etc */
+ul.primary-links, 
+ul.primary,
+ul.secondary-links,
+/* #header-region,  */
+.sidebar, 
+#sidebar-left,
+.first-column {
+  display: none; width: 0;
+}
+
+body.sidebars, body.sideber-left, body.sidebar-right, body {
+}
+
+body.sidebar-left #center, body.sidebar-right #center, body.sidebars #center,
+body.sidebar-left #squeeze, body.sidebar-right #squeeze, body.sidebars #squeeze {
+  margin: 0;
+}
+
+#wrapper,
+#wrapper #container .breadcrumb,
+#wrapper #container #center,
+#wrapper #container #center .right-corner,
+#wrapper #container #center .right-corner .left-corner,
+#wrapper #container #footer,
+#wrapper #container #center #squeeze {
+/*  position: static;  */
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  float: none;
+  clear: both;
+  background: none;
+}
+
+#wrapper #container #header {
+  height: 130px;
+}
+
+#wrapper #container #header h1, #wrapper #container #header h1 a:link, #wrapper #container #header h1 a:visited {
+  text-shadow: none;
+  color: #000;
+}
+/*
+.a {
+display:none;
+}
+*/
+.access {
+	display:none;
+}
+
+h1.article-title {
+	color: #000;
+}
+h2 {
+	font-size: 18pt;
+	color: #000;
+}
+/*
+#header-region {
+	display: block;
+	background-image:url('https://web.archive.org/web/20160122000808im_/http://www.brown.edu/www-dev/home/sites/brown.edu.www-dev.home/themes/ursa/img/brown-university-print.png');
+	height: 86px;
+	background-repeat:no-repeat;
+	margin: 10pt auto 0 auto;
+}
+*/
+#header-region,
+header#header-region,
+.sub-banner,
+#banner {
+	display: none; height: 0;
+}
+
+#audience-gateways h6,
+#audience-gateways ul li,
+#audience-gateways li a {
+	display: none;
+}
+
+#top-destinations{
+	display:none;
+}
+
+#brown-resources{
+	display:none;
+}
+
+/*
+#footer {
+	display:none;
+}
+*/
+#banner {
+	margin-top: 90px;
+}
+#brown-masthead {
+	display: none;
+	height: 0;
+}
+
+section#audience-gateways {
+	display: none;
+	height: 0;
+}
+
+.main-columns   {
+	width:90%;
+}
+
+
+h1.article-title {
+	border-bottom-color: #000;
+}
+
+a:link, a:visited	{
+	color: #000;
+}
+
+#body-content, 
+article.main-article   {
+	margin-left: 18pt;
+	width: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#footer {
+	 border-top: 1px solid #000;
+	 background-color: #fff;
+	 margin-top: 0;
+	 padding-top: 0;
+	 border-bottom: 0;
+	 width: 90%;
+}
+
+
+#brown-footer h4 {
+	font-size: .75em;
+	text-indent: 0;
+/*	padding-left: 18pt;   */
+}
+
+#footer #brown-footer .content p,
+#footer #brown-footer .content p a:link,
+#footer #brown-footer .content p a:link {
+	color: #000;
+/*	padding-left: 18pt;   */
+}
+
+#footer #brown-footer .content p .maps-contact,
+#footer #brown-footer .content p.social-links  {
+	display: none;
+}
+
+#footer .block-menu, 
+#top-destinations, 
+#brown-resources,
+#footer-advancement {
+	display: none;
+}
+
+
+
+/* without the sIFR stuff, the headline will repeat twice  */
+
+ .sIFR-flash {
+   display    : none !important;
+   height     : 0;
+   width      : 0;
+   position   : absolute;
+   overflow   : hidden;
+ }
+
+ .sIFR-alternate {
+   visibility : visible !important;
+   display    : block   !important;
+   position   : static  !important;
+   left       : auto    !important;
+   top        : auto    !important;
+   width      : auto    !important;
+   height     : auto    !important;
+ }
+
+/*
+     FILE ARCHIVED ON 00:08:08 Jan 22, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:13:36 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 2.521
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.008
+  esindex: 0.035
+  cdx.remote: 16.99
+  LoadShardBlock: 169.723 (3)
+  PetaboxLoader3.datanode: 192.233 (4)
+  PetaboxLoader3.resolve: 152.918 (2)
+  load_resource: 272.565
+*/

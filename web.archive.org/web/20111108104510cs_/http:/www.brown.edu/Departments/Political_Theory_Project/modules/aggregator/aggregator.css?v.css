@@ -1,0 +1,58 @@
+
+#aggregator .feed-source .feed-title {
+  margin-top: 0;
+}
+#aggregator .feed-source .feed-image img {
+  margin-bottom: 0.75em;
+}
+#aggregator .feed-source .feed-icon {
+  float: right; /* LTR */
+  display: block;
+}
+#aggregator .feed-item {
+  margin-bottom: 1.5em;
+}
+#aggregator .feed-item-title {
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+#aggregator .feed-item-meta, #aggregator .feed-item-body {
+  margin-bottom: 0.5em;
+}
+#aggregator .feed-item-categories {
+  font-size: 0.9em;
+}
+#aggregator td {
+  vertical-align: bottom;
+}
+#aggregator td.categorize-item {
+  white-space: nowrap;
+}
+#aggregator .categorize-item .news-item .body {
+  margin-top: 0;
+}
+#aggregator .categorize-item h3 {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+/*
+     FILE ARCHIVED ON 11:06:32 Nov 06, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:04:02 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.546
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.009
+  esindex: 0.011
+  cdx.remote: 13.382
+  LoadShardBlock: 916.118 (3)
+  PetaboxLoader3.datanode: 209.96 (6)
+  PetaboxLoader3.resolve: 764.616 (3)
+  load_resource: 85.051
+*/

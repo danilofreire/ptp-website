@@ -1,0 +1,78 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/* $Id$ */
+
+Drupal.behaviors.video_assist = function(context) {
+  $('textarea.video_assist:not(.video_assist-processed)', context).each(function() {
+    // Drupal's teaser behavior is a destructive one and needs to be run first.
+    if ($(this).is('textarea.teaser:not(.teaser-processed)')) {
+      Drupal.behaviors.teaser(context);  
+    }
+    $(this).addClass('video_assist-processed').parent().append(Drupal.theme('video_assist_link', this));
+  });
+}
+
+Drupal.theme.prototype.video_assist_link = function(el) {
+alert("test" + el);
+console.log("test" + el);
+  var html = '<div class="video_assist-button">', link = Drupal.t('Add video');
+  if (Drupal.settings.video_assist.link == 'icon') {
+    link = '<img src="'+ Drupal.settings.basePath + Drupal.settings.video_assist.icon +'" alt="'+ link +'" title="'+ link +'" />';
+  }
+  html += '<a href="'+ Drupal.settings.basePath +'index.php?q=brown_video_assist/load/textarea&textarea='+ el.name +'" class="video_assist-link" id="video_assist-link-'+ el.id +'" title="'+ Drupal.t('Click here to add videos') +'" onclick="window.open(this.href, \'video_assist_link\', \'width=600,height=350,scrollbars=yes,status=yes,resizable=yes,toolbar=no,menubar=no\'); return false;">'+ link +'</a>';
+  html += '</div>';
+  return html;
+}
+
+function launch_popup(nid, mw, mh) {
+console.log("Test" + nid);
+  var ox = mw;
+  var oy = mh;
+  if((ox>=screen.width) || (oy>=screen.height)) {
+    var ox = screen.width-150;
+    var oy = screen.height-150;
+    var winx = (screen.width / 2)-(ox / 2);
+    var winy = (screen.height / 2)-(oy / 2);
+    var use_scrollbars = 1;
+  }
+  else {
+    var winx = (screen.width / 2)-(ox / 2);
+    var winy = (screen.height / 2)-(oy / 2);
+    var use_scrollbars = 0;
+  }
+  var win = window.open(Drupal.settings.basePath + 'index.php?q=brown_video_assist/popup/' + nid, 'videov', 'height='+oy+'-10,width='+ox+',top='+winy+',left='+winx+',scrollbars='+use_scrollbars+',resizable');
+}
+
+
+
+}
+/*
+     FILE ARCHIVED ON 01:50:59 Sep 07, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:58:23 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.752
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.01
+  esindex: 0.015
+  cdx.remote: 9.541
+  LoadShardBlock: 44.803 (3)
+  PetaboxLoader3.datanode: 100.52 (4)
+  load_resource: 103.614
+  PetaboxLoader3.resolve: 43.921
+*/

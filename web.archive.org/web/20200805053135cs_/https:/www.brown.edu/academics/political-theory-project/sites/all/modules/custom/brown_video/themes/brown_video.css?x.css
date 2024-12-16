@@ -1,0 +1,42 @@
+.mediaplayer {
+}
+
+.media-left {
+	float: left;
+	margin: 0 .75em .75em 0;
+}
+.media-right {
+	float: right;
+	margin: 0 0 .75em .75em;
+}
+.media-break {
+	clear: both;
+}
+
+#field-caption-items .description {
+  font-size: 0.75em;
+  line-height: 1.75em;
+  margin-bottom: 0.75em;
+	font-size: .625em;
+	color: #666;
+}
+/*
+     FILE ARCHIVED ON 23:04:44 Sep 06, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:05:15 Dec 16, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.742
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.01
+  esindex: 0.014
+  cdx.remote: 8.908
+  LoadShardBlock: 62.755 (3)
+  PetaboxLoader3.datanode: 58.499 (4)
+  load_resource: 83.567
+  PetaboxLoader3.resolve: 72.014
+*/

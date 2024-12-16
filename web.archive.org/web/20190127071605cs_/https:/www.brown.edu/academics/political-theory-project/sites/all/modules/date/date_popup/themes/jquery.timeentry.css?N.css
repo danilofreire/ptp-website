@@ -1,0 +1,29 @@
+/* TimeEntry styles */
+.timeEntry_control {
+	vertical-align: middle;
+	margin-left: 2px;
+}
+* html .timeEntry_control { /* IE only */
+	margin-top: -4px;
+}
+
+/*
+     FILE ARCHIVED ON 09:41:47 Jan 24, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:40:53 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.675
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.011
+  esindex: 0.012
+  cdx.remote: 92.166
+  LoadShardBlock: 92.749 (3)
+  PetaboxLoader3.datanode: 142.621 (5)
+  load_resource: 228.904 (2)
+  PetaboxLoader3.resolve: 155.737 (2)
+*/

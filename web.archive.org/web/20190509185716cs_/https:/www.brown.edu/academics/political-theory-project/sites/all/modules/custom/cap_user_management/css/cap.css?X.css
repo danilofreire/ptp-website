@@ -1,0 +1,116 @@
+/* Create User page */
+
+form#user-register div#edit-name-wrapper span::after,
+form#user-register div#edit-mail-wrapper span::after,
+form#user-register div#edit-pass-pass1-wrapper span::after {
+    display: block;
+    color: #999;
+    text-transform: none;
+    font-weight: normal;
+}
+form#user-register div#edit-name-wrapper span::after {
+    content: 'MUST include "@brown.edu" e.g. "jcarberr@brown.edu"';
+}
+form#user-register div#edit-mail-wrapper span::after {
+    content: 'MUST be a Brown email address e.g. "josiah_carberry@brown.edu"';
+}
+form#user-register div#edit-pass-pass1-wrapper span.form-required::after {
+    content: 'You can enter anything here as long as the two fields match. This password is temporary and the User DOES NOT need to know it.';
+}
+form#user-register #edit-notify-wrapper,
+form#user-register .form-item-labeled .form-checkboxes .form-option {
+    display: none;
+}
+form#user-register .form-item-labeled .form-checkboxes #edit-roles-4-wrapper {
+    display: block;
+}
+
+/* User Management Pages */
+
+.view-CAP-User-Management .form-item.form-item-labeled,
+.view-CAP-User-Management #views-bulk-operations-submit {
+    display: inline-block;
+    margin: .5em 2% 2.5em 0;
+}
+.view-CAP-User-Management .form-item.form-item-labeled {
+    float: left;
+    padding-top: 0;
+}
+.view-CAP-User-Management div#edit-add-roles-wrapper {
+    margin-left: 2%;
+}
+.view-CAP-User-Management .view-header p {
+    margin-bottom: 1em;
+    margin-left: 2%;
+}
+.view-CAP-User-Management.view-display-id-page_1 .view-filters {
+    padding-left: 2%;
+}
+.view-CAP-User-Management.view-display-id-page_1 .view-display-id-attachment_1 {
+    border-bottom: 1px solid #999;
+    padding: .25em 0 1.5em 2%;
+    margin-bottom: 1.5em;
+    margin-top: .667em;
+}
+.view-CAP-User-Management form#views-bulk-operations-form-CAP-User-Management-page-1::before {
+    content: 'Update User Roles';
+    font-size: 1.15em;
+    font-weight: bold;
+}
+.view-CAP-User-Management.users-cap h2 {
+    font-size: 1.15em;
+    margin-top: 1em;
+}
+.view-CAP-User-Management div#edit-objects-wrapper {
+    margin: .5em 0 2em 0; 
+}
+.view-CAP-User-Management div#edit-objects-1-wrapper {
+    margin: .5em 0 .125em 0; 
+}
+.view-CAP-User-Management .views-exposed-form .views-exposed-widget {
+    padding: .25em 1em 0 0;
+}
+.view-CAP-User-Management .form-item.form-item-labeled label {
+    padding: .25em 0;
+}
+.view-CAP-User-Management .form-item.form-item-labeled label {
+    padding: .5em 0;
+    font-size: 100%;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: bold;
+}
+.view-CAP-User-Management span.views-summary.views-summary-unformatted {
+    font-size: 1.25em;
+    margin-right: .125em;
+}
+.view-CAP-User-Management div#edit-add-roles-1-wrapper {
+    margin-left: 2%;
+}
+.view-CAP-User-Management .view-header hr,
+.view-CAP-User-Management .view-footer hr {
+    display: block;
+}
+form#views-bulk-operations-form-CAP-User-Management-page-1 div#edit-remove-roles-wrapper {
+    display: none;
+}
+/*
+     FILE ARCHIVED ON 08:16:17 May 10, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:49:40 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.465
+  exclusion.robots: 0.017
+  exclusion.robots.policy: 0.009
+  esindex: 0.01
+  cdx.remote: 109.571
+  LoadShardBlock: 1095.584 (3)
+  PetaboxLoader3.datanode: 98.415 (4)
+  PetaboxLoader3.resolve: 1027.683 (2)
+  load_resource: 49.482
+*/

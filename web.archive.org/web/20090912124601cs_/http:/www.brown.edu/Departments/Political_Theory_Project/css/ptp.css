@@ -1,0 +1,163 @@
+/* CSS Document */
+
+body	{
+	background:#DBCCCC;
+}
+
+#wrapper    
+{
+/*	background: #f4efe3 url(/web/20091003153134im_/http://www.brown.edu/Departments/Political_Theory_Project/img/bkgd-columns.jpg) top center repeat-y;  */
+    background: #E0D3B3 url(../../../../../../20091003153134im_/http:/www.brown.edu/Departments/Political_Theory_Project/images/design_sub_bottom.jpg); 
+	background-position: 3px 90px;  
+   	background-repeat: no-repeat; 
+/* 	background-repeat: repeat-y;  */
+/*    background-color:transparent;*/
+	border:none;
+	margin-top:0;
+	margin-bottom:0;
+	padding-bottom:-20px;
+	padding-left:3px;
+	padding-right:3px;
+	}	
+    
+#main
+{
+/*	background: #E0D3B3 url(/web/20091003153134im_/http://www.brown.edu/Departments/Political_Theory_Project/images/design_sub_bottom.jpg);
+    background-color:transparant;
+   	background-repeat: no-repeat;
+	background-position: -194px 0px;*/
+	background: transparent; 
+	margin-top: 0;
+	padding-top: 20px;
+	border-right: 0px;
+	border-left: 0px;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+	
+	
+#content
+{
+/* 	background: #FFFFFF url(/web/20091003153134im_/http://www.brown.edu/Departments/Political_Theory_Project/images/design_sub_bottom.jpg); 
+   	background-repeat: no-repeat; */
+	background: transparent; 
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-left: 1px;
+	border-right: 1px;
+}
+	
+	
+#header	{
+
+	border-bottom: none;
+	margin-bottom:0;
+	padding-bottom:0;
+	}
+	
+#navbar    {
+
+/*    background: #E0D3B3 url(/web/20091003153134im_/http://www.brown.edu/Departments/Political_Theory_Project/images/design_sub_bottom.jpg);
+   	background-repeat: no-repeat; 
+	background-position: 0px 0px; */ 
+	background: transparent; 
+	margin-top:0px;
+	padding-top:0px;
+/*	background: #f4efe3 url(/web/20091003153134im_/http://www.brown.edu/Departments/Political_Theory_Project/img/bkgd-columns2.jpg) top center repeat-y; */
+/*   	background-repeat: repeat-y;*/
+	padding-bottom:25px;
+	margin-top:0px;
+
+	}
+	
+#sidebar	{
+/*    background: #E0D3B3 url(/web/20091003153134im_/http://www.brown.edu/Departments/Political_Theory_Project/images/design_sub_bottom.jpg);
+   	background-repeat: no-repeat; */
+	background-position: -609px 0px; 
+	padding-left:15px;
+    margin-top: 0px;
+	margin-left:0;
+	margin-right:-50px;
+	width:165px;
+	
+	padding-bottom:5px;
+	padding-right:10px;
+	/*border-left: 1px solid #3a1e1a;*/
+		}
+	#sidebar h1	{
+		color:#3a1e1a;
+	}
+	#sidebar p	{
+	margin-top:12px;
+	
+	
+	}
+	#sidebar a:link, 
+#sidebar a:visited	{
+	color:#6a3730;
+	}
+
+/*#wrapper,
+#endbar	{
+	background:#ffffff;
+}
+*/
+	/* Default links 	*/
+
+a:link, a:visited {
+	font-family: arial;
+	text-decoration : none;
+	color:#CB305A;
+	background: transparent; 
+	}
+
+a:hover {
+	text-decoration : underline;
+    /*color:#E9C0DD;*/
+	color:#F9C6DE;
+	background: transparent; 
+	}
+
+#footer a:link, 
+#footer a:visited	{
+	color:#ffffff;
+	margin:0;
+}
+
+/*
+#footer 	{
+background-color:#666666;
+	
+}
+
+
+#footer p {
+	color:#ffffff;
+}
+*/
+.main {
+	font-size: 1.6 ems;
+}
+
+/*
+     FILE ARCHIVED ON 15:31:34 Oct 03, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:14:33 Dec 15, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.924
+  exclusion.robots: 0.038
+  exclusion.robots.policy: 0.023
+  esindex: 0.015
+  cdx.remote: 9.175
+  LoadShardBlock: 139.472 (3)
+  PetaboxLoader3.datanode: 752.127 (4)
+  PetaboxLoader3.resolve: 88.678 (2)
+  load_resource: 724.155
+*/
